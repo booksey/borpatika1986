@@ -55,7 +55,7 @@
                 <div class="col-12">
                     <?php
                     $language = $_COOKIE['language'];
-                    if (in_array($language, ['hu', 'us'], true)) {
+                    if (in_array($language, ['hu', 'gb'], true)) {
                         require_once 'bemutatkozas_' . $language . '.php';
                     }
                     ?>

@@ -65,7 +65,7 @@
             </a>
             <?php
             $GLOBALS['language'] = 'hu';
-            if (in_array($_COOKIE['language'], ['hu', 'us'], true)) {
+            if (in_array($_COOKIE['language'], ['hu', 'gb'], true)) {
                 $GLOBALS['language'] = $_COOKIE['language'];
             }
             ?>
@@ -85,7 +85,7 @@
                 <a href="https://www.instagram.com/b0rpatika" class="mx-2" target="_blank"><span class="bi-instagram"></span></a>
                 <a href="#" class="mx-2 js-search-open" style="display: none;"><span class="bi-search"></span></a>
                 <a href="#" onclick="languageChange('hu'); return false;"><i class="flag flag-hu"></i></a>
-                <a href="#" onclick="languageChange('us'); return false;"><i class="flag flag-us"></i></a>
+                <a href="#" onclick="languageChange('gb'); return false;"><i class="flag flag-gb"></i></a>
                 <i class="bi bi-list mobile-nav-toggle"></i>
 
                 <!-- ======= Search Form ======= -->

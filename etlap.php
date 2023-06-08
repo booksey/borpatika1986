@@ -6,7 +6,7 @@ require_once 'header.php';
         <div class="container-md mt-5" data-aos="fade-in">
             <?php
             $language = $GLOBALS['language'];
-            if (in_array($language, ['hu', 'us'], true)) {
+            if (in_array($language, ['hu', 'gb'], true)) {
                 require_once 'etlap_' . $language . '.php';
             }
             ?>
