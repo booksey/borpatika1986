@@ -54,7 +54,7 @@
             <div class="row">
                 <div class="col-12">
                     <?php
-                    $language = isset($_COOKIE['language']) && in_array($_COOKIE['language'], ['hu', 'gb'], true) ? $_COOKIE['language'] : 'hu';
+                    $language = $GLOBALS['language'];
                     require_once 'bemutatkozas_' . $language . '.php';
                     ?>
                 </div>
