@@ -54,10 +54,8 @@
             <div class="row">
                 <div class="col-12">
                     <?php
-                    $language = $_COOKIE['language'];
-                    if (in_array($language, ['hu', 'gb'], true)) {
-                        require_once 'bemutatkozas_' . $language . '.php';
-                    }
+                    $language = isset($_COOKIE['language']) && in_array($_COOKIE['language'], ['hu', 'gb'], true) ? $_COOKIE['language'] : 'hu';
+                    require_once 'bemutatkozas_' . $language . '.php';
                     ?>
                 </div>
             </div>
