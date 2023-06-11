@@ -29,6 +29,7 @@
                         <a href="https://twitter.com/borpatika1986" class="twitter"><i class="bi bi-twitter"></i></a>
                         <a href="https://www.facebook.com/borpatikus" class="facebook"><i class="bi bi-facebook"></i></a>
                         <a href="https://www.instagram.com/b0rpatika" class="instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@borpatika19861" class="instagram"><i class="bi bi-tiktok"></i></a>
                     </div>
                 </div>
             </div>
