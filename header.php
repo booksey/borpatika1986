@@ -83,7 +83,7 @@
                 <a href="https://www.facebook.com/borpatikus" class="mx-2" target="_blank"><span class="bi-facebook"></span></a>
                 <a href="https://twitter.com/borpatika1986" class="mx-2" target="_blank"><span class="bi-twitter"></span></a>
                 <a href="https://www.instagram.com/b0rpatika" class="mx-2" target="_blank"><span class="bi-instagram"></span></a>
-                <a href="https://www.tiktok.com/@borpatika19861" class="mx-2" target="_blank"><span class="bi-tiktok"></span></a>
+                <!-- <a href="https://www.tiktok.com/@borpatika19861" class="mx-2" target="_blank"><span class="bi-tiktok"></span></a> -->
                 <a href="#" class="mx-2 js-search-open" style="display: none;"><span class="bi-search"></span></a>
                 <a href="#" onclick="languageChange('hu'); return false;"><i class="flag flag-hu"></i></a>
                 <a href="#" onclick="languageChange('gb'); return false;"><i class="flag flag-gb"></i></a>
