@@ -2,40 +2,40 @@
 require_once 'header.php';
 
 $dailyMenu = [
-    '2023.Június 5. hétfő' => [
-        'Kolbászos bableves',
-        'Sajtos, tejfölös spagetti szalonna pörccel',
-        'Gyümölcs saláta',
+    '2023.Június 12. hétfő' => [
+        'Kertész leves',
+        'Sertésszelet Jóasszony módra pirított burgonyával',
+        'Isler',
     ],
-    '2023.Június 6. kedd' => [
-        'Hideg gyümölcsleves',
-        'Roston sült csirkemell kevert salátával',
-        'Mákos guba vanília öntettel',
+    '2023.Június 13. kedd' => [
+        'Orja leves',
+        'Lecsós szelet rizzsel',
+        'Tiramisu',
     ],
-    '2023.Június 7. szerda' => [
-        'Citromos zöldbableves virsli karikákkal',
-        'Rántott sajt rizzsel,tartárral',
-        'Piskóta tekercs'
+    '2023.Június 14. szerda' => [
+        'Francia hagymaleves',
+        'Bolognai spagetti',
+        'Borpatika kehely'
     ],
-    '2023.Június 8. csütörtök' => [
-        'Erdélyi húsleves',
-        'Zöldborsó főzelék sült virslivel',
-        'Almás rétes'
+    '2023.Június 15. csütörtök' => [
+        'Erőleves fridatto',
+        'Töltött paprika sós burgonyával',
+        'Kókusz golyó'
     ],
-    '2023.Június 9. péntek' => [
-        'Zellerkrémleves',
-        'Sanyi bácsi kedvence petrezselymes burgonyával',
-        'Fahéjas palacsinta'
+    '2023.Június 16. péntek' => [
+        'Karfiol leves',
+        'Csibe brassói kocka burgonyával',
+        'Cékla saláta'
     ],
-    '2023.Június 10. szombat' => [
-        'Paradicsom leves betű tésztával',
-        'Cigány pecsenye hagymás tört burgonyával',
-        'Csalamádé'
+    '2023.Június 17. szombat' => [
+        'Májgombóc leves',
+        'Mátrai borzaska rizibizivel',
+        'Túrógombóc'
     ],
-    '2023.Június 11. vasárnap' => [
-        'Magyaros gombaleves',
-        'Sajttal,almával töltött csirkemell rizibizivel',
-        'Madártej'
+    '2023.Június 18. vasárnap' => [
+        'Kolbászos burgonyaleves',
+        'Csikós tokány galuskával',
+        'Linzer karika'
     ],
 ];
 ?>
@@ -44,7 +44,7 @@ $dailyMenu = [
         <div class="container-md mt-5" data-aos="fade-in">
             <div class="d-flex flex-row justify-content-center">
                 <div>
-                    <h1 class="text-center">Heti menü (23.hét) <br />1890.-Ft / nap</h1>
+                    <h1 class="text-center">Heti menü (24.hét) <br />1890.-Ft / nap</h1>
                     <br />
                     <?php
                     foreach ($dailyMenu as $day => $menus) { ?>
