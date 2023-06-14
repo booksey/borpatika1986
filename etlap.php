@@ -10,38 +10,51 @@ require_once 'header.php';
                 require_once 'etlap_' . $language . '.php';
             }
             ?>
-            <?php
-            foreach ($menus as $menu) {
-                foreach ($menu as $key => $menuContent) {
-                    if ($key === 'title') { ?>
-                        <div class="row">
-                            <div class="col-12">
-                                <h1 class="mt-3 mb-3"><?php echo $menuContent; ?></h1>
-                            <?php } ?>
-                            </div>
-                            <?php }
-                        if ($key === 'menus') {
-                            foreach ($menuContent as $name => $price) { ?>
-                                <div class="row">
-                                    <div class="col-10">
-                                        <h3><?php echo $name; ?></h3>
-                                    </div>
-                                    <div class="col-2 text-end">
-                                        <h3><?php echo $price; ?>.-</h3>
-                                    </div>
+            <div class="accordion" id="etlap">
+                <?php
+                $menuCnt = 0;
+                foreach ($menus as $menu) {
+                    foreach ($menu as $key => $menuContent) {
+                        if ($key === 'title') {
+                            $menuCnt++;
+                            $title = "collapseId" . $menuCnt; ?>
+                            <div class="accordion-item">
+                                <h1 class="mt-3 mb-3">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#<?php echo $title; ?>" aria-expanded="true" aria-controls="<?php echo $title; ?>">
+                                        <?php echo $menuContent; ?>
+                                    </button>
+                                </h1>
+                                <div id="<?php echo $title; ?>" class="accordion-collapse collapse <?= ($menuCnt === 1) ? "show" : ""; ?> data-bs-parent=" #etlap">
+                                <?php }
+                                ?>
+                                <?php
+                                if ($key === 'menus') {
+                                    foreach ($menuContent as $name => $price) { ?>
+                                        <div class="accordion-body pb-2">
+                                            <div class="row">
+                                                <div class="col-10">
+                                                    <?php echo $name; ?>
+                                                </div>
+                                                <div class="col-2 text-end">
+                                                    <?php echo $price . ".-"; ?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <?php } ?>
                                 </div>
-                        <?php }
-                        } ?>
+                                <?php } ?><?php
+                                        } ?>
 
-                    <?php } ?>
-                    <div class="row mt-5">
-                        <div class="col-12">
-                            <h1><?= $language == 'hu' ? "Az árak köret nélkül értendők!" : " The prices are in HUF, and the Garnishes are not included in the prices!"; ?></h1>
-                            <h1><?= $language == 'hu'
-                                    ? "Az ételeink allergén anyagokat tartalmazhatnak, kérem érdeklőjenek a rendeléskor!"
-                                    : "Dishes may contain allergens, please ask our staff for detailed information when ordering!"; ?></h1>
+                            </div>
+                        <?php } ?>
+                        <div class="row mt-5">
+                            <div class="col-12">
+                                <h1><?= $language == 'hu' ? "Az árak köret nélkül értendők!" : " The prices are in HUF, and the Garnishes are not included in the prices!"; ?></h1>
+                                <h1><?= $language == 'hu'
+                                        ? "Az ételeink allergén anyagokat tartalmazhatnak, kérem érdeklőjenek a rendeléskor!"
+                                        : "Dishes may contain allergens, please ask our staff for detailed information when ordering!"; ?></h1>
+                            </div>
                         </div>
-                    </div>
 
     </section><!-- End Hero Slider Section -->
 </main><!-- End #main -->

@@ -1307,3 +1307,48 @@ section {
 .drinkTitleRow {
   margin-top: 50px !important;
 }
+
+.accordion {
+  color: var(--color-primary-rgb) !important;
+  background-color: #2F130C !important;
+  border: none;
+  box-shadow: none;
+}
+
+.accordion-item {
+  color: var(--color-primary-rgb) !important;
+  background-color: #2F130C !important;
+  font-size: 2rem;
+  border: none !important;
+  box-shadow: none !important;
+  box-shadow: none;
+}
+
+.accordion-button {
+  color: var(--color-primary-rgb) !important;
+  background-color: #2F130C !important;
+  font-size: 2.5rem;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  border: none !important;
+  box-shadow: none !important;
+  background-image: url("/assets/img/arrow-down-circle-fill.svg");
+  transform: scale(1.5);
+}
+
+.accordion-button.collapsed::after {
+  border: none !important;
+  box-shadow: none !important;
+  background-image: url("/assets/img/arrow-up-circle-fill.svg");
+  transform: scale(1.5);
+}
+
+.accordion-button:focus {
+  border: none !important;
+  box-shadow: none !important;
+  border-color: rgba(0, 0, 0, .125);
+
+}

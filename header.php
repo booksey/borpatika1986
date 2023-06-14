@@ -33,7 +33,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet" />
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -80,13 +79,13 @@
                 </ul>
             </nav>
             <div class="position-relative">
-                <a href="https://www.facebook.com/borpatikus" class="mx-2" target="_blank"><span class="bi-facebook"></span></a>
-                <a href="https://twitter.com/borpatika1986" class="mx-2" target="_blank"><span class="bi-twitter"></span></a>
-                <a href="https://www.instagram.com/b0rpatika" class="mx-2" target="_blank"><span class="bi-instagram"></span></a>
+                <a href="https://www.facebook.com/borpatikus" class="ms-3 me-1" target="_blank"><i class="bi-facebook" style="font-size: 1.5rem!important;"></i></a>
+                <a href="https://twitter.com/borpatika1986" class="mx-2" target="_blank"><i class="bi-twitter" style="font-size: 1.5rem!important;"></i></a>
+                <a href="https://www.instagram.com/b0rpatika" class="mx-2" target="_blank"><i class="bi-instagram" style="font-size: 1.5rem!important;"></i></a>
                 <!-- <a href="https://www.tiktok.com/@borpatika19861" class="mx-2" target="_blank"><span class="bi-tiktok"></span></a> -->
-                <a href="#" class="mx-2 js-search-open" style="display: none;"><span class="bi-search"></span></a>
-                <a href="#" onclick="languageChange('hu'); return false;"><i class="flag flag-hu"></i></a>
-                <a href="#" onclick="languageChange('gb'); return false;"><i class="flag flag-gb"></i></a>
+                <a href="#" class="mx-2 js-search-open" style="display: none;"><i class="bi-search"></i></a>
+                <a href="#" onclick="languageChange('hu'); return false;"><img src="assets/img/Flag_of_Hungary.svg" width="30" height="24" class="mb-2 mx-1"></a>
+                <a href="#" onclick="languageChange('gb'); return false;"><img src="assets/img/Flag_of_the_United_Kingdom.svg" width="30" height="24" class="mb-2 mx-1"></a>
                 <i class="bi bi-list mobile-nav-toggle"></i>
 
                 <!-- ======= Search Form ======= -->
