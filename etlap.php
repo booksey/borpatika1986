@@ -55,7 +55,6 @@ require_once 'header.php';
                                         : "Dishes may contain allergens, please ask our staff for detailed information when ordering!"; ?></h1>
                             </div>
                         </div>
-
     </section><!-- End Hero Slider Section -->
 </main><!-- End #main -->
 <?php require_once 'footer.php'; ?>
