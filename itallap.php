@@ -1,6 +1,8 @@
 <?php
 require_once 'header.php';
 require_once 'drinks.php';
+
+//TODO: reszponzív itallap oszlopok
 ?>
 
 <main id="main">
@@ -20,7 +22,7 @@ require_once 'drinks.php';
                     ?>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button style="font-size: 1.5rem!important;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#<?= $menuId; ?>" aria-expanded="true" aria-controls="<?= $menuId; ?>">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#<?= $menuId; ?>" aria-expanded="true" aria-controls="<?= $menuId; ?>">
                                     <?= ($menu['mainTitle'] ? $menu['mainTitle'] : '') ?>
                                 </button>
                             </h2>
@@ -53,18 +55,18 @@ require_once 'drinks.php';
                                         <div class="col-<?php echo $firstDiv; ?>"></div>
                                         <?php foreach ($menu['columns'] as $column) { ?>
                                             <div class="col-<?php echo $secondDiv; ?>">
-                                                <h4 style="font-size: large !important;"><?php echo $column; ?></h4>
+                                                <?php echo $column; ?>
                                             </div>
                                         <?php } ?>
                                     </div>
                                     <div class="row mt-2 text-center">
                                         <?php foreach ($menu['drinks'] as $name => $con) { ?>
                                             <div class="col-<?php echo $firstDiv; ?> text-start">
-                                                <h4 style="font-size: large !important;"><?php echo $name; ?></h4>
+                                                <?php echo $name; ?>
                                             </div>
                                             <?php foreach ($con as $price) { ?>
                                                 <div class="col-<?php echo $secondDiv; ?>">
-                                                    <h4 style="font-size: large !important;"><?php echo $price; ?>.-</h4>
+                                                    <?php echo $price; ?>.-
                                                 </div>
                                             <?php } ?>
                                         <?php } ?>
