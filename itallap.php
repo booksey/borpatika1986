@@ -20,12 +20,10 @@ require_once 'drinks.php';
                     <?php foreach ($menus['menus'] as $menu) {
                         $menuId = "menuId" . $menuCnt;
                     ?>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#<?= $menuId; ?>" aria-expanded="true" aria-controls="<?= $menuId; ?>">
-                                    <?= ($menu['mainTitle'] ? $menu['mainTitle'] : '') ?>
-                                </button>
-                            </h2>
+                        <div class="accordion-item italitem">
+                            <button class="accordion-button italbutton" type="button" data-bs-toggle="collapse" data-bs-target="#<?= $menuId; ?>" aria-expanded="true" aria-controls="<?= $menuId; ?>">
+                                <?= ($menu['mainTitle'] ? $menu['mainTitle'] : '') ?>
+                            </button>
                             <div id="<?= $menuId; ?>" class="accordion-collapse collapse" aria-labelledby="heading<?= $menuId; ?>" data-bs-parent="#itallap">
                                 <div class="accordion-body">
                                     <div class="row mt-2 text-center">

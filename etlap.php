@@ -21,7 +21,7 @@ require_once 'header.php';
                             <div class="accordion-item">
                                 <h1 class="mt-3 mb-3">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#<?php echo $title; ?>" aria-expanded="true" aria-controls="<?php echo $title; ?>">
-                                        <?php echo $menuContent; ?>
+                                        <span class="accordion"><?php echo $menuContent; ?></span>
                                     </button>
                                 </h1>
                                 <div id="<?php echo $title; ?>" class="accordion-collapse collapse <?= ($menuCnt === 1) ? "show" : ""; ?> data-bs-parent=" #etlap">
