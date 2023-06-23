@@ -21,7 +21,7 @@ require_once 'header.php';
                             <div class="accordion-item">
                                 <h1 class="mt-3 mb-3">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#<?php echo $title; ?>" aria-expanded="true" aria-controls="<?php echo $title; ?>">
-                                        <span class="accordion"><?php echo $menuContent; ?></span>
+                                        <span class="accordion-title"><?php echo $menuContent; ?></span>
                                     </button>
                                 </h1>
                                 <div id="<?php echo $title; ?>" class="accordion-collapse collapse <?= ($menuCnt === 1) ? "show" : ""; ?> data-bs-parent=" #etlap">
@@ -31,13 +31,15 @@ require_once 'header.php';
                                 if ($key === 'menus') {
                                     foreach ($menuContent as $name => $price) { ?>
                                         <div class="accordion-body pb-2">
-                                            <div class="row">
-                                                <div class="col-10">
-                                                    <?php echo $name; ?>
-                                                </div>
-                                                <div class="col-2 text-end">
-                                                    <?php echo $price . ".-"; ?>
-                                                </div>
+                                            <div class="table table-borderless table-responsive-sm">
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td scope="row" class="border-0 text-start"><?php echo $name; ?></td>
+                                                            <td class="align-right border-0 text-end"><?php echo $price . ".-"; ?></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
                                         </div>
                                     <?php } ?>

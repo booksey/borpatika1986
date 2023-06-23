@@ -1291,6 +1291,10 @@ section {
   box-shadow: none;
 }
 
+.accordion-title {
+  font-size: 40px;
+}
+
 .accordion-button {
   color: var(--color-primary-rgb) !important;
   background-color: #2F130C !important;
