@@ -26,48 +26,57 @@ require_once 'drinks.php';
                             </button>
                             <div id="<?= $menuId; ?>" class="accordion-collapse collapse" aria-labelledby="heading<?= $menuId; ?>" data-bs-parent="#itallap">
                                 <div class="accordion-body">
-                                    <div class="row mt-2 text-center">
-                                        <?php
-                                        //4 columns default
-                                        $firstDiv = '4';
-                                        $secondDiv = '2';
-                                        switch (count($menu['columns'])) {
-                                            case 5:
+                                    <div class="table table-borderless table-responsive-md">
+                                        <table class="table">
+                                            <tbody>
+                                                <?php
+                                                //4 columns default
                                                 $firstDiv = '4';
                                                 $secondDiv = '2';
-                                                break;
-                                            case 3:
-                                                $firstDiv = '6';
-                                                $secondDiv = '2';
-                                                break;
-                                            case 2:
-                                                $firstDiv = '8';
-                                                $secondDiv = '2';
-                                                break;
-                                            case 1:
-                                                $firstDiv = '10';
-                                                $secondDiv = '2';
-                                                break;
-                                        }
-                                        ?>
-                                        <div class="col-<?php echo $firstDiv; ?>"></div>
-                                        <?php foreach ($menu['columns'] as $column) { ?>
-                                            <div class="col-<?php echo $secondDiv; ?>">
-                                                <?php echo $column; ?>
-                                            </div>
-                                        <?php } ?>
+                                                switch (count($menu['columns'])) {
+                                                    case 5:
+                                                        $firstDiv = '4';
+                                                        $secondDiv = '2';
+                                                        break;
+                                                    case 3:
+                                                        $firstDiv = '6';
+                                                        $secondDiv = '2';
+                                                        break;
+                                                    case 2:
+                                                        $firstDiv = '8';
+                                                        $secondDiv = '2';
+                                                        break;
+                                                    case 1:
+                                                        $firstDiv = '10';
+                                                        $secondDiv = '2';
+                                                        break;
+                                                }
+                                                ?>
+                                                <tr>
+                                                    <td scope="row" class="col-<?php echo $firstDiv; ?> border-0"></td>
+                                                    <?php foreach ($menu['columns'] as $column) { ?>
+                                                        <td class="col-<?php echo $secondDiv; ?> border-0 text-center">
+                                                            <?php echo $column; ?>
+                                                        </td>
+                                                    <?php } ?>
+                                                </tr>
+
                                     </div>
-                                    <div class="row mt-2 text-center">
+                                    <div class="table table-borderless table-responsive-md">
                                         <?php foreach ($menu['drinks'] as $name => $con) { ?>
-                                            <div class="col-<?php echo $firstDiv; ?> text-start">
-                                                <?php echo $name; ?>
-                                            </div>
-                                            <?php foreach ($con as $price) { ?>
-                                                <div class="col-<?php echo $secondDiv; ?>">
-                                                    <?php echo $price; ?>.-
-                                                </div>
-                                            <?php } ?>
+                                            <tr>
+                                                <td class="col-<?php echo $firstDiv; ?> text-start border-0">
+                                                    <?php echo $name; ?>
+                                                </td>
+                                                <?php foreach ($con as $price) { ?>
+                                                    <td class="col-<?php echo $secondDiv; ?> text-center border-0">
+                                                        <?php echo $price; ?>.-
+                                                    </td>
+                                                <?php } ?>
+                                            </tr>
                                         <?php } ?>
+                                        </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
