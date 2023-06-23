@@ -41,14 +41,14 @@ h6 {
 }
 
 #main {
-  margin-top: 90px;
+  margin-top: 250px;
 }
 
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
 section {
-  padding: 40px 0;
+  padding: 0 40px 15px 40px;
   overflow: hidden;
 }
 
@@ -129,18 +129,18 @@ section {
 # Header
 --------------------------------------------------------------*/
 .header {
-  height: 150px;
+  height: 230px;
   transition: all 0.5s;
   z-index: 997;
   background: #f2f2f2;
 }
 
 .header.sticked {
-  height: 70px;
+  height: 230px;
 }
 
 .header .logo img {
-  max-height: 100px;
+  max-height: 230px;
   margin-right: 6px;
 }
 
@@ -237,9 +237,9 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0 10px 30px;
+    padding: 10px;
     font-family: var(--font-default);
-    font-size: 22px;
+    font-size: 30px;
     font-weight: 500;
     color: rgba(var(--color-default-rgb), 1);
     white-space: nowrap;
@@ -375,7 +375,7 @@ section {
     justify-content: space-between;
     padding: 10px 20px;
     font-family: var(--font-primary);
-    font-size: 15px;
+    font-size: 30px;
     font-weight: 600;
     color: var(--color-primary);
     white-space: nowrap;
@@ -416,7 +416,7 @@ section {
   .mobile-nav-toggle {
     display: inline-block;
     color: var(--color-secondary);
-    font-size: 28px;
+    font-size: 32px;
     cursor: pointer;
     line-height: 0;
     transition: 0.5s;
@@ -449,44 +449,6 @@ section {
   .mobile-nav-active .navbar>ul {
     display: block;
   }
-}
-
-/*--------------------------------------------------------------
-# Posts
---------------------------------------------------------------*/
-.post-entry-1 {
-  margin-bottom: 30px;
-}
-
-.post-entry-1 img {
-  margin-bottom: 30px;
-}
-
-.post-entry-1 h2 {
-  margin-bottom: 20px;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  font-weight: 500;
-}
-
-.post-entry-1 h2 a {
-  color: var(--color-black);
-}
-
-.post-entry-1.lg h2 {
-  font-size: 40px;
-  line-height: 1;
-}
-
-.post-meta {
-  font-size: 11px;
-  letter-spacing: 0.07rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-family: var(--font-secondary);
-  color: rgba(var(--color-black-rgb), 0.4);
-  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {

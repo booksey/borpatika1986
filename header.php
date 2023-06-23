@@ -59,8 +59,9 @@
     <!-- log line break -->
     <header id="header" class="header d-flex align-items-center fixed-top" style="background-color: #2F130C !important">
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-            <a href="index.php" class="logo d-flex align-items-center d-none d-lg-block">
-                <img src="assets/img/logo.jpg" />
+            <a href="index.php" class="logo d-flex align-items-center d-none d-sm-block">
+                <!-- <img src="assets/img/logo.jpg" /> -->
+                <img src="assets/img/logo_2.png" />
             </a>
             <?php
             $GLOBALS['language'] = 'hu';
@@ -78,15 +79,15 @@
                     <li><a href="rendezvenyek.php"><?= $GLOBALS['language'] == 'hu' ? "Rendezvények" : 'Events'; ?></a></li>
                 </ul>
             </nav>
-            <div class="position-relative">
+            <div class="position-relative d-flex align-items-center">
+                <i class="bi bi-list mobile-nav-toggle"></i>
                 <a href="https://www.facebook.com/borpatikus" class="ms-3 me-1" target="_blank"><i class="bi-facebook" style="font-size: 1.5rem!important;"></i></a>
                 <a href="https://twitter.com/borpatika1986" class="mx-2" target="_blank"><i class="bi-twitter" style="font-size: 1.5rem!important;"></i></a>
                 <a href="https://www.instagram.com/b0rpatika" class="mx-2" target="_blank"><i class="bi-instagram" style="font-size: 1.5rem!important;"></i></a>
                 <!-- <a href="https://www.tiktok.com/@borpatika19861" class="mx-2" target="_blank"><span class="bi-tiktok"></span></a> -->
                 <a href="#" class="mx-2 js-search-open" style="display: none;"><i class="bi-search"></i></a>
-                <a href="#" onclick="languageChange('hu'); return false;"><img src="assets/img/Flag_of_Hungary.svg" width="30" height="24" class="mb-2 mx-1"></a>
-                <a href="#" onclick="languageChange('gb'); return false;"><img src="assets/img/Flag_of_the_United_Kingdom.svg" width="30" height="24" class="mb-2 mx-1"></a>
-                <i class="bi bi-list mobile-nav-toggle"></i>
+                <a href="#" onclick="languageChange('hu'); return false;"><img src="assets/img/Flag_of_Hungary.svg" width="30" height="24" class="mx-1"></a>
+                <a href="#" onclick="languageChange('gb'); return false;"><img src="assets/img/Flag_of_the_United_Kingdom.svg" width="30" height="24" class="mx-1"></a>
 
                 <!-- ======= Search Form ======= -->
                 <div class="search-form-wrap js-search-form-wrap">
