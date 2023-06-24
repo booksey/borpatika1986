@@ -31,7 +31,7 @@ require_once 'header.php';
                                 if ($key === 'menus') {
                                     foreach ($menuContent as $name => $price) { ?>
                                         <div class="accordion-body pb-2">
-                                            <div class="table table-borderless table-responsive-sm">
+                                            <div class="table table-borderless">
                                                 <table class="table">
                                                     <tbody>
                                                         <tr>
