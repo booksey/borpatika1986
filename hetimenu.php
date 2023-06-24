@@ -1,32 +1,7 @@
 <?php
 require_once 'header.php';
-
+$weekNumber = '26';
 $dailyMenu = [
-    '2023.Június 19. hétfő' => [
-        'Palóc leves',
-        'Káposztás tészta',
-        'Linzer karika',
-    ],
-    '2023.Június 20. kedd' => [
-        'Zöldségkrémleves',
-        'Kijevi csirkemell burgonyapürével',
-        'Lekváros palacsinta',
-    ],
-    '2023.Június 21. szerda' => [
-        'Tárkonyos lencseleves virslivel',
-        'Natur sertésszelet párolt zöldségekkel',
-        'Puncs szelet'
-    ],
-    '2023.Június 22. csütörtök' => [
-        'Daragaluska leves',
-        'Tejfölös,majorannás burgonyafőzelék sült kolbásszal',
-        'Gesztenye püré'
-    ],
-    '2023.Június 23. péntek' => [
-        'Görög gyümölcsleves',
-        'Rántott cukkini rizzsel,tartárral',
-        'Mascarponés,citromos pohárkrém'
-    ],
     '2023.Június 24. szombat' => [
         'Csülkös bableves',
         'Tojásos galuska',
@@ -37,6 +12,42 @@ $dailyMenu = [
         'Csirkepörkölt szarvacska tésztával',
         'Borpatika kehely'
     ],
+    '2023.Június 26. hétfő' => [
+        'Színes zöldségleves pirított sonkacsíkokkal',
+        'Spagetti carbonara',
+        'Peach melba',
+    ],
+    '2023.Június 27. kedd' => [
+        'Burgonyakrémleves virslivel',
+        'Sertés pörkölt galuskával',
+        'Káposzta saláta',
+    ],
+    '2023.Június 28. szerda' => [
+        'Húsleves csigatésztával',
+        'Rakott karfiol',
+        'Vaníliás gofri'
+    ],
+    '2023.Június 29. csütörtök' => [
+        'Zöldborsó leves',
+        'Bankár csirkemell petrezselymes burgonyával',
+        'Napközis piskóta'
+    ],
+    '2023.Június 30. péntek' => [
+        'Tárkonyos sertésraguleves',
+        'Rántott sajt rizzsel,tartárral',
+        'Túrós palacsinta'
+    ],
+    '2023.Július 1. szombat' => [
+        'Májgombóc leves',
+        'Lyoni sertésszelet burgonyapürével',
+        'Kevert almás'
+    ],
+    '2023.Július 2. vasárnap' => [
+        'Tejfölös zöldbableves',
+        'Sajttal töltött csirkemell zöldséges rizzsel',
+        'Almás rétes'
+    ],
+
 ];
 ?>
 <main id="main">
@@ -44,7 +55,7 @@ $dailyMenu = [
         <div class="container-md mt-5" data-aos="fade-in">
             <div class="d-flex flex-row justify-content-center">
                 <div>
-                    <h1 class="text-center">Heti menü (25.hét) <br />1890.-Ft / nap</h1>
+                    <h1 class="text-center">Heti menü (<?= $weekNumber; ?>.hét) <br />1890.-Ft / nap</h1>
                     <br />
                     <?php
                     foreach ($dailyMenu as $day => $menus) { ?>
