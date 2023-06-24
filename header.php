@@ -52,14 +52,6 @@ if ((empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === "off") && $_SERVER['HTTP_
     <!-- Template Main CSS Files -->
     <link href="assets/css/variables.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
-
-    <!-- =======================================================
-  * Template Name: ZenBlog
-  * Updated: Mar 10 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/zenblog-bootstrap-blog-template/
-  * Author: BootstrapMade.com
-  * License: https:///bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body style="background-color: #2F130C !important">

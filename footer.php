@@ -1,11 +1,5 @@
 <!-- ======= Footer ======= -->
 <footer id="footer" class="footer">
-
-    <!-- <div class="footer-content">
-        <div class="container">
-        </div>
-    </div> -->
-
     <div class="footer-legal">
         <div class="container">
 
