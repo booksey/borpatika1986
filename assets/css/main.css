@@ -436,12 +436,6 @@ section {
   }
 }
 
-@media (max-width: 768px) {
-  .custom-border {
-    border: none !important;
-  }
-}
-
 .img-bg {
   height: 500px;
   background-size: cover;
@@ -759,7 +753,7 @@ section {
     width: 45%;
     padding-right: 10px;
     white-space: nowrap;
-    font-weight: bold;
+    font-weight: normal;
   }
 
   .table-mobile-responsive.table-mobile-sided> :not(:first-child) {
@@ -782,13 +776,22 @@ section {
     width: 45%;
     padding-right: 10px;
     white-space: nowrap;
-    font-weight: bold;
+    font-weight: normal;
+  }
+
+  .table-mobile-responsive.table-mobile-sided td:first-child {
+    padding-left: 0;
+    justify-content: start;
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin: 10px 0 10px 0;
   }
 
   .table-mobile-responsive.table-mobile-styleless tr:not(.bg-light-blue) {
     border-bottom: none !important;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Custom
@@ -808,11 +811,5 @@ section {
 }
 
 .drinkButton {
-  font-size: 1.4rem !important;
-}
-
-@media (max-width: 450px) {
-  .logo-mobile-hidden {
-    display: none;
-  }
+  font-size: 1.8rem !important;
 }

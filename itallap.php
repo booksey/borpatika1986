@@ -54,14 +54,14 @@ require_once 'drinks.php';
                                             ];
                                             ?>
                                             <tr>
-                                                <th class="border-0" scope="col"></th>
+                                                <td class="border-0" scope="col"></td>
                                                 <?php foreach ($menu['columns'] as $column) { ?>
-                                                    <th class="border-0 text-center" scope="col">
+                                                    <td class="border-0 text-center fw-normal" scope="col">
                                                         <?php
                                                         echo $column;
                                                         $columns[] = $column;
                                                         ?>
-                                                    </th>
+                                                    </td>
                                                 <?php } ?>
                                             </tr>
                                         </thead>
@@ -74,7 +74,7 @@ require_once 'drinks.php';
                                                         <?php echo $name; ?>
                                                     </td>
                                                     <?php foreach ($con as $price) { ?>
-                                                        <td data-content="<?= $columns[$columnCnt]; ?>" class="text-center border-0">
+                                                        <td data-content="<?= $columns[$columnCnt]; ?>" class="text-center border-0 fw-normal">
                                                             <?php echo $price; ?>.-
                                                         </td>
                                                     <?php $columnCnt++;
