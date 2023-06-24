@@ -810,3 +810,9 @@ section {
 .drinkButton {
   font-size: 1.4rem !important;
 }
+
+@media (max-width: 450px) {
+  .logo-mobile-hidden {
+    display: none;
+  }
+}

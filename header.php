@@ -58,7 +58,7 @@ if ((empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === "off") && $_SERVER['HTTP_
     <!-- ======= Header ======= -->
     <!-- log line break -->
     <header id="header" class="header d-flex align-items-center fixed-top" style="background-color: #2F130C !important">
-        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-evenly">
             <a href="index.php" class="logo d-flex align-items-center d-none d-sm-block">
                 <!-- <img src="assets/img/logo.jpg" /> -->
                 <img src="assets/img/logo_2.png" />

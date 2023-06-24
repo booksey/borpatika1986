@@ -25,7 +25,7 @@ require_once 'drinks.php';
                             </button>
                             <div id="<?= $menuId; ?>" class="accordion-collapse collapse" aria-labelledby="heading<?= $menuId; ?>" data-bs-parent="#itallap">
                                 <div class="accordion-body">
-                                    <table class="table table-mobile-responsive">
+                                    <table class="table table-mobile-responsive table-mobile-sided">
                                         <thead>
                                             <?php
                                             //4 columns default
@@ -54,9 +54,9 @@ require_once 'drinks.php';
                                             ];
                                             ?>
                                             <tr>
-                                                <th class="col-<?php echo $firstDiv; ?> border-0" scope="col"></th>
+                                                <th class="border-0" scope="col"></th>
                                                 <?php foreach ($menu['columns'] as $column) { ?>
-                                                    <th class="col-<?php echo $secondDiv; ?> border-0 text-center" scope="col">
+                                                    <th class="border-0 text-center" scope="col">
                                                         <?php
                                                         echo $column;
                                                         $columns[] = $column;
@@ -66,16 +66,15 @@ require_once 'drinks.php';
                                             </tr>
                                         </thead>
                                         <tbody>
-
                                             <?php foreach ($menu['drinks'] as $name => $con) {
                                                 $columnCnt = 1;
                                             ?>
                                                 <tr>
-                                                    <td data-content="" class="col-<?php echo $firstDiv; ?> border-0" scope="row">
+                                                    <td data-content="" class="border-0" scope="row">
                                                         <?php echo $name; ?>
                                                     </td>
                                                     <?php foreach ($con as $price) { ?>
-                                                        <td data-content="<?= $columns[$columnCnt]; ?>" class="col-<?php echo $secondDiv; ?> border-0 text-center">
+                                                        <td data-content="<?= $columns[$columnCnt]; ?>" class="text-center border-0">
                                                             <?php echo $price; ?>.-
                                                         </td>
                                                     <?php $columnCnt++;
