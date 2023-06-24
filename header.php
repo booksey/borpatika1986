@@ -79,12 +79,12 @@ if ((empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === "off") && $_SERVER['HTTP_
             ?>
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a href="index.php"><?= $GLOBALS['language'] == 'hu' ? "Bemutatkozás" : 'About'; ?></a></li>
-                    <li><a href="etlap.php"><?= $GLOBALS['language'] == 'hu' ? "Étlap" : 'Menu'; ?></a></li>
-                    <li><a href="hetimenu.php"><?= $GLOBALS['language'] == 'hu' ? "Heti menü" : 'Weekly menu'; ?></a></li>
-                    <li><a href="album.php"><?= $GLOBALS['language'] == 'hu' ? "Fotóalbum" : 'Gallery'; ?></a></li>
-                    <li><a href="itallap.php"><?= $GLOBALS['language'] == 'hu' ? "Itallap" : 'Drinks'; ?></a></li>
-                    <li><a href="rendezvenyek.php"><?= $GLOBALS['language'] == 'hu' ? "Rendezvények" : 'Events'; ?></a></li>
+                    <li><a href="/"><?= $GLOBALS['language'] == 'hu' ? "Bemutatkozás" : 'About'; ?></a></li>
+                    <li><a href="/etlap.php"><?= $GLOBALS['language'] == 'hu' ? "Étlap" : 'Menu'; ?></a></li>
+                    <li><a href="/hetimenu.php"><?= $GLOBALS['language'] == 'hu' ? "Heti menü" : 'Weekly menu'; ?></a></li>
+                    <li><a href="/album.php"><?= $GLOBALS['language'] == 'hu' ? "Fotóalbum" : 'Gallery'; ?></a></li>
+                    <li><a href="/itallap.php"><?= $GLOBALS['language'] == 'hu' ? "Itallap" : 'Drinks'; ?></a></li>
+                    <li><a href="/rendezvenyek.php"><?= $GLOBALS['language'] == 'hu' ? "Rendezvények" : 'Events'; ?></a></li>
                 </ul>
             </nav>
             <div class="position-relative d-flex align-items-center">

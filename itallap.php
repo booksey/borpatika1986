@@ -2,7 +2,7 @@
 require_once 'header.php';
 require_once 'drinks.php';
 
-//TODO: reszponzív itallap oszlopok
+//TODO: scrollbar always show on top and bottom
 ?>
 
 <main id="main">
