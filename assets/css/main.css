@@ -651,14 +651,9 @@ section {
   color: var(--color-white);
 }
 
-.drinkTitle {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-}
-
-.drinkTitleRow {
-  margin-top: 50px !important;
-}
+/*--------------------------------------------------------------
+# Accordion
+--------------------------------------------------------------*/
 
 .accordion {
   color: var(--color-primary-rgb) !important;
@@ -692,14 +687,6 @@ section {
   box-shadow: none !important;
 }
 
-.italbutton {
-  font-size: 1.4rem !important;
-}
-
-.italitem {
-  font-size: 1.25rem !important;
-}
-
 .accordion-button:not(.collapsed)::after {
   border: none !important;
   box-shadow: none !important;
@@ -719,4 +706,107 @@ section {
   box-shadow: none !important;
   border-color: rgba(0, 0, 0, .125);
 
+}
+
+/*--------------------------------------------------------------
+# Responsive tables
+--------------------------------------------------------------*/
+
+@media only screen and (max-width: 675px),
+(min-device-width: 675px) and (max-device-width: 1024px) {
+
+  [data-content]:before {
+    content: attr(data-content);
+  }
+
+  .table-mobile-responsive,
+  .table-mobile-responsive thead,
+  .table-mobile-responsive tbody,
+  .table-mobile-responsive th,
+  .table-mobile-responsive td,
+  .table-mobile-responsive tr {
+    display: block;
+  }
+
+  .table-mobile-responsive td.text-center {
+    text-align: left !important;
+  }
+
+  .table-mobile-responsive caption {
+    width: max-content;
+  }
+
+  .table-mobile-responsive thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .table-mobile-responsive> :not(:first-child) {
+    border-top: none;
+  }
+
+  .table-mobile-responsive td {
+    border: none;
+    position: relative;
+    padding-top: 1.5rem !important;
+  }
+
+  .table-mobile-responsive td:before {
+    position: absolute;
+    top: 0;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+
+  .table-mobile-responsive.table-mobile-sided> :not(:first-child) {
+    border-top: none;
+  }
+
+  .table-mobile-responsive.table-mobile-sided td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+    padding-top: 0px !important;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .table-mobile-responsive.table-mobile-sided td:before {
+    position: absolute;
+    top: 0;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+
+  .table-mobile-responsive.table-mobile-styleless tr:not(.bg-light-blue) {
+    border-bottom: none !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Custom
+--------------------------------------------------------------*/
+
+.drinkTitle {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.drinkTitleRow {
+  margin-top: 50px !important;
+}
+
+.drinkItem {
+  font-size: 1.25rem !important;
+}
+
+.drinkButton {
+  font-size: 1.4rem !important;
 }
