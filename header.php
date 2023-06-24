@@ -71,19 +71,19 @@ if ((empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === "off") && $_SERVER['HTTP_
             ?>
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a href="/"><?= $GLOBALS['language'] == 'hu' ? "Bemutatkozás" : 'About'; ?></a></li>
-                    <li><a href="/etlap.php"><?= $GLOBALS['language'] == 'hu' ? "Étlap" : 'Menu'; ?></a></li>
-                    <li><a href="/hetimenu.php"><?= $GLOBALS['language'] == 'hu' ? "Heti menü" : 'Weekly menu'; ?></a></li>
-                    <li><a href="/album.php"><?= $GLOBALS['language'] == 'hu' ? "Fotóalbum" : 'Gallery'; ?></a></li>
-                    <li><a href="/itallap.php"><?= $GLOBALS['language'] == 'hu' ? "Itallap" : 'Drinks'; ?></a></li>
-                    <li><a href="/rendezvenyek.php"><?= $GLOBALS['language'] == 'hu' ? "Rendezvények" : 'Events'; ?></a></li>
+                    <li><a href="/"><i class="bi-house-fill"></i><?= $GLOBALS['language'] == 'hu' ? "Bemutatkozás" : 'About'; ?></a></li>
+                    <li><a href="/etlap.php"><i class="bi-cart-fill"></i><?= $GLOBALS['language'] == 'hu' ? "Étlap" : 'Menu'; ?></a></li>
+                    <li><a href="/hetimenu.php"><i class="bi-clipboard2-fill"></i><?= $GLOBALS['language'] == 'hu' ? "Heti menü" : 'Weekly menu'; ?></a></li>
+                    <li><a href="/album.php"><i class="bi-image-fill"></i><?= $GLOBALS['language'] == 'hu' ? "Fotóalbum" : 'Gallery'; ?></a></li>
+                    <li><a href="/itallap.php"><i class="bi-cup-hot-fill"></i><?= $GLOBALS['language'] == 'hu' ? "Itallap" : 'Drinks'; ?></a></li>
+                    <li><a href="/rendezvenyek.php"><i class="bi-calendar2-fill"></i><?= $GLOBALS['language'] == 'hu' ? "Rendezvények" : 'Events'; ?></a></li>
                 </ul>
             </nav>
             <div class="position-relative d-flex align-items-center">
                 <i class="bi bi-list mobile-nav-toggle"></i>
-                <a href="https://www.facebook.com/borpatikus" class="ms-3 me-1" target="_blank"><i class="bi-facebook" style="font-size: 1.5rem!important;"></i></a>
-                <a href="https://twitter.com/borpatika1986" class="mx-2" target="_blank"><i class="bi-twitter" style="font-size: 1.5rem!important;"></i></a>
-                <a href="https://www.instagram.com/b0rpatika" class="mx-2" target="_blank"><i class="bi-instagram" style="font-size: 1.5rem!important;"></i></a>
+                <a href="https://www.facebook.com/borpatikus" class="ms-3 me-1" target="_blank"><i class="bi-facebook social-media-icon"></i></a>
+                <a href="https://twitter.com/borpatika1986" class="mx-2" target="_blank"><i class="bi-twitter social-media-icon"></i></a>
+                <a href="https://www.instagram.com/b0rpatika" class="mx-2" target="_blank"><i class="bi-instagram social-media-icon"></i></a>
                 <!-- <a href="https://www.tiktok.com/@borpatika19861" class="mx-2" target="_blank"><span class="bi-tiktok"></span></a> -->
                 <a href="#" class="mx-2 js-search-open" style="display: none;"><i class="bi-search"></i></a>
                 <a href="#" onclick="languageChange('hu'); return false;"><img src="assets/img/Flag_of_Hungary.svg" width="30" height="24" class="mx-1"></a>
