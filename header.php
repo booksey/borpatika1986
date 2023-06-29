@@ -51,7 +51,7 @@ if ((empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === "off") && $_SERVER['HTTP_
 
     <!-- Template Main CSS Files -->
     <link href="assets/css/variables.css" rel="stylesheet">
-    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/main.css?v=1.2" rel="stylesheet">
 </head>
 
 <body style="background-color: #2F130C !important">
