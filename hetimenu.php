@@ -1,51 +1,46 @@
 <?php
 require_once 'header.php';
-$weekNumber = '26';
+$weekNumber = '27';
 $dailyMenu = [
-    '2023.Június 24. szombat' => [
-        'Csülkös bableves',
-        'Tojásos galuska',
-        'Fejes saláta'
-    ],
-    '2023.Június 25. vasárnap' => [
-        'Újházy tyúkhúsleves',
-        'Csirkepörkölt szarvacska tésztával',
-        'Borpatika kehely'
-    ],
-    '2023.Június 26. hétfő' => [
-        'Színes zöldségleves pirított sonkacsíkokkal',
-        'Spagetti carbonara',
-        'Peach melba',
-    ],
-    '2023.Június 27. kedd' => [
-        'Burgonyakrémleves virslivel',
-        'Sertés pörkölt galuskával',
-        'Káposzta saláta',
-    ],
-    '2023.Június 28. szerda' => [
-        'Húsleves csigatésztával',
-        'Rakott karfiol',
-        'Vaníliás gofri'
-    ],
-    '2023.Június 29. csütörtök' => [
-        'Zöldborsó leves',
-        'Bankár csirkemell petrezselymes burgonyával',
-        'Napközis piskóta'
-    ],
-    '2023.Június 30. péntek' => [
-        'Tárkonyos sertésraguleves',
-        'Rántott sajt rizzsel,tartárral',
-        'Túrós palacsinta'
-    ],
-    '2023.Július 1. szombat' => [
-        'Májgombóc leves',
-        'Lyoni sertésszelet burgonyapürével',
-        'Kevert almás'
-    ],
-    '2023.Július 2. vasárnap' => [
+    '2023. Július 2. vasárnap' => [
         'Tejfölös zöldbableves',
         'Sajttal töltött csirkemell zöldséges rizzsel',
         'Almás rétes'
+    ],
+    '2023. Július 3. hétfő' => [
+        'Palóc leves',
+        'Mákos tészta',
+        'Gyümölcsös vanília puding',
+    ],
+    '2023. Július 4. kedd' => [
+        'Lebbencs leves kolbásszal',
+        'Brassói aprópecsenye kocka burgonyával',
+        'Gesztenye golyó',
+    ],
+    '2023. Július 5. szerda' => [
+        'Zöldségleves',
+        'Pompadur csirkemell krokettel',
+        'Meggyes piskóta'
+    ],
+    '2023. Július 6. csütörtök' => [
+        'Orja leves',
+        'Házi paprikás burgonya virslivel',
+        'Csemege uborka'
+    ],
+    '2023. Július 7. péntek' => [
+        'Paradicsom leves',
+        'Rántott csirkemáj hagymás tört burgonyával',
+        'Kakaós palacsinta'
+    ],
+    '2023. Július 8. szombat' => [
+        'Brokkoli krémleves',
+        'Bundás csirkemell fűszeres tejföllel, sajttal kukoricás rizzsel',
+        'Csokis gofri'
+    ],
+    '2023.Július 9. vasárnap' => [
+        'Gomba leves',
+        'Holstein szelet petrezselymes burgonyával',
+        'Túrógombóc'
     ],
 
 ];
