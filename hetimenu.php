@@ -2,11 +2,6 @@
 require_once 'header.php';
 $weekNumber = '27';
 $dailyMenu = [
-    '2023. Július 2. vasárnap' => [
-        'Tejfölös zöldbableves',
-        'Sajttal töltött csirkemell zöldséges rizzsel',
-        'Almás rétes'
-    ],
     '2023. Július 3. hétfő' => [
         'Palóc leves',
         'Mákos tészta',
@@ -42,7 +37,6 @@ $dailyMenu = [
         'Holstein szelet petrezselymes burgonyával',
         'Túrógombóc'
     ],
-
 ];
 ?>
 <main id="main">
