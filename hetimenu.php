@@ -1,41 +1,46 @@
 <?php
 require_once 'header.php';
-$weekNumber = '27';
+$weekNumber = '28';
 $dailyMenu = [
-    '2023. Július 3. hétfő' => [
-        'Palóc leves',
-        'Mákos tészta',
-        'Gyümölcsös vanília puding',
-    ],
-    '2023. Július 4. kedd' => [
-        'Lebbencs leves kolbásszal',
-        'Brassói aprópecsenye kocka burgonyával',
-        'Gesztenye golyó',
-    ],
-    '2023. Július 5. szerda' => [
-        'Zöldségleves',
-        'Pompadur csirkemell krokettel',
-        'Meggyes piskóta'
-    ],
-    '2023. Július 6. csütörtök' => [
-        'Orja leves',
-        'Házi paprikás burgonya virslivel',
-        'Csemege uborka'
-    ],
-    '2023. Július 7. péntek' => [
-        'Paradicsom leves',
-        'Rántott csirkemáj hagymás tört burgonyával',
-        'Kakaós palacsinta'
-    ],
-    '2023. Július 8. szombat' => [
-        'Brokkoli krémleves',
-        'Bundás csirkemell fűszeres tejföllel, sajttal kukoricás rizzsel',
-        'Csokis gofri'
-    ],
     '2023.Július 9. vasárnap' => [
         'Gomba leves',
         'Holstein szelet petrezselymes burgonyával',
         'Túrógombóc'
+    ],
+    '2023. Július 10. hétfő' => [
+        'Jókai bableves',
+        'Túrós csusza',
+        'Gyümölcs kehely',
+    ],
+    '2023. Július 11. kedd' => [
+        'Zöldborsós csirkeragu leves',
+        'Gombapaprikás galuskával',
+        'Püspök kenyér',
+    ],
+    '2023. Július 12. szerda' => [
+        'Karfiol leves',
+        'Rántott sertésszelet kevert salátával, fokhagymás,joghurtos öntettel',
+        'Meggyes rétes'
+    ],
+    '2023. Július 13. csütörtök' => [
+        'Daragaluska leves',
+        'Tejfölös zöldbabfőzelék sertés pörkölttel',
+        'Szerelmes levél'
+    ],
+    '2023. Július 14. péntek' => [
+        'Hideg gyümölcsleves',
+        'Vadas csirkemell tésztával',
+        'Tiramisu'
+    ],
+    '2023. Július 15. szombat' => [
+        'Frankfurti leves',
+        'Sült csirkecomb petrezselymes burgonyával',
+        'Savanyúság mix'
+    ],
+    '2023. Július 16. vasárnap' => [
+        'Újházy tyúkhúsleves',
+        'Stefánia vagdalt burgonyapürével',
+        'Kókusz golyó'
     ],
 ];
 ?>
