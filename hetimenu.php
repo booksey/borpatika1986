@@ -1,46 +1,41 @@
 <?php
 require_once 'header.php';
-$weekNumber = '28';
+$weekNumber = '29';
 $dailyMenu = [
-    '2023.Július 9. vasárnap' => [
-        'Gomba leves',
-        'Holstein szelet petrezselymes burgonyával',
+    '2023. Július 17. hétfő' => [
+        'Hideg gyümölcsleves',
+        'Rántott gomba rizzsel, tartárral',
+        'Tiramisu',
+    ],
+    '2023. Július 18. kedd' => [
+        'Palóc leves',
+        'Tejszínes, sonkás, kukoricás spagetti',
+        'Peach melba',
+    ],
+    '2023. Július 19. szerda' => [
+        'Húsleves gazdagon',
+        'Zöldborsó főzelék tükörtojással',
         'Túrógombóc'
     ],
-    '2023. Július 10. hétfő' => [
-        'Jókai bableves',
-        'Túrós csusza',
-        'Gyümölcs kehely',
+    '2023. Július 20. csütörtök' => [
+        'Színes zöldségleves bacon csipsszel',
+        'Bácskai rizseshús',
+        'Csalamádé'
     ],
-    '2023. Július 11. kedd' => [
-        'Zöldborsós csirkeragu leves',
-        'Gombapaprikás galuskával',
-        'Püspök kenyér',
+    '2023. Július 21. péntek' => [
+        'Burgonyakrémleves virslivel',
+        'Csirkemell filé 4 sajt mártással, krokettel',
+        'Fahéjas palacsinta'
     ],
-    '2023. Július 12. szerda' => [
-        'Karfiol leves',
-        'Rántott sertésszelet kevert salátával, fokhagymás,joghurtos öntettel',
-        'Meggyes rétes'
+    '2023. Július 22. szombat' => [
+        'Paradicsom leves betű tésztával',
+        'Rántott csirkecomb filé majonézes burgonyasalátával',
+        'Piskóta tekercs'
     ],
-    '2023. Július 13. csütörtök' => [
-        'Daragaluska leves',
-        'Tejfölös zöldbabfőzelék sertés pörkölttel',
-        'Szerelmes levél'
-    ],
-    '2023. Július 14. péntek' => [
-        'Hideg gyümölcsleves',
-        'Vadas csirkemell tésztával',
-        'Tiramisu'
-    ],
-    '2023. Július 15. szombat' => [
-        'Frankfurti leves',
-        'Sült csirkecomb petrezselymes burgonyával',
-        'Savanyúság mix'
-    ],
-    '2023. Július 16. vasárnap' => [
-        'Újházy tyúkhúsleves',
-        'Stefánia vagdalt burgonyapürével',
-        'Kókusz golyó'
+    '2023. Július 23. vasárnap' => [
+        'Erőleves fridatto',
+        'Hortobágyi palacsinta',
+        'Házi rétes'
     ],
 ];
 ?>
