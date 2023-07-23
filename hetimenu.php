@@ -1,41 +1,41 @@
 <?php
 require_once 'header.php';
-$weekNumber = '29';
+$weekNumber = '30';
 $dailyMenu = [
-    '2023. Július 17. hétfő' => [
-        'Hideg gyümölcsleves',
-        'Rántott gomba rizzsel, tartárral',
-        'Tiramisu',
+    '2023. július 24. hétfő' => [
+        'Májgombóc leves',
+        'Erdész szelet rizzsel',
+        'Csokis gofri',
     ],
-    '2023. Július 18. kedd' => [
-        'Palóc leves',
-        'Tejszínes, sonkás, kukoricás spagetti',
-        'Peach melba',
+    '2023. július 25. kedd' => [
+        'Csülkös bableves',
+        'Káposztás tészta',
+        'Gesztenyepüré',
     ],
-    '2023. Július 19. szerda' => [
-        'Húsleves gazdagon',
-        'Zöldborsó főzelék tükörtojással',
-        'Túrógombóc'
+    '2023. július 26. szerda' => [
+        'Sajtkrémleves',
+        'Csirkepörkölt galuskával',
+        'Káposzta saláta'
     ],
-    '2023. Július 20. csütörtök' => [
-        'Színes zöldségleves bacon csipsszel',
-        'Bácskai rizseshús',
-        'Csalamádé'
+    '2023. július 27. csütörtök' => [
+        'Gulyás leves',
+        'Rántott cukkini rizzsel, tartárral',
+        'Borpatika kehely'
     ],
-    '2023. Július 21. péntek' => [
-        'Burgonyakrémleves virslivel',
-        'Csirkemell filé 4 sajt mártással, krokettel',
-        'Fahéjas palacsinta'
+    '2023. július 28. péntek' => [
+        'Magyaros burgonyaleves',
+        'Székely káposzta',
+        'Citromos palacsinta'
     ],
-    '2023. Július 22. szombat' => [
-        'Paradicsom leves betű tésztával',
-        'Rántott csirkecomb filé majonézes burgonyasalátával',
-        'Piskóta tekercs'
+    '2023. július 29. szombat' => [
+        'Húsleves csigatésztával',
+        'Milánói sertésborda',
+        'Gyümölcs saláta'
     ],
-    '2023. Július 23. vasárnap' => [
-        'Erőleves fridatto',
-        'Hortobágyi palacsinta',
-        'Házi rétes'
+    '2023. július 30. vasárnap' => [
+        'Francia hagymaleves',
+        'Kijevi csirkemell rizibizivel',
+        'Meggyes piskóta'
     ],
 ];
 ?>
