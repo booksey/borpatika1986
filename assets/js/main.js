@@ -152,3 +152,22 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+function languageChange(language) {
+  var date = new Date();
+  var days = 365;
+  date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+  var expires = date.toGMTString();
+  document.cookie = "language=" + language + "; expires=" + expires + ";";
+  location.reload();
+}
+
+function cookiesApproved() {
+  var date = new Date();
+  var days = 365;
+  date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+  var expires = date.toGMTString();
+  document.cookie = "cookiesApproved=true; expires=" + expires + ";";
+  document.getElementById("cookie-footer").classList.remove("d-block");
+  document.getElementById("cookie-footer").classList.add("d-none");
+}

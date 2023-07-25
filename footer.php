@@ -1,3 +1,14 @@
+<?php
+$cookieFooterDisplayClass = !empty($_COOKIE['cookiesApproved']) ? 'd-none' : 'd-block';
+?>
+<div id="cookie-footer" class="row cookie-footer p-2 <?= $cookieFooterDisplayClass ?>">
+    <div class="col text-center">
+        Az oldalon történő böngészéssel elfogadja, hogy a személyre szabott tartalom érdekében az oldal cookie-kat használ.
+        Adatkezelési tájékoztatónkat
+        <a href="cookie-tajekoztato.php"><span style="text-decoration: underline; font-weight: bold;">Itt</span> olvashatja.</a>
+        <button type="button" class="btn btn-primary cookie-button" onclick="cookiesApproved(); return false;">Értem</button>
+    </div>
+</div>
 <!-- ======= Footer ======= -->
 <footer id="footer" class="footer">
     <div class="footer-legal">
@@ -29,7 +40,6 @@
             </div>
         </div>
     </div>
-
 </footer>
 
 <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

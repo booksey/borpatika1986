@@ -811,3 +811,45 @@ section {
 .drinkButton {
   font-size: 1.8rem !important;
 }
+
+.cookie-col {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem !important;
+}
+
+.cookie-link:hover {
+  text-decoration: underline;
+}
+
+.cookie-footer {
+  font-size: 16px !important;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: auto;
+  filter: brightness(0.75);
+  opacity: 0.95;
+  text-align: left;
+  background-color: #2F130C !important;
+  color: rgba(var(--color-default-rgb), 1);
+  -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+  -ms-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+  z-index: 999999999;
+}
+
+.cookie-button {
+  margin-left: 15px;
+  background-color: #2F130C !important;
+  border-color: rgba(var(--color-default-rgb), 1) !important;
+  color: rgba(var(--color-default-rgb), 1) !important;
+}
+
+.cookie-button:hover {
+  background-color: rgba(var(--color-default-rgb), 1) !important;
+  color: #2F130C !important;
+}

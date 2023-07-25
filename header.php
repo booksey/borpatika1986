@@ -16,13 +16,6 @@
     <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
 
-    <script type="text/javascript">
-        function languageChange(language) {
-            document.cookie = "language=" + language;
-            location.reload();
-        }
-    </script>
-
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -42,9 +35,10 @@
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
     <!-- Template Main CSS Files -->
-    <link href="assets/css/variables.css" rel="stylesheet">
-    <link href="assets/css/main.css?v=1.2" rel="stylesheet">
+    <link href="assets/css/variables.css?v=1.0" rel="stylesheet">
+    <link href="assets/css/main.css?v=1.3" rel="stylesheet">
 </head>
+
 
 <body style="background-color: #2F130C !important">
     <!-- ======= Header ======= -->
@@ -55,6 +49,7 @@
                 <!-- <img src="assets/img/logo.jpg" /> -->
                 <img src="assets/img/logo_2.png" />
             </a>
+
             <?php
             $GLOBALS['language'] = 'hu';
             if (in_array($_COOKIE['language'], ['hu', 'gb'], true)) {
