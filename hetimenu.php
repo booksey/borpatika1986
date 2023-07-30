@@ -1,41 +1,41 @@
 <?php
 require_once 'header.php';
-$weekNumber = '30';
+$weekNumber = '31';
 $dailyMenu = [
-    '2023. július 24. hétfő' => [
-        'Májgombóc leves',
-        'Erdész szelet rizzsel',
-        'Csokis gofri',
+    '2023. július 31. hétfő' => [
+        'Tárkonyos raguleves',
+        'Juhtúrós sztrapacska',
+        'Gesztenye golyó',
     ],
-    '2023. július 25. kedd' => [
-        'Csülkös bableves',
-        'Káposztás tészta',
-        'Gesztenyepüré',
+    '2023. augusztus 1. kedd' => [
+        'Gyümölcs leves',
+        'Bakonyi csirkemell tokány tésztával',
+        'Alma fahéjas bundában',
     ],
-    '2023. július 26. szerda' => [
-        'Sajtkrémleves',
-        'Csirkepörkölt galuskával',
-        'Káposzta saláta'
+    '2023. augusztus 2. szerda' => [
+        'Orja leves',
+        'Húsos palacsinta rántva rizzsel, tartárral',
+        'Napközis piskóta'
     ],
-    '2023. július 27. csütörtök' => [
-        'Gulyás leves',
-        'Rántott cukkini rizzsel, tartárral',
-        'Borpatika kehely'
+    '2023. augusztus 3. csütörtök' => [
+        'Tejfölös bableves',
+        'Sertésborda Hentes módra pirított burgonyával',
+        'Túrós palacsinta'
     ],
-    '2023. július 28. péntek' => [
-        'Magyaros burgonyaleves',
-        'Székely káposzta',
-        'Citromos palacsinta'
+    '2023. augusztus 4. péntek' => [
+        'Zöldséges pulykanyak leves',
+        'Kelkáposzta főzelék vagdalttal',
+        'Kevert almás'
     ],
-    '2023. július 29. szombat' => [
-        'Húsleves csigatésztával',
-        'Milánói sertésborda',
-        'Gyümölcs saláta'
+    '2023. augusztus 5. szombat' => [
+        'Magyaros karfiol leves',
+        'Óvári sertésszelet rizibizivel',
+        'Madártej'
     ],
-    '2023. július 30. vasárnap' => [
-        'Francia hagymaleves',
-        'Kijevi csirkemell rizibizivel',
-        'Meggyes piskóta'
+    '2023. augusztus 6. vasárnap' => [
+        'Zellerkrémleves',
+        'Csabai karaj hagymás tört burgonyával',
+        'Savanyúság mix'
     ],
 ];
 ?>
