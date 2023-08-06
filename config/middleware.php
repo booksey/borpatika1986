@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use App\Middleware\LanguageCookieMiddleware;
 use Slim\App;
 
 return function (App $app): void {
@@ -10,4 +11,6 @@ return function (App $app): void {
         true,
         true
     );
+
+    $app->add(LanguageCookieMiddleware::class);
 };

@@ -25,8 +25,7 @@ require_once 'header.php';
                                     </button>
                                 </h1>
                                 <div id="<?php echo $title; ?>" class="accordion-collapse collapse <?= ($menuCnt === 1) ? "show" : ""; ?> data-bs-parent=" #etlap">
-                                <?php }
-                                ?>
+                                <?php } ?>
                                 <?php
                                 if ($key === 'menus') {
                                     foreach ($menuContent as $name => $price) { ?>
