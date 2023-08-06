@@ -2,7 +2,7 @@
 
 class DailyMenu
 {
-    public const WEEK_NUMBER = '31';
+    public const WEEK_NUMBER = '32';
 
     public static function get()
     {
