@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace App\Factory;
 
+use App\Twig\Extension\UrlHelper;
+use App\Twig\Extension\UrlHelperExtension;
 use Psr\Container\ContainerInterface;
 use Twig\Environment;
 use Twig\Extension\DebugExtension;
@@ -14,15 +16,17 @@ use Twig\Loader\FilesystemLoader;
 
 class TwigFactory
 {
-    public function __construct(private ContainerInterface $container)
+    private ContainerInterface $container;
+
+    public function __construct(ContainerInterface $container)
     {
+        $this->container = $container;
     }
 
     public function __invoke(): Environment
     {
         /** @var array $config */
         $config = $this->container->get('config');
-
         $loader = new FilesystemLoader(
             $config['twig']['paths'],
             $config['twig']['rootPath']
@@ -39,6 +43,7 @@ class TwigFactory
         /** @var string[] $extensions */
         $extensions = [
             StringLoaderExtension::class,
+            UrlHelperExtension::class
         ];
 
         if (getenv('APP_ENV') === 'dev') {

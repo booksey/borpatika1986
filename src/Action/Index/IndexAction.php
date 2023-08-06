@@ -10,8 +10,11 @@ use Twig\Environment;
 
 class IndexAction extends AbstractAction
 {
-    public function __construct(private readonly Environment $twig)
+    private Environment $twig;
+
+    public function __construct(Environment $twig)
     {
+        $this->twig = $twig;
     }
 
     public function invoke(): ResponseInterface
