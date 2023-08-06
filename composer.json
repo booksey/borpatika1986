@@ -1,4 +1,10 @@
 {
+    "config": {
+        "optimize-autoloader": true,
+        "platform": {
+            "php": "7.4"
+        }
+    },
     "require": {
         "facebook/graph-sdk": "^5.1"
     }
