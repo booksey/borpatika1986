@@ -1,2 +1,15 @@
+.idea/
+cache/
+mapping/
+phpStanTmp/
 vendor/
+.env
+.phpunit.result.cache
+memory
+memory*
+coverage.html/
+nbproject/
+.settings/
+.buildpath
+.project
 fbTest.php
