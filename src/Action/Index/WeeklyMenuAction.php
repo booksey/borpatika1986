@@ -25,7 +25,7 @@ class WeeklyMenuAction extends AbstractAction
     public function invoke(): ResponseInterface
     {
         $weeklyMenu = new WeeklyMenu();
-        $cookieFooterDisplayClass = $this->cookieHelper->isApproved() ? 'd-block' : 'd-none';
+        $cookieFooterDisplayClass = !$this->cookieHelper->isApproved() ? 'd-block' : 'd-none';
         $this->response->getBody()->write($this->twig->render(
             'weeklymenu.html.twig',
             [

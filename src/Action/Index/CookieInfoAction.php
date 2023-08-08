@@ -23,7 +23,7 @@ class CookieInfoAction extends AbstractAction
 
     public function invoke(): ResponseInterface
     {
-        $cookieFooterDisplayClass = $this->cookieHelper->isApproved() ? 'd-block' : 'd-none';
+        $cookieFooterDisplayClass = !$this->cookieHelper->isApproved() ? 'd-block' : 'd-none';
         $this->response->getBody()->write($this->twig->render(
             'cookieinfo.html.twig',
             [

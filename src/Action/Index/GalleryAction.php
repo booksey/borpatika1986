@@ -24,7 +24,7 @@ class GalleryAction extends AbstractAction
 
     public function invoke(): ResponseInterface
     {
-        $cookieFooterDisplayClass = $this->cookieHelper->isApproved() ? 'd-block' : 'd-none';
+        $cookieFooterDisplayClass = !$this->cookieHelper->isApproved() ? 'd-block' : 'd-none';
         $images = [];
         $imagePaths = glob(self::ALBUM_IMAGES_GLOB_PATTERN);
         foreach ($imagePaths as $path) {

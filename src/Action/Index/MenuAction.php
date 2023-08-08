@@ -28,7 +28,7 @@ class MenuAction extends AbstractAction
     {
         $config = $this->container->get('config');
         $menus = $config['menu_' . $this->cookieHelper->getLanguage()];
-        $cookieFooterDisplayClass = $this->cookieHelper->isApproved() ? 'd-block' : 'd-none';
+        $cookieFooterDisplayClass = !$this->cookieHelper->isApproved() ? 'd-block' : 'd-none';
         $this->response->getBody()->write($this->twig->render(
             'menu.html.twig',
             [
