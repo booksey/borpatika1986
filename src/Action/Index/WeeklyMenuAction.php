@@ -25,12 +25,12 @@ class WeeklyMenuAction extends AbstractAction
     public function invoke(): ResponseInterface
     {
         $weeklyMenu = new WeeklyMenu();
-        $cookieFooterDisplayClass = !$this->cookieHelper->isApproved() ? 'd-block' : 'd-none';
+        $cookieFooterClass = !$this->cookieHelper->isApproved() ? 'd-block' : 'd-none';
         $this->response->getBody()->write($this->twig->render(
             'weeklymenu.html.twig',
             [
                 'language' => $this->cookieHelper->getLanguage(),
-                'cookieFooterDisplayClass' => $cookieFooterDisplayClass,
+                'cookieFooterDisplayClass' => $cookieFooterClass,
                 'weekNumber' => $weeklyMenu->weekNumber,
                 'weeklyMenu' => $weeklyMenu->menu,
             ]

@@ -12,7 +12,7 @@ use Twig\Environment;
 
 class GalleryAction extends AbstractAction
 {
-    const ALBUM_IMAGES_GLOB_PATTERN = __DIR__ . '/../../../public/assets/img/photoalbum/*.jpg';
+    private const ALBUM_IMAGES_GLOB_PATTERN = __DIR__ . '/../../../public/assets/img/photoalbum/*.jpg';
     private Environment $twig;
     private CookieHelper $cookieHelper;
 
@@ -24,7 +24,7 @@ class GalleryAction extends AbstractAction
 
     public function invoke(): ResponseInterface
     {
-        $cookieFooterDisplayClass = !$this->cookieHelper->isApproved() ? 'd-block' : 'd-none';
+        $cookieFooterClass = !$this->cookieHelper->isApproved() ? 'd-block' : 'd-none';
         $images = [];
         $imagePaths = glob(self::ALBUM_IMAGES_GLOB_PATTERN);
         foreach ($imagePaths as $path) {
@@ -34,7 +34,7 @@ class GalleryAction extends AbstractAction
             'gallery.html.twig',
             [
                 'language' => $this->cookieHelper->getLanguage(),
-                'cookieFooterDisplayClass' => $cookieFooterDisplayClass,
+                'cookieFooterDisplayClass' => $cookieFooterClass,
                 'galleryImages' => $images
             ]
         ));

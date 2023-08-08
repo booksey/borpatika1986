@@ -26,12 +26,12 @@ class DrinksAction extends AbstractAction
 
     public function invoke(): ResponseInterface
     {
-        $cookieFooterDisplayClass = !$this->cookieHelper->isApproved() ? 'd-block' : 'd-none';
+        $cookieFooterClass = !$this->cookieHelper->isApproved() ? 'd-block' : 'd-none';
         $this->response->getBody()->write($this->twig->render(
             'drinks.html.twig',
             [
                 'language' => $this->cookieHelper->getLanguage(),
-                'cookieFooterDisplayClass' => $cookieFooterDisplayClass,
+                'cookieFooterDisplayClass' => $cookieFooterClass,
                 'drinks' => $this->config['drinks']
             ]
         ));

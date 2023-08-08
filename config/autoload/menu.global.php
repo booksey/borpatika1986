@@ -1,4 +1,5 @@
 <?php
+
 return [
     'menu_hu' => [
         [
@@ -6,8 +7,8 @@ return [
             'menus' => [
                 'Magyaros burgonyaleves kolbásszal' => '750',
                 'Erőleves tojással / palacsinta metélt' => '800',
-                'Csontleves finom metélttel' =>    '800',
-                'Csontleves daragaluskával' =>     '850',
+                'Csontleves finom metélttel' => '800',
+                'Csontleves daragaluskával' => '850',
                 'Csontleves májgombóccal' => '900',
                 'Orjaleves <br>(orjacsont, zöldség, cérnametélt)' => '1200',
                 'Palóc leves <br>(marhahús, burgonya, zöldbab, tejföl)' => '1300',
@@ -24,10 +25,11 @@ return [
             'title' => 'Hideg-meleg előételek',
             'menus' => [
                 'Tatár beafsteak tál' => '4400',
-                'Paraszttál <br>(gyulai kolbász, füstölt főtt tarja, bacon szalonna, kockasajt, tojás, hagyma, retek)' => '3500',
+                'Paraszttál <br>(gyulai kolbász, füstölt főtt tarja, bacon szalonna, kockasajt, tojás, hagyma, retek)'
+                => '3500',
                 'Sopszka saláta <br/>(uborka, paradicsom, zöldpaprika, hagyma juhsajt)' => '1400',
                 'Görög saláta' => '1590',
-                'Cézár saláta' =>  '1690',
+                'Cézár saláta' => '1690',
                 'Rántott velő' => '1450',
                 'Hortobágyi palacsinta <br/>(hússal töltve. paprikás mártás)' => '1650',
             ]
@@ -41,7 +43,8 @@ return [
                 'Sajttal, sonkával töltött sertésborda (Cordon Blue)' => '2200',
                 'Sertésborda „Hentes" módra <br/>(natúr horda, ecetes uborka, sonka)' => '1900',
                 'Bakonyi sertésborda <br/>(natúrborda, bakonyi máriás)' => '2000',
-                'Sertésborda „Jóasszony" módra <br/>(natúr borda, szalonna, gépsonka, hagyma, gomba, zöldborsó)' => '2200',
+                'Sertésborda „Jóasszony" módra <br/>(natúr borda, szalonna, gépsonka, hagyma, gomba, zöldborsó)'
+                => '2200',
                 'Szűzérmék Magyarosan <br/>(natúr szűz, karika sültburgonya, lecsó)' => '2400',
                 'Vasipecsenye <br/>(fok hagymás tejben áztatott hús)' => '1900',
                 'Cigánypecsenye' => '2000',
@@ -73,7 +76,8 @@ return [
                 'Hátszín steak fűszer vajjal <br/>(hátszín, fűszeres vaj)' => '2900',
                 'Hátszín steak zöldbors mártással' => '2900',
                 'Lyoni hátszín steak <br/>(hátszín, lyoni hagyma, mustár)' => '2900',
-                'Hátszín steak „Budapest" módra <br/>(natúr bélszín, szalonna, szárnyas máj, zöldborsó, gomba, lecsó)' =>    '3500',
+                'Hátszín steak „Budapest" módra <br/>(natúr bélszín, szalonna, szárnyas máj, zöldborsó, gomba, lecsó)'
+                => '3500',
                 'Vörösboros marhapörkölt' => '2700'
             ]
         ],
@@ -95,7 +99,8 @@ return [
                 'Gombafejek rántva'    => '1400',
                 'Kapros juhtúróval töltött gomba' => '2000',
                 'Karfiol rántva' => '1400',
-                '2 személyes Vegetáriánus tál <br/>(sajt rántva, rántott gombafej, karfiol Dubarry módra, broccoli sörtésztával, vegyesköret, saláta)' => '5900'
+                '2 személyes Vegetáriánus tál <br/>(sajt rántva, rántott gombafej, karfiol Dubarry módra,
+                    broccoli sörtésztával, vegyesköret, saláta)' => '5900'
             ],
         ],
         [
@@ -103,9 +108,11 @@ return [
             'menus' => [
                 '2 személyes BORPATIKA bőségtál <br/>(füstölt csülök, csülök pékné módra, s. kolbász,
             cigánypecsenye, szalonna, vegyes köret, saláta)' => '6100',
-                '2 személyes Erdélyi fatányéros <br/>(natúr hátszín, natúr borjújava, natúr sertésjava, sült szalonna, sült kolbász, saláta, sült burgonya)' => '6300',
+                '2 személyes Erdélyi fatányéros <br/>(natúr hátszín, natúr borjújava, natúr sertésjava,
+                    sült szalonna, sült kolbász, saláta, sült burgonya)' => '6300',
                 '2 személyes Sertéscsülök „Pékné" módra' => '5400',
-                '2 személyes Füstölt csülöktál <br/>(füstölt főtt csülök, ecetes torma, mustár, tojás, csalamádé)' => '6100',
+                '2 személyes Füstölt csülöktál <br/>(füstölt főtt csülök, ecetes torma, mustár, tojás, csalamádé)'
+                => '6100',
             ],
         ],
         [
@@ -125,7 +132,7 @@ return [
                 'Pirított burgonya' => '550',
                 'Hagymás törtburgonya' => '600',
                 'Burgonyapüré' => '650',
-                'Hasábburgonya' =>     '650',
+                'Hasábburgonya' => '650',
                 'Burgonyakrokett' => '700',
                 'Párolt rizs' => '550',
                 'Rizi-bizi' => '600',
@@ -141,9 +148,9 @@ return [
         [
             'title' => 'Saláták-Öntetek',
             'menus' => [
-                'Ecetes paprika' =>    '620',
+                'Ecetes paprika' => '620',
                 'Kovászos uborka' => '680',
-                'Csemege uborka' =>  '620',
+                'Csemege uborka' => '620',
                 'Csípős paprikatál' => '680',
                 'Csalamádé' => '620',
                 'Fejes saláta' => '590',
@@ -160,12 +167,12 @@ return [
         [
             'title' => 'Desszertek',
             'menus' => [
-                'Túrógombóc' =>    '1150',
+                'Túrógombóc' => '1150',
                 'Ízes palacsinta (lekváros, fahéjas)' => '650',
                 'Túrós palacsinta' => '750',
                 'Csokoládés palacsinta (diós, mákos, nutellás)' => '750',
                 'Gundel palacsinta'    => '1490',
-                'Házi rétes (túrós, meggyes. mákos. almás)' =>    '700',
+                'Házi rétes (túrós, meggyes. mákos. almás)' => '700',
                 'Somlói galuska' => '1150',
                 'Gesztenye püré' => '1050',
                 'Borpatika kehely (somlói galuska, gyümölcsök, tejszín)' => '1450',
@@ -179,8 +186,8 @@ return [
             'menus' => [
                 'Hungarian Potato Soup with Sausage' => '750',
                 'Consommé with Egg / Consommé with sliced Pancakes' => '800',
-                'Bone Soup with Noddles' =>    '800',
-                'Bone Soup with Semolina Gnocchi' =>     '850',
+                'Bone Soup with Noddles' => '800',
+                'Bone Soup with Semolina Gnocchi' => '850',
                 'Bone Soup with Liver Dumplings' => '900',
                 'Hungarian Pork Rib Soup<br>(pork rib, vegetables, noddles)' => '1200',
                 'Mutton Stew Soup Palóc Style<br>(beef, potato, green beans, sour cream)' => '1300',
@@ -201,7 +208,7 @@ return [
                         cream cheese, boiled egg, onion, radish)' => '3500',
                 'Sopska Salad<br/>(cucumber, tomato, green paprika, onion, ewe-cheese)' => '1400',
                 'Greek Salad' => '1590',
-                'Caesar Salad' =>  '1690',
+                'Caesar Salad' => '1690',
                 'Fried Marrow Rose' => '1450',
                 'Hortobágy Pancakes<br/>(filled with meat, in red pepper sauce)' => '1650',
             ]
@@ -247,7 +254,7 @@ return [
                 'Rump-Steak Majordomo Style <br/>(rump-steak, spiced butter)' => '2900',
                 'Rump-Steak with Creamy Peppercorn Sauce' => '2900',
                 'Rump-Steak Lyonnaise Style <br/>(rump-steak, onion, mustard)' => '2900',
-                'Rump-steak Budapest Style <br/>(sirloin, bacon, chicken liver, peas, mushroom, letcho)' =>    '3500',
+                'Rump-steak Budapest Style <br/>(sirloin, bacon, chicken liver, peas, mushroom, letcho)' => '3500',
                 'Hungarian Stew of Beef with Red Wine' => '2700'
             ]
         ],
@@ -302,7 +309,7 @@ return [
                 'Sauté Potatoes' => '550',
                 'Mashed Onion - Potatoes' => '600',
                 'Mashed Potatoes' => '650',
-                'French Fries' =>     '650',
+                'French Fries' => '650',
                 'Potatoes Croquettes' => '700',
                 'Steamed Rice' => '550',
                 'Rice with Peas' => '600',
@@ -318,9 +325,9 @@ return [
         [
             'title' => 'Salads and Sauces',
             'menus' => [
-                'Pickled Green Pepper' =>    '620',
+                'Pickled Green Pepper' => '620',
                 'Pickled Cucumber' => '680',
-                'Pickled Gherkins' =>  '620',
+                'Pickled Gherkins' => '620',
                 'Hot Pickled Pepper Plate' => '680',
                 'Mixed Pickled Salad' => '620',
                 'Green Salad' => '590',
@@ -337,12 +344,12 @@ return [
         [
             'title' => 'Home-made Pastries - Desserts',
             'menus' => [
-                'Cottage Cheese Dumplings' =>    '1150',
+                'Cottage Cheese Dumplings' => '1150',
                 'Pancakes with Jam (Cinnamon)' => '650',
                 'Pancakes with Cottage Cheese' => '750',
                 'Pancakes with Chocolate  (Walnut / Poppy / Nutella)' => '750',
                 'Pancakes Gundel Style' => '1490',
-                'Strudel (with cottage cheese, sour cherry, poppy or apples)' =>    '700',
+                'Strudel (with cottage cheese, sour cherry, poppy or apples)' => '700',
                 'Somló Sponge Cake' => '1150',
                 'Mashed Chestnut' => '1050',
                 'Borpatika Cup (somlói galuska, gyümölcsök, tejszín)' => '1450',

@@ -23,12 +23,12 @@ class IndexAction extends AbstractAction
 
     public function invoke(): ResponseInterface
     {
-        $cookieFooterDisplayClass = !$this->cookieHelper->isApproved() ? 'd-block' : 'd-none';
+        $cookieFooterClass = !$this->cookieHelper->isApproved() ? 'd-block' : 'd-none';
         $this->response->getBody()->write($this->twig->render(
             'index.html.twig',
             [
                 'language' => $this->cookieHelper->getLanguage(),
-                'cookieFooterDisplayClass' => $cookieFooterDisplayClass
+                'cookieFooterDisplayClass' => $cookieFooterClass
             ]
         ));
         return $this->response;
