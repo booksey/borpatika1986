@@ -11,4 +11,5 @@ return function (SlimApp $app): void {
     $app->get('/album', App\Action\Index\GalleryAction::class)->setName('gallery');
     $app->get('/itallap', App\Action\Index\DrinksAction::class)->setName('drinks');
     $app->get('/rendezvenyek', App\Action\Index\EventsAction::class)->setName('events');
+    $app->get('/cookie-tajekoztato', App\Action\Index\CookieInfoAction::class)->setName('cookie-info');
 };
