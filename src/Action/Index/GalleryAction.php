@@ -7,34 +7,35 @@ namespace App\Action\Index;
 use App\Action\AbstractAction;
 use App\Helper\CookieHelper;
 use App\Helper\CookieHelperInterface;
-use Psr\Container\ContainerInterface;
 use Psr\Http\Message\ResponseInterface;
 use Twig\Environment;
 
-class MenuAction extends AbstractAction
+class GalleryAction extends AbstractAction
 {
-    private ContainerInterface $container;
-    private CookieHelper $cookieHelper;
+    const ALBUM_IMAGES_GLOB_PATTERN = __DIR__ . '/../../../public/assets/img/photoalbum/*.jpg';
     private Environment $twig;
+    private CookieHelper $cookieHelper;
 
-    public function __construct(ContainerInterface $container, Environment $twig, CookieHelperInterface $cookieHelper)
+    public function __construct(Environment $twig, CookieHelperInterface $cookieHelper)
     {
-        $this->container = $container;
         $this->twig = $twig;
         $this->cookieHelper = $cookieHelper;
     }
 
     public function invoke(): ResponseInterface
     {
-        $config = $this->container->get('config');
-        $menus = $config['etlap_' . $this->cookieHelper->getLanguage()];
         $cookieFooterDisplayClass = $this->cookieHelper->isApproved() ? 'd-block' : 'd-none';
+        $images = [];
+        $imagePaths = glob(self::ALBUM_IMAGES_GLOB_PATTERN);
+        foreach ($imagePaths as $path) {
+            $images[] = pathinfo($path, PATHINFO_BASENAME);
+        }
         $this->response->getBody()->write($this->twig->render(
-            'menu.html.twig',
+            'gallery.html.twig',
             [
                 'language' => $this->cookieHelper->getLanguage(),
                 'cookieFooterDisplayClass' => $cookieFooterDisplayClass,
-                'menus' => $menus
+                'galleryImages' => $images
             ]
         ));
         return $this->response;

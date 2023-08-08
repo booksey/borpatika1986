@@ -5,31 +5,29 @@ declare(strict_types=1);
 namespace App\Action\Index;
 
 use App\Action\AbstractAction;
+use App\Helper\CookieHelper;
+use App\Helper\CookieHelperInterface;
 use Psr\Http\Message\ResponseInterface;
 use Twig\Environment;
 
 class IndexAction extends AbstractAction
 {
     private Environment $twig;
+    private CookieHelper $cookieHelper;
 
-    public function __construct(Environment $twig)
+    public function __construct(Environment $twig, CookieHelperInterface $cookieHelper)
     {
         $this->twig = $twig;
+        $this->cookieHelper = $cookieHelper;
     }
 
     public function invoke(): ResponseInterface
     {
-        $cookies = $this->request->getCookieParams();
-        $language = !empty($cookies['language']) && in_array($cookies['language'], ['hu', 'gb'], true)
-            ? $cookies['language']
-            : 'hu';
-        $cookieFooterDisplayClass = !empty($cookies['cookiesApproved']) && $cookies['cookiesApproved']
-            ? 'd-none'
-            : 'd-block';
+        $cookieFooterDisplayClass = $this->cookieHelper->isApproved() ? 'd-block' : 'd-none';
         $this->response->getBody()->write($this->twig->render(
             'index.html.twig',
             [
-                'language' => $language,
+                'language' => $this->cookieHelper->getLanguage(),
                 'cookieFooterDisplayClass' => $cookieFooterDisplayClass
             ]
         ));

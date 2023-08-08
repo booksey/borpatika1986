@@ -10,14 +10,14 @@ $images = glob('assets/img/photoalbum/*.jpg');
                         "thumbnailHeight": 200,
                         "thumbnailWidth":  200,
                         "thumbnailDisplayTransition": "slideUp2",
-                        "thumbnailDisplayTransitionDuration":  500,  
-                        "thumbnailDisplayInterval":            30,   
+                        "thumbnailDisplayTransitionDuration":  500,
+                        "thumbnailDisplayInterval":            30,
                         "galleryDisplayTransition":            "rotateX",
                         "galleryDisplayTransitionDuration":    500 ,
                         "thumbnailHoverEffect2": "scale120"
                     }'>
                         <?php foreach ($images as $imageSrc) { ?>
-                            <a href="<?php echo $imageSrc; ?>" data-ngthumb="<?php echo $imageSrc; ?>"></a>
+                            <a href="public/assets/img/photoalbum/{{ imageSrc }}" data-ngthumb="public/assets/img/photoalbum/{{ imageSrc }}"></a>
                         <?php } ?>
                     </div>
                 </div>

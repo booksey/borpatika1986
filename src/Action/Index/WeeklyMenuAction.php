@@ -7,34 +7,32 @@ namespace App\Action\Index;
 use App\Action\AbstractAction;
 use App\Helper\CookieHelper;
 use App\Helper\CookieHelperInterface;
-use Psr\Container\ContainerInterface;
+use App\ValueObject\WeeklyMenu;
 use Psr\Http\Message\ResponseInterface;
 use Twig\Environment;
 
-class MenuAction extends AbstractAction
+class WeeklyMenuAction extends AbstractAction
 {
-    private ContainerInterface $container;
-    private CookieHelper $cookieHelper;
     private Environment $twig;
+    private CookieHelper $cookieHelper;
 
-    public function __construct(ContainerInterface $container, Environment $twig, CookieHelperInterface $cookieHelper)
+    public function __construct(Environment $twig, CookieHelperInterface $cookieHelper)
     {
-        $this->container = $container;
         $this->twig = $twig;
         $this->cookieHelper = $cookieHelper;
     }
 
     public function invoke(): ResponseInterface
     {
-        $config = $this->container->get('config');
-        $menus = $config['etlap_' . $this->cookieHelper->getLanguage()];
+        $weeklyMenu = new WeeklyMenu();
         $cookieFooterDisplayClass = $this->cookieHelper->isApproved() ? 'd-block' : 'd-none';
         $this->response->getBody()->write($this->twig->render(
-            'menu.html.twig',
+            'weeklymenu.html.twig',
             [
                 'language' => $this->cookieHelper->getLanguage(),
                 'cookieFooterDisplayClass' => $cookieFooterDisplayClass,
-                'menus' => $menus
+                'weekNumber' => $weeklyMenu->weekNumber,
+                'weeklyMenu' => $weeklyMenu->menu,
             ]
         ));
         return $this->response;

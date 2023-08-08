@@ -1,0 +1,26 @@
+{% extends "layout.html.twig" %}
+{% block main %}
+<section id="main-content">
+  <div class="container-md mt-5" data-aos="fade-in">
+    <div class="d-flex flex-row justify-content-center">
+      <div>
+        <h1 class="text-center mb-5">Heti menü ({{ weekNumber }}. hét) - 1890 Ft / nap</h1>
+        {% for day, menus in weeklyMenu %}
+          <h1 class="text-center mt-5">
+            <strong>{{ day }}</strong>
+          </h1>
+          {% for menu in menus %}
+            <h1 class="text-center">
+              {{ menu }}
+            </h1>
+          {% endfor %}
+        {% endfor %}
+        <h1 class="text-center mt-5">(Az allergén összetevőkről érdeklődjön munkatársainknál.)</h1>
+        <h1 class="text-center">Jó étvágyat kívánunk!</h1>
+        <h1 class="text-center">Napi menü 12 órától.</h1>
+        <h1 class="text-center">A menüváltoztatás jogát fenntartjuk.</h1>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
