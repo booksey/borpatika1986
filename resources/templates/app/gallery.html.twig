@@ -15,7 +15,7 @@
         "thumbnailHoverEffect2": "scale120"
         }'>
         {% for imageSrc in galleryImages %}
-          <a href="assets/img/photoalbum/{{ imageSrc }}" data-ngthumb="assets/img/photoalbum/{{ imageSrc }}"></a>
+          <a href="{{ asset('img/photoalbum/' ~ imageSrc) }}" data-ngthumb="{{ asset('img/photoalbum/' ~ imageSrc) }}"></a>
         {% endfor %}
       </div>
     </div>

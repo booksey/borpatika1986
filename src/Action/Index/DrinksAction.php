@@ -11,30 +11,28 @@ use Psr\Container\ContainerInterface;
 use Psr\Http\Message\ResponseInterface;
 use Twig\Environment;
 
-class MenuAction extends AbstractAction
+class DrinksAction extends AbstractAction
 {
-    private ContainerInterface $container;
-    private CookieHelper $cookieHelper;
     private Environment $twig;
+    private CookieHelper $cookieHelper;
+    private array $config;
 
     public function __construct(ContainerInterface $container, Environment $twig, CookieHelperInterface $cookieHelper)
     {
-        $this->container = $container;
+        $this->config = $container->get('config');
         $this->twig = $twig;
         $this->cookieHelper = $cookieHelper;
     }
 
     public function invoke(): ResponseInterface
     {
-        $config = $this->container->get('config');
-        $menus = $config['menu_' . $this->cookieHelper->getLanguage()];
         $cookieFooterDisplayClass = $this->cookieHelper->isApproved() ? 'd-block' : 'd-none';
         $this->response->getBody()->write($this->twig->render(
-            'menu.html.twig',
+            'drinks.html.twig',
             [
                 'language' => $this->cookieHelper->getLanguage(),
                 'cookieFooterDisplayClass' => $cookieFooterDisplayClass,
-                'menus' => $menus
+                'drinks' => $this->config['drinks']
             ]
         ));
         return $this->response;

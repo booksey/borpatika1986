@@ -1,6 +1,6 @@
 <?php
 return [
-    'etlap_hu' => [
+    'menu_hu' => [
         [
             'title' => 'Levesek',
             'menus' => [
@@ -101,7 +101,7 @@ return [
         [
             'title' => '2 személyes ételeink',
             'menus' => [
-                '2 személyes BORPATIKA bőségtál <br/>(füstölt csülök, csülök pékné módra, s. kolbász, 
+                '2 személyes BORPATIKA bőségtál <br/>(füstölt csülök, csülök pékné módra, s. kolbász,
             cigánypecsenye, szalonna, vegyes köret, saláta)' => '6100',
                 '2 személyes Erdélyi fatányéros <br/>(natúr hátszín, natúr borjújava, natúr sertésjava, sült szalonna, sült kolbász, saláta, sült burgonya)' => '6300',
                 '2 személyes Sertéscsülök „Pékné" módra' => '5400',
@@ -173,7 +173,7 @@ return [
             ]
         ]
     ],
-    'etlap_gb' => [
+    'menu_gb' => [
         [
             'title' => 'Soups',
             'menus' => [
@@ -197,7 +197,7 @@ return [
             'title' => 'Cold and Hot Entrées',
             'menus' => [
                 'Beefsteak Tatar' => '4400',
-                'Ploughman<br>(gyulai sausage, smoked cooked ham, bacon,  
+                'Ploughman<br>(gyulai sausage, smoked cooked ham, bacon,
                         cream cheese, boiled egg, onion, radish)' => '3500',
                 'Sopska Salad<br/>(cucumber, tomato, green paprika, onion, ewe-cheese)' => '1400',
                 'Greek Salad' => '1590',
@@ -276,12 +276,12 @@ return [
         [
             'title' => 'Dishes for 2 Persons',
             'menus' => [
-                'Borpatika Plate for 2 <br/>(smoked knuckle, knuckle Boulangére, fried sausage, 
+                'Borpatika Plate for 2 <br/>(smoked knuckle, knuckle Boulangére, fried sausage,
                         gipsy roast, bacon, mixed garnish, salad)' => '6100',
-                'Transylvanian Mixed Grill for 2 <br/>(rump-steak, veal steak, pork steak, fried bacon, 
+                'Transylvanian Mixed Grill for 2 <br/>(rump-steak, veal steak, pork steak, fried bacon,
                         fried sausage, salad, french fries)' => '6300',
                 'Knuckle of Pork Boulangére for 2' => '5400',
-                'Smoked Knuckle of Pork Plate for 2 <br/>(smoked cooked knuckle, pickled horse-radish, mustard, egg, 
+                'Smoked Knuckle of Pork Plate for 2 <br/>(smoked cooked knuckle, pickled horse-radish, mustard, egg,
                         pickled mixed salad)' => '6100',
             ],
         ],

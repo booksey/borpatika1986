@@ -1,0 +1,67 @@
+{% extends "layout.html.twig" %}
+{% block main %}
+<section id="main-content">
+  <div class="container-md mt-5" data-aos="fade-in">
+    <div class="accordion" id="itallap">
+    {% for drinkTitle, menus in drinks %}
+      {% set menuCnt = 0 %}
+        <div class="row text-center mb-4 drinkTitleRow">
+          <div class="col-12">
+            <h1 class="drinkTitle">{{ drinkTitle }}</h1>
+          </div>
+        </div>
+        {% for menu in menus.menus %}
+          {% set menuId = 'menuId' ~ menuCnt %}
+          <div class="accordion-item drinkItem">
+            <button
+              class="accordion-button drinkButton"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#{{ menuId }}" aria-expanded="true" aria-controls="{{ menuId }}">
+              {% if menu.mainTitle is defined %}
+                {{ menu.mainTitle }}
+              {% endif %}
+          </button>
+          <div id="{{ menuId }}" class="accordion-collapse collapse" aria-labelledby="heading{{ menuId }}" data-bs-parent="#itallap">
+          <div class="accordion-body">
+            <table class="table table-mobile-responsive table-mobile-sided">
+              <thead>
+              {% set columns = [''] %}
+                <tr>
+                  <td class="border-0" scope="col"></td>
+                  {% for column in menu.columns %}
+                    <td class="border-0 text-center fw-normal" scope="col">
+                      {{ column }}
+                    {% set columns = columns | merge([column]) %}
+                    </td>
+                  {% endfor %}
+                </tr>
+              </thead>
+              <tbody>
+                {% for name, con in menu.drinks %}
+                  {% set columnCnt = 1%}
+                  <tr>
+                    <td data-content="" class="border-0" scope="row">
+                      {{ name }}
+                    </td>
+                    {% for price in con %}
+                      <td data-content="{{ columns[columnCnt] }}" class="text-center border-0 fw-normal">
+                        {{ price }}.-
+                      </td>
+                      {% set columnCnt = columnCnt + 1 %}
+                    {% endfor %}
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+          </div>
+          {% set menuCnt = menuCnt + 1 %}
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}
