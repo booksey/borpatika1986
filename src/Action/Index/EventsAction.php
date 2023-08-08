@@ -13,7 +13,7 @@ use Twig\Environment;
 class EventsAction extends AbstractAction
 {
     private Environment $twig;
-    private CookieHelper $cookieHelper;
+    private CookieHelperInterface $cookieHelper;
 
     public function __construct(Environment $twig, CookieHelperInterface $cookieHelper)
     {

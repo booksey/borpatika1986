@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace App\Action\Index;
 
 use App\Action\AbstractAction;
-use App\Helper\CookieHelper;
 use App\Helper\CookieHelperInterface;
 use Psr\Http\Message\ResponseInterface;
 use Twig\Environment;
@@ -14,7 +13,7 @@ class GalleryAction extends AbstractAction
 {
     private const ALBUM_IMAGES_GLOB_PATTERN = __DIR__ . '/../../../public/assets/img/photoalbum/*.jpg';
     private Environment $twig;
-    private CookieHelper $cookieHelper;
+    private CookieHelperInterface $cookieHelper;
 
     public function __construct(Environment $twig, CookieHelperInterface $cookieHelper)
     {
@@ -27,8 +26,10 @@ class GalleryAction extends AbstractAction
         $cookieFooterClass = !$this->cookieHelper->isApproved() ? 'd-block' : 'd-none';
         $images = [];
         $imagePaths = glob(self::ALBUM_IMAGES_GLOB_PATTERN);
-        foreach ($imagePaths as $path) {
-            $images[] = pathinfo($path, PATHINFO_BASENAME);
+        if ($imagePaths) {
+            foreach ($imagePaths as $path) {
+                $images[] = pathinfo($path, PATHINFO_BASENAME);
+            }
         }
         $this->response->getBody()->write($this->twig->render(
             'gallery.html.twig',

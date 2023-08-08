@@ -399,7 +399,6 @@ return [
                         'PILSNER URQUELL 0.5' => ['850'],
                         'HEINEKEN 0.5' => ['800'],
                         'DREHER BAK 0.5' => ['800'],
-                        'DREHER BAK 0.5' => ['800'],
                         'DREHER HIDEGKOMLÓS 0.5' => ['800'],
                         'DREHER CLASSIC 0.5' => ['750'],
                         'DREHER IPA 0.5' => ['800'],

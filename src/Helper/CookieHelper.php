@@ -18,7 +18,7 @@ class CookieHelper implements CookieHelperInterface
 
     public function isApproved(): bool
     {
-        return !empty($this->cookies[self::COOKIE_KEY_APPROVED]) && $this->cookies[self::COOKIE_KEY_APPROVED];
+        return !empty($this->cookies[self::COOKIE_KEY_APPROVED]);
     }
 
     public function getLanguage(): string

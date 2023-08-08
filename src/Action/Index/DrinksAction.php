@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace App\Action\Index;
 
 use App\Action\AbstractAction;
-use App\Helper\CookieHelper;
 use App\Helper\CookieHelperInterface;
 use Psr\Container\ContainerInterface;
 use Psr\Http\Message\ResponseInterface;
@@ -14,12 +13,14 @@ use Twig\Environment;
 class DrinksAction extends AbstractAction
 {
     private Environment $twig;
-    private CookieHelper $cookieHelper;
+    private CookieHelperInterface $cookieHelper;
     private array $config;
 
     public function __construct(ContainerInterface $container, Environment $twig, CookieHelperInterface $cookieHelper)
     {
-        $this->config = $container->get('config');
+        /** @var array $config */
+        $config = $container->get('config');
+        $this->config = $config;
         $this->twig = $twig;
         $this->cookieHelper = $cookieHelper;
     }
