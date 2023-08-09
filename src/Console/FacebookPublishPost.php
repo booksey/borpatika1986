@@ -3,34 +3,38 @@
 namespace App\Console;
 
 use App\Helper\FacebookHelperInterface;
+use RuntimeException;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Throwable;
 
 final class FacebookPublishPost extends Command
 {
-    public function __construct(private FacebookHelperInterface $facebookHelper)
+    private FacebookHelperInterface $facebookHelper;
+
+    public function __construct(FacebookHelperInterface $facebookHelper)
     {
-        $this->facebookHelper = $facebookHelper;
         parent::__construct();
+        $this->facebookHelper = $facebookHelper;
     }
 
     protected function configure(): void
     {
         parent::configure();
-
         $this->setName('facebook-publish-post');
         $this->setDescription('A command to publish post on a page');
     }
 
+    /** @SuppressWarnings(PHPMD.UnusedFormalParameter) */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
+        $output->writeln(date('Y-m-d H:i:s') . ": " . $this->getName() . " execution started");
         try {
             $this->facebookHelper->publishPagePost('Slim cli test');
-        } catch (Throwable $e) {
-            echo $e->getMessage() . "\n";
+        } catch (RuntimeException $exception) {
+            $output->writeln($exception->getMessage());
         }
+        $output->writeln(date('Y-m-d H:i:s') . ": " . $this->getName() . " execution ended");
 
         return 0;
     }

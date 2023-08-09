@@ -2,34 +2,45 @@
 
 namespace App\Helper;
 
+use Facebook\Exceptions\FacebookSDKException;
+use Facebook\Facebook;
+use RuntimeException;
+
 class FacebookHelper implements FacebookHelperInterface
 {
-    private \Facebook\Facebook $fbClient;
+    private Facebook $fbClient;
+    private string $appId;
+    private string $appSecret;
     private string $pageId;
     private string $accessToken;
 
-    public function __construct(array $config)
+    public function __construct(string $appId, string $appSecret, string $pageId, string $accessToken)
     {
-        $env = getenv('APP_ENV');
-        $appIdEnvKey = 'FACEBOOK_APP_ID' . ($env == 'dev' ? '_TEST' : '');
-        $appSecretEnvKey = 'FACEBOOK_APP_SECRET' . ($env == 'dev' ? '_TEST' : '');
-        $appPageIdEnvKey = 'FACEBOOK_APP_PAGE_ID' . ($env == 'dev' ? '_TEST' : '');
-        $appUserAccessTokenEnvKey = 'FACEBOOK_APP_USER_ACCESS_TOKEN' . ($env == 'dev' ? '_TEST' : '');
+        $this->appId = $appId;
+        $this->appSecret = $appSecret;
+        $this->pageId = $pageId;
+        $this->accessToken = $accessToken;
 
-        $this->fbClient = new \Facebook\Facebook([
-            'app_id' => getenv($appIdEnvKey),
-            'app_secret' => getenv($appSecretEnvKey),
-            'default_graph_version' => 'v17.0'
-        ]);
-        $this->pageId = getenv($appPageIdEnvKey);
-        $this->accessToken = getenv($appUserAccessTokenEnvKey);
+        try {
+            $this->fbClient = new Facebook([
+                'app_id' => $this->appId,
+                'app_secret' => $this->appSecret,
+                'default_graph_version' => 'v17.0'
+            ]);
+        } catch (FacebookSDKException $exception) {
+            throw new RuntimeException("Facebook client init failed - " . $exception->getMessage());
+        }
     }
 
     public function publishPagePost(string $message): void
     {
-        $this->fbClient->sendRequest('POST', "$this->pageId/feed", [
-            'message' => $message,
-            'access_token' => $this->accessToken,
-        ]);
+        try {
+            $this->fbClient->sendRequest('POST', "$this->pageId/feed", [
+                'message' => $message,
+                'access_token' => $this->accessToken,
+            ]);
+        } catch (FacebookSDKException $exception) {
+            throw new RuntimeException("Publish page post failed - " . $exception->getMessage());
+        }
     }
 }
