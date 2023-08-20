@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="hu">
     <head>
-        <!-- Google Tag Manager -->
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YQNKG1VXT6"></script>
         <script>
-            (function (w, d, s, l, i) {
-                w[l] = w[l] || [];
-                w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
-                var f = d.getElementsByTagName(s)[0],
-                    j = d.createElement(s),
-                    dl = l != 'dataLayer' ? '&l=' + l : '';
-                j.async = true;
-                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-                f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', 'GTM-M9KKJPTR');
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-YQNKG1VXT6');
         </script>
-        <!-- End Google Tag Manager -->
 
         <meta charset="UTF-8">
         <title>Borpatika</title>
@@ -72,13 +69,7 @@
         <link href="{{ asset('css/variables.css') }}" rel="stylesheet">
         <link href="{{ asset('css/main.css?ver=2.1') }}" rel="stylesheet">
     </head>
-    <body
-        style="background-color: #2F130C !important">
-        <!-- Google Tag Manager (noscript) -->
-        <noscript>
-            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M9KKJPTR" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-        </noscript>
-        <!-- End Google Tag Manager (noscript) -->
+    <body style="background-color: #2F130C !important">
         <!-- ======= Header ======= -->
         <!-- log line break -->
             <header id="header" class="header d-flex align-items-center fixed-top" style="background-color: #2F130C !important"> <div class="container-fluid container-xl d-flex align-items-center justify-content-evenly">
@@ -133,7 +124,7 @@
             <div id="cookie-footer" class="row cookie-footer p-2 {{ cookieFooterDisplayClass }}">
                 <div class="col text-center">
                     Az oldalon történő böngészéssel elfogadja, hogy a személyre szabott tartalom érdekében az oldal cookie-kat használ.
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Adatkezelési tájékoztatónkat
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Adatkezelési tájékoztatónkat
                     <a href="/cookie-tajekoztato">
                         <span style="text-decoration: underline; font-weight: bold;">Itt</span>
                         olvashatja.</a>
