@@ -76,9 +76,26 @@
         <link href="{{ asset('css/main.css?ver=2.1') }}" rel="stylesheet">
     </head>
     <body style="background-color: #2F130C !important">
+        <div id="fb-root"></div>
+        <!-- Facebook JSSDK init -->
+        <script>
+            (function (d, s, id) {
+                var js,
+                    fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) 
+                    return;
+                
+
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
         <!-- ======= Header ======= -->
         <!-- log line break -->
-            <header id="header" class="header d-flex align-items-center fixed-top" style="background-color: #2F130C !important"> <div class="container-fluid container-xl d-flex align-items-center justify-content-evenly">
+        <header id="header" class="header d-flex align-items-center fixed-top" style="background-color: #2F130C !important">
+            <div class="container-fluid container-xl d-flex align-items-center justify-content-evenly">
                 <a href="index.php" class="logo d-flex align-items-center d-none d-sm-block">
                     <img src="{{ asset('img/logo_2.png') }}"/>
                 </a>
@@ -130,7 +147,7 @@
             <div id="cookie-footer" class="row cookie-footer p-2 {{ cookieFooterDisplayClass }}">
                 <div class="col text-center">
                     Az oldalon történő böngészéssel elfogadja, hogy a személyre szabott tartalom érdekében az oldal cookie-kat használ.
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Adatkezelési tájékoztatónkat
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Adatkezelési tájékoztatónkat
                     <a href="/cookie-tajekoztato">
                         <span style="text-decoration: underline; font-weight: bold;">Itt</span>
                         olvashatja.</a>
