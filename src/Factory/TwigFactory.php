@@ -4,8 +4,7 @@ declare(strict_types=1);
 
 namespace App\Factory;
 
-use App\Twig\Extension\UrlHelper;
-use App\Twig\Extension\UrlHelperExtension;
+use App\Twig\Extension\TwigHelperExtension;
 use Psr\Container\ContainerInterface;
 use Twig\Environment;
 use Twig\Extension\DebugExtension;
@@ -43,7 +42,7 @@ class TwigFactory
         /** @var string[] $extensions */
         $extensions = [
             StringLoaderExtension::class,
-            UrlHelperExtension::class
+            TwigHelperExtension::class
         ];
 
         if (getenv('APP_ENV') === 'dev') {

@@ -7,7 +7,7 @@ use Psr\Http\Message\ServerRequestInterface;
 use Slim\App;
 use RuntimeException;
 
-class UrlHelper implements UrlHelperInterface
+class TwigHelper implements TwigHelperInterface
 {
     private App $app;
     private ServerRequestInterface $request;
@@ -58,5 +58,10 @@ class UrlHelper implements UrlHelperInterface
         }
 
         return $config['twig']['binDirectory'];
+    }
+
+    public function getFbPageId(): string
+    {
+        return getenv('FACEBOOK_APP_PAGE_ID');
     }
 }

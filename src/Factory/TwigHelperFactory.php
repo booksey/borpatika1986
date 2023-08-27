@@ -2,22 +2,22 @@
 
 namespace App\Factory;
 
-use App\Helper\UrlHelper;
-use App\Helper\UrlHelperInterface;
+use App\Helper\TwigHelper;
+use App\Helper\TwigHelperInterface;
 use Psr\Container\ContainerInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Slim\App;
 
-class UrlHelperFactory
+class TwigHelperFactory
 {
-    public function __invoke(ContainerInterface $container): UrlHelperInterface
+    public function __invoke(ContainerInterface $container): TwigHelperInterface
     {
         /** @var App $app */
         $app = $container->get('App');
         /** @var ServerRequestInterface $request */
         $request = $container->get(ServerRequestInterface::class);
 
-        return new UrlHelper(
+        return new TwigHelper(
             $app,
             $request
         );

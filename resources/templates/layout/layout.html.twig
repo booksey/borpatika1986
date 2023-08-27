@@ -18,21 +18,27 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Otthonos, klimatizált borozó-éttermünkben gyertyafény mellett kóstolhatja meg kiváló borainkat és házias ételeinket.">
-        <meta
-        name="keywords" content="borpatika, bor, étterem, borozó-étterem, tradicionális">
+        <meta name="keywords" content="borpatika, bor, étterem, borozó-étterem, tradicionális">
+
+        {% set ogTitle = ogTitle ?? 'Borpatika' %}
+        {% set ogType = ogType ?? 'website' %}
+        {% set ogUrl = ogUrl ?? 'https://borpatika1986.hu' %}
+        {% set ogImage = ogImage ?? asset('img/fb-card.jpg') %}
+        {% set ogDescription = ogDescription ?? 'Otthonos, klimatizált borozó-éttermünkben gyertyafény mellett kóstolhatja meg kiváló borainkat és házias ételeinket.' %}
+        {% set ogSiteName = ogSiteName ?? 'Borpatika' %}
 
         <!-- Social media meta tags -->
-        <meta property="og:title" content="Borpatika"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:url" content="https://borpatika1986.hu"/>
-        <meta property="og:image" content="https://borpatika1986.hu/public/assets/img/fb-card.jpg"/>
+        <meta property="og:title" content="{{ ogTitle }}"/>
+        <meta property="og:type" content="{{ ogType }}"/>
+        <meta property="og:url" content="{{ ogUrl }}"/>
+        <meta property="og:image" content="{{ ogImage }}"/>
         <meta name="twitter:card" content="summary_large_image">
 
-        <meta property="og:description" content="Otthonos, klimatizált borozó-éttermünkben gyertyafény mellett kóstolhatja meg kiváló borainkat és házias ételeinket.">
-        <meta property="og:site_name" content="Borpatika">
-        <meta name="twitter:image:alt" content="Borpatika">
+        <meta property="og:description" content="{{ ogDescription }}">
+        <meta property="og:site_name" content="{{ ogSiteName }}">
+        <meta name="twitter:image:alt" content="{{ ogTitle }}">
 
-        <meta property="fb:page_id" content="112133708639773"/>
+        <meta property="fb:page_id" content="{{ getFbPageId() }}"/>
         <meta
         name="twitter:site" content="@borpatika1986">
 
@@ -124,7 +130,7 @@
             <div id="cookie-footer" class="row cookie-footer p-2 {{ cookieFooterDisplayClass }}">
                 <div class="col text-center">
                     Az oldalon történő böngészéssel elfogadja, hogy a személyre szabott tartalom érdekében az oldal cookie-kat használ.
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Adatkezelési tájékoztatónkat
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Adatkezelési tájékoztatónkat
                     <a href="/cookie-tajekoztato">
                         <span style="text-decoration: underline; font-weight: bold;">Itt</span>
                         olvashatja.</a>

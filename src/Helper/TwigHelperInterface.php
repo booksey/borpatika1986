@@ -2,8 +2,9 @@
 
 namespace App\Helper;
 
-interface UrlHelperInterface
+interface TwigHelperInterface
 {
     public function getBaseUrl(): string;
     public function assetFor(string $file): string;
+    public function getFbPageId(): string;
 }
