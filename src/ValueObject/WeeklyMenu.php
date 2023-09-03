@@ -9,42 +9,42 @@ final class WeeklyMenu
 
     public function __construct()
     {
-        $this->weekNumber = '35';
+        $this->weekNumber = '36';
         $this->menu = [
-            '2023. augusztus 28. hétfő' => [
-                'Kolbászos burgonyaleves',
-                'Lecsós csirkemáj sós burgonyával',
-                'Puncs szelet',
+            '2023. szeptember 04. hétfő' => [
+                'Kertész leves',
+                'Csirkepörkölt szarvacska tésztával',
+                'Túrós rétes',
             ],
-            '2023. augusztus 29. kedd' => [
-                'Palóc leves',
-                'Spagetti carbonara',
-                'Hideg gyümölcsrizs',
+            '2023. szeptember 05. kedd' => [
+                'Tejfölös zöldbab leves',
+                'Tarhonyás hús',
+                'Gyümölcs saláta tejszínhabbal',
             ],
-            '2023. augusztus 30. szerda' => [
-                'Paradicsom leves betű tésztával',
-                'Csirkemell csíkok póréhagymás, tejszínes raguval, rizzsel',
-                'Meggyes piskóta'
+            '2023. szeptember 06. szerda' => [
+                'Májgombóc leves',
+                'Párizsi sertésszelet rizibizivel',
+                'Káposzta saláta'
             ],
-            '2023. augusztus 31. csütörtök' => [
-                'Húsleves cérnametélttel',
-                'Bankár csirkemell burgnyapürével',
-                'Somlóis palacsinta'
+            '2023. szeptember 07. csütörtök' => [
+                'Pilisi sertésgulyás',
+                'Szárnyasmáj rizottó',
+                'Mákos guba'
             ],
-            '2023. szeptember 01. péntek' => [
-                'Lebbencs leves',
-                'Rántott karfiol rizzsel, tartárral',
-                'Citromos piskóta'
+            '2023. szeptember 08. péntek' => [
+                'Fokhagyma krémleves',
+                'Pirosra sült csülök sztrapacskával',
+                'Alma fahéjas bundában'
             ],
-            '2023. szeptember 02. szombat' => [
-                'Francia hagymaleves',
-                'Gombával töltött sertésborda kukoricás rizzsel',
-                'Keksztekercs'
+            '2023. szeptember 09. szombat' => [
+                'Zöldborsó leves vajas galuskával',
+                'Csibe brassói pirított burgonyával',
+                'Csemege uborka'
             ],
-            '2023. szeptember 03. vasárnap' => [
-                'Zöldborsós csirkeraguleves',
-                'Debreceni sertéstokány galuskával',
-                'Kovászos uborka'
+            '2023. szeptember 10. vasárnap' => [
+                'Májgombóc leves',
+                'Cigány pecsenye hagymás tört burgonyával',
+                'Lekváros palacsinta'
             ],
         ];
     }
