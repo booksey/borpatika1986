@@ -14,7 +14,7 @@ parameters:
     checkGenericClassInNonGenericObjectType: false
     checkMissingIterableValueType: false
     parallel:
-    		maximumNumberOfProcesses: 2
+        maximumNumberOfProcesses: 2
     tmpDir: '%currentWorkingDirectory%/phpStanTmp'
     reportUnmatchedIgnoredErrors: false
     ignoreErrors:
