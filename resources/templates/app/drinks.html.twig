@@ -1,17 +1,19 @@
 {% extends "layout.html.twig" %}
 {% block main %}
 <section id="main-content">
-  <div class="container-md mt-5" data-aos="fade-in">
+  <div class="container-md" data-aos="fade-in">
     <div class="accordion" id="itallap">
+    {% set menuCnt = 0 %}
     {% for drinkTitle, menus in drinks %}
-      {% set menuCnt = 0 %}
-        <div class="row text-center mb-4 drinkTitleRow">
-          <div class="col-12">
-            <h1 class="drinkTitle">{{ drinkTitle }}</h1>
+        <div class="row text-center mb-4 mt-3">
+          <div class="col-12 drinkTitle">
+            {{ drinkTitle }}
           </div>
         </div>
         {% for menu in menus.menus %}
+          {% set menuCnt = menuCnt + 1 %}
           {% set menuId = 'menuId' ~ menuCnt %}
+          {% set showDiv = menuCnt == 1 or menu.mainTitle is not defined ? 'show' : '' %}
           <div class="accordion-item drinkItem">
             <button
               class="accordion-button drinkButton"
@@ -21,8 +23,9 @@
               {% if menu.mainTitle is defined %}
                 {{ menu.mainTitle }}
               {% endif %}
+
           </button>
-          <div id="{{ menuId }}" class="accordion-collapse collapse" aria-labelledby="heading{{ menuId }}" data-bs-parent="#itallap">
+          <div id="{{ menuId }}" class="accordion-collapse collapse {{ showDiv }}" aria-labelledby="heading{{ menuId }}" data-bs-parent="#itallap">
           <div class="accordion-body">
             <table class="table table-mobile-responsive table-mobile-sided">
               <thead>
@@ -42,7 +45,7 @@
                   {% set columnCnt = 1%}
                   <tr>
                     <td data-content="" class="border-0" scope="row">
-                      {{ name }}
+                      {{ name|nl2br }}
                     </td>
                     {% for price in con %}
                       <td data-content="{{ columns[columnCnt] }}" class="text-center border-0 fw-normal">
@@ -56,7 +59,7 @@
             </table>
           </div>
           </div>
-          {% set menuCnt = menuCnt + 1 %}
+
           {% endfor %}
         </div>
       </div>

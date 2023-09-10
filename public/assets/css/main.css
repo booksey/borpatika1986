@@ -212,7 +212,7 @@ section {
         padding: 10px;
         font-family: var(--font-default);
         font-size: 20px;
-        font-weight: 500;
+        font-weight: 400;
         color: rgba(var(--color-default-rgb), 1);
         white-space: nowrap;
         transition: 0.3s;
@@ -345,7 +345,7 @@ section {
         padding: 10px 20px;
         font-family: var(--font-primary);
         font-size: 20px;
-        font-weight: 500;
+        font-weight: 400;
         color: var(--color-primary);
         white-space: nowrap;
         transition: 0.3s;
@@ -727,7 +727,6 @@ section {
     .table-mobile-responsive td {
         border: none;
         position: relative;
-        padding-top: 1.5rem !important;
     }
 
     .table-mobile-responsive td:before {
@@ -766,8 +765,7 @@ section {
     .table-mobile-responsive.table-mobile-sided td:first-child {
         padding-left: 0;
         justify-content: start;
-        font-weight: 500;
-        font-size: 1.6rem;
+        font-weight: 400;
         margin: 10px 0 10px 0;
     }
 
@@ -785,11 +783,8 @@ section {
 }
 
 .drinkTitle {
+    font-size: 1.5rem !important;
     text-transform: uppercase;
-}
-
-.drinkTitleRow {
-    margin-top: 50px !important;
 }
 
 .drinkItem {
@@ -797,7 +792,7 @@ section {
 }
 
 .drinkButton {
-    font-size: 1.8rem !important;
+    font-size: 1.25rem !important;
 }
 
 .cookie-col {
