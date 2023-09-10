@@ -2,10 +2,6 @@
     scroll-behavior: smooth;
 }
 
-body {
-    color: rgba(var(--color-primary-rgb), 1);
-}
-
 a {
     color: var(--color-links);
     text-decoration: none;
@@ -26,7 +22,7 @@ h6 {
 }
 
 #main {
-    margin-top: 250px;
+    margin-top: 200px;
 }
 
 /*--------------------------------------------------------------
@@ -68,7 +64,7 @@ section {
 }
 
 .scroll-top i {
-    font-size: 24px;
+    font-size: 20px;
     color: #fff;
     line-height: 0;
 }
@@ -114,18 +110,18 @@ section {
 # Header
 --------------------------------------------------------------*/
 .header {
-    height: 230px;
+    height: 150px;
     transition: all 0.5s;
     z-index: 997;
-    background: #f2f2f2;
+    background-color: var(--color-background-primary) !important;
 }
 
 .header.sticked {
-    height: 230px;
+    height: 150px;
 }
 
 .header .logo img {
-    max-height: 230px;
+    max-height: 150px;
     margin-right: 6px;
 }
 
@@ -224,7 +220,7 @@ section {
         justify-content: space-between;
         padding: 10px;
         font-family: var(--font-default);
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 500;
         color: rgba(var(--color-default-rgb), 1);
         white-space: nowrap;
@@ -268,7 +264,7 @@ section {
         z-index: 99;
         opacity: 0;
         visibility: hidden;
-        background: #2F130C;
+        background-color: var(--color-background-primary) !important;
         box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
         transition: 0.3s;
         border-radius: 4px;
@@ -345,7 +341,7 @@ section {
         padding: 10px 0;
         margin: 0;
         border-radius: 10px;
-        background-color: #2F130C !important;
+        background-color: var(--color-background-primary) !important;
         overflow-y: auto;
         transition: 0.3s;
         z-index: 9998;
@@ -357,7 +353,7 @@ section {
         align-items: center;
         padding: 10px 20px;
         font-family: var(--font-primary);
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 500;
         color: var(--color-primary);
         white-space: nowrap;
@@ -650,7 +646,7 @@ section {
 
 .accordion {
     color: var(--color-primary-rgb) !important;
-    background-color: #2F130C !important;
+    background-color: var(--color-background-primary) !important;
     border: none;
     box-shadow: none;
 }
@@ -661,7 +657,7 @@ section {
 
 .accordion-item {
     color: var(--color-primary-rgb) !important;
-    background-color: #2F130C !important;
+    background-color: var(--color-background-primary) !important;
     font-size: 1.75rem;
     border: none !important;
     box-shadow: none !important;
@@ -674,7 +670,7 @@ section {
 
 .accordion-button {
     color: var(--color-primary-rgb) !important;
-    background-color: #2F130C !important;
+    background-color: var(--color-background-primary) !important;
     font-size: 2rem;
     border: none !important;
     box-shadow: none !important;
@@ -800,7 +796,6 @@ section {
 }
 
 .drinkTitle {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
 }
 
@@ -836,7 +831,7 @@ section {
     height: auto;
     filter: brightness(0.75);
     text-align: left;
-    background-color: #2F130C !important;
+    background-color: var(--color-background-primary) !important;
     color: rgba(var(--color-default-rgb), 1);
     -webkit-transition: all .6s ease-in-out;
     -moz-transition: all .6s ease-in-out;
@@ -848,12 +843,12 @@ section {
 
 .cookie-button {
     margin-left: 15px;
-    background-color: #2F130C !important;
+    background-color: var(--color-background-primary) !important;
     border-color: rgba(var(--color-default-rgb), 1) !important;
     color: rgba(var(--color-default-rgb), 1) !important;
 }
 
 .cookie-button:hover {
     background-color: rgba(var(--color-default-rgb), 1) !important;
-    color: #2F130C !important;
+    color: var(--color-background-primary) !important;
 }
