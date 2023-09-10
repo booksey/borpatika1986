@@ -2,6 +2,10 @@
     scroll-behavior: smooth;
 }
 
+body {
+    letter-spacing: 0.10rem;
+}
+
 a {
     color: var(--color-links);
     text-decoration: none;
@@ -22,28 +26,15 @@ h6 {
 }
 
 #main {
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 /*--------------------------------------------------------------
-# Sections & Section Header
+# Sections
 --------------------------------------------------------------*/
 section {
     padding: 0 40px 15px 40px;
     overflow: hidden;
-}
-
-.section-header {
-    border-bottom: 2px solid var(--color-black);
-}
-
-.section-header h2 {
-    font-size: 50px;
-    color: var(--color-black);
-}
-
-.section-header p {
-    margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------
@@ -64,7 +55,7 @@ section {
 }
 
 .scroll-top i {
-    font-size: 20px;
+    font-size: 1.5rem;
     color: #fff;
     line-height: 0;
 }
@@ -658,22 +649,27 @@ section {
 .accordion-item {
     color: var(--color-primary-rgb) !important;
     background-color: var(--color-background-primary) !important;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     border: none !important;
     box-shadow: none !important;
     box-shadow: none;
 }
 
 .accordion-title {
-    font-size: 40px;
+    font-size: 1.75rem;
 }
 
 .accordion-button {
     color: var(--color-primary-rgb) !important;
     background-color: var(--color-background-primary) !important;
-    font-size: 2rem;
-    border: none !important;
+    font-size: 1.75rem;
+    border: none;
     box-shadow: none !important;
+    border-bottom: 1px dotted !important;
+}
+
+.accordion-button:hover {
+    opacity: 0.5;
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -688,13 +684,6 @@ section {
     box-shadow: none !important;
     background-image: url("/assets/img/arrow-up-circle-fill.svg");
     transform: scale(1.5);
-}
-
-.accordion-button:focus {
-    border: none !important;
-    box-shadow: none !important;
-    border-color: rgba(0, 0, 0, .125);
-
 }
 
 /*--------------------------------------------------------------
@@ -839,6 +828,11 @@ section {
     -ms-transition: all .6s ease-in-out;
     transition: all .6s ease-in-out;
     z-index: 999999999;
+}
+
+.cookie-footer-link {
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .cookie-button {

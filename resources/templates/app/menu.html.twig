@@ -11,11 +11,9 @@
                         {% set title = 'collapseId' ~ menuCnt %}
                         {% set showDiv = menuCnt == 1 ? 'show' : '' %}
                         <div class="accordion-item">
-                            <h1 class="mt-3 mb-3">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#{{ title }}" aria-expanded="true" aria-controls="{{ title }}">
-                                    <span class="accordion-title">{{ content }}</span>
-                                </button>
-                            </h1>
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#{{ title }}" aria-expanded="true" aria-controls="{{ title }}">
+                                <span class="accordion-title">{{ content }}</span>
+                            </button>
                             <div id="{{ title }}" class="accordion-collapse collapse {{ showDiv }}" data-bs-parent=" #etlap">
                             {% endif %}
                         {% if (key == 'menus') %}
@@ -25,7 +23,7 @@
                                         <table class="table">
                                             <tbody>
                                                 <tr>
-                                                    <td scope="row" class="border-0 text-start">{{ name}}</td>
+                                                    <td scope="row" class="border-0 text-start">{{ name|nl2br }}</td>
                                                     <td class="align-right border-0 text-end">{{ price }}.-</td>
                                                 </tr>
                                             </tbody>
@@ -39,11 +37,11 @@
             </div>
             {% endfor %}
             <div class="row mt-5">
-                <div class="col-12">
+                <div class="col-12 text-center">
                 {% set priceStr = language == 'gb' ? 'The prices are in HUF, and the Garnishes are not included in the prices!' : 'Az árak köret nélkül értendők!' %}
                 {% set allergenStr = language == 'gb' ? 'Dishes may contain allergens, please ask our staff for detailed information when ordering!' : 'Az ételeink allergén anyagokat tartalmazhatnak, kérem érdeklőjenek a rendeléskor!' %}
-                    <h1>{{ priceStr}}</h1>
-                    <h1>{{ allergenStr }}</h1>
+                    <h2>{{ priceStr}}</h2>
+                    <h2>{{ allergenStr }}</h2>
                 </div>
             </div>
         </div>
