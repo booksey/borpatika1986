@@ -8,22 +8,24 @@
             <div class="d-flex flex-row justify-content-center">
                 <div>
                     <h1 class="text-center mb-5">
-                        Heti menü ({{ weekNumber }}. hét) - 1890 Ft / nap
+                        Heti menü
+                        {{ weekNumber }}. hét - 1890 Ft / nap
                     </h1>
+                    <h4 class="text-center">Napi menü 12:00-tól</h4>
                     {% for day, menus in weeklyMenu %}
-                        <h1 class="text-center mt-5">
-                            <strong>{{ day }}</strong>
-                        </h1>
+                        <h2 class="text-center mt-5">
+                            {{ day }}
+                        </h2>
                         {% for menu in menus %}
-                            <h1 class="text-center">
+                            <h3 class="text-center">
                                 {{ menu }}
-                            </h1>
+                            </h3>
                         {% endfor %}
                     {% endfor %}
-                    <h1 class="text-center mt-5">(Az allergén összetevőkről érdeklődjön munkatársainknál.)</h1>
-                    <h1 class="text-center">Jó étvágyat kívánunk!</h1>
-                    <h1 class="text-center">Napi menü 12 órától.</h1>
-                    <h1 class="text-center">A menüváltoztatás jogát fenntartjuk.</h1>
+                    <br/>
+                    <h3 class="text-center mt-5">Jó étvágyat kívánunk!</h3>
+                    <h4 class="text-center">Az allergén összetevőkről érdeklődjön munkatársainknál.</h4>
+                    <h4 class="text-center">A menüváltoztatás jogát fenntartjuk.</h4>
                 </div>
             </div>
 
