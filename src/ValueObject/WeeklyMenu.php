@@ -2,14 +2,24 @@
 
 namespace App\ValueObject;
 
+use DateTime;
+
 final class WeeklyMenu
 {
     public array $menu;
+    public array $menu2;
     public string $weekNumber;
 
     public function __construct()
     {
         $this->weekNumber = '37';
+        $this->menu2 = [
+            '20230912' => [
+                'Tejszínes gombaleves',
+                'Kolbászos rakott burgonya',
+                'Kovászos uborka',
+            ],
+        ];
         $this->menu = [
             '2023. szeptember 11. hétfő' => [
                 'Tárkonyos lencseleves virslivel',
@@ -47,5 +57,11 @@ final class WeeklyMenu
                 'Savanyúság mix'
             ],
         ];
+    }
+
+    public function getMenuForDate(DateTime $date): ?array
+    {
+        $dayToGet = $date->format('Ymd');
+        return $this->menu2[$dayToGet] ?? null;
     }
 }

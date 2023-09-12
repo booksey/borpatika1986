@@ -3,47 +3,47 @@
     <section id="main-content">
         <div class="container-md mt-5" data-aos="fade-in">
             <div class="accordion" id="etlap">
-            {% set menuCnt = 0 %}
-            {% for menu in menus %}
-                {% for key, content in menu %}
-                    {% if key == 'title' %}
-                        {% set menuCnt = menuCnt + 1 %}
-                        {% set title = 'collapseId' ~ menuCnt %}
-                        {% set showDiv = menuCnt == 1 ? 'show' : '' %}
-                        <div class="accordion-item">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#{{ title }}" aria-expanded="true" aria-controls="{{ title }}">
-                                <span class="accordion-title">{{ content }}</span>
-                            </button>
-                            <div id="{{ title }}" class="accordion-collapse collapse {{ showDiv }}" data-bs-parent=" #etlap">
-                            {% endif %}
-                        {% if (key == 'menus') %}
-                            {% for name, price in content %}
-                                <div class="accordion-body pb-2">
-                                    <div class="table table-borderless">
-                                        <table class="table">
-                                            <tbody>
-                                                <tr>
-                                                    <td scope="row" class="border-0 text-start">{{ name|nl2br }}</td>
-                                                    <td class="align-right border-0 text-end">{{ price }}.-</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                {% set menuCnt = 0 %}
+                {% for menu in menus %}
+                    {% for key, content in menu %}
+                        {% if key == 'title' %}
+                            {% set menuCnt = menuCnt + 1 %}
+                            {% set title = 'collapseId' ~ menuCnt %}
+                            {% set showDiv = menuCnt == 1 ? 'show' : '' %}
+                            <div class="accordion-item">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#{{ title }}" aria-expanded="true" aria-controls="{{ title }}">
+                                    <span class="accordion-title">{{ content }}</span>
+                                </button>
+                                <div id="{{ title }}" class="accordion-collapse collapse {{ showDiv }}" data-bs-parent=" #etlap">
+                                {% endif %}
+                                {% if (key == 'menus') %}
+                                    {% for name, price in content %}
+                                        <div class="accordion-body pb-2">
+                                            <div class="table table-borderless">
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td scope="row" class="border-0 text-start">{{ name|nl2br }}</td>
+                                                            <td class="align-right border-0 text-end">{{ price }}.-</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
                                 </div>
-                            {% endfor %}
-                        </div>
-                    {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
                 {% endfor %}
-            </div>
-            {% endfor %}
-            <div class="row mt-5">
-                <div class="col-12 text-center">
-                {% set priceStr = language == 'gb' ? 'The prices are in HUF, and the Garnishes are not included in the prices!' : 'Az árak köret nélkül értendők!' %}
-                {% set allergenStr = language == 'gb' ? 'Dishes may contain allergens, please ask our staff for detailed information when ordering!' : 'Az ételeink allergén anyagokat tartalmazhatnak, kérem érdeklőjenek a rendeléskor!' %}
-                    <h2>{{ priceStr}}</h2>
-                    <h2>{{ allergenStr }}</h2>
+                <div class="row mt-5">
+                    <div class="col-12 text-center">
+                        {% set priceStr = language == 'gb' ? 'The prices are in HUF, and the Garnishes are not included in the prices!' : 'Az árak köret nélkül értendők!' %}
+                        {% set allergenStr = language == 'gb' ? 'Dishes may contain allergens, please ask our staff for detailed information when ordering!' : 'Az ételeink allergén anyagokat tartalmazhatnak, kérem érdeklőjenek a rendeléskor!' %}
+                        <h2>{{ priceStr}}</h2>
+                        <h2>{{ allergenStr }}</h2>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-{% endblock %}
+        </section>
+    {% endblock %}

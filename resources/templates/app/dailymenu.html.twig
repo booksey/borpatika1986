@@ -1,0 +1,36 @@
+{% extends "layout.html.twig" %}
+{% block main %}
+    <section id="main-content">
+        <div class="container-md" data-aos="fade-in">
+
+            <div class="d-flex flex-row justify-content-center">
+                <div>
+                    <h1 class="text-center">
+                        Napi menü - 1890 Ft
+                    </h1>
+                    <h4 class="text-center mb-5">
+                        {{ todayDate }}
+                        12:00-tól
+                    </h4>
+                    <br/>
+                    {% if dailyMenu is null %}
+                        <h2 class="text-center">A napi menü még nem került feltöltésre.</h2>
+                    {% else %}
+                        {% for menuName in dailyMenu %}
+                            <h2 class="text-center">
+                                {{ menuName }}
+                            </h2>
+                        {% endfor %}
+                        <h4 class="text-center mt-5">Jó étvágyat kívánunk!</h4>
+                        <h4 class="text-center">Az allergén összetevőkről érdeklődjön munkatársainknál.</h4>
+                        <h4 class="text-center">A menüváltoztatás jogát fenntartjuk.</h4>
+                    {% endif %}
+                    <br/>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-end">
+                <div class="fb-share-button" data-href="{{ ogUrl }}" data-layout="button_count"></div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
