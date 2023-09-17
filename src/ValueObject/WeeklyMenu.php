@@ -12,49 +12,49 @@ final class WeeklyMenu
 
     public function __construct()
     {
-        $this->weekNumber = '37';
+        $this->weekNumber = '38';
         $this->menu2 = [
-            '20230912' => [
+            '20230917' => [
                 'Tejszínes gombaleves',
                 'Kolbászos rakott burgonya',
                 'Kovászos uborka',
             ],
         ];
         $this->menu = [
-            '2023. szeptember 11. hétfő' => [
-                'Tárkonyos lencseleves virslivel',
-                'Tejszínes, kukoricás csirkés penne',
-                'Peach melba',
+            '2023. szeptember 18. hétfő' => [
+                'Zöldborsó krémleves',
+                'Vasi pecsenye hagymás tört burgonyával',
+                'Meggyes-mákos palacsinta',
             ],
-            '2023. szeptember 12. kedd' => [
-                'Tejszínes gombaleves',
-                'Kolbászos rakott burgonya',
-                'Kovászos uborka',
+            '2023. szeptember 19. kedd' => [
+                'Palóc leves',
+                'Káposztás tészta',
+                'Gyümölcs saláta',
             ],
-            '2023. szeptember 13. szerda' => [
-                'Csirkeaprólék leves',
-                'Rántott cukkini rizzsel, tartárral',
-                'Piskóta tekercs'
+            '2023. szeptember 20. szerda' => [
+                'Erőlevers fridatto',
+                'Rakott kel',
+                'Gofri'
             ],
-            '2023. szeptember 14. csütörtök' => [
-                'Zöldségkrém leves',
-                'Hentes tokány pirított burgonyával',
-                'Linzer karika'
+            '2023. szeptember 21. csütörtök' => [
+                'Zöldség leves',
+                'Székely káposzta',
+                'Puding tejszínhabbal'
             ],
-            '2023. szeptember 15. péntek' => [
-                'Orja leves',
-                'Zöldborsó főzelék sült virslivel',
-                'Gesztenye püré'
+            '2023. szeptember 22. péntek' => [
+                'Tárkonyos pulykaragu leves',
+                'Hagymás, gombás csirkemáj burgonyapürével',
+                'Napközis piskóta'
             ],
-            '2023. szeptember 16. szombat' => [
-                'Erdei gyümölcsleves',
-                'Szezámmagos rántott csirkemell kevert salátával, joghurtos öntettel',
-                'Isler'
+            '2023. szeptember 23. szombat' => [
+                'Magyaros burgonyaleves',
+                'Töltött csirkecomb tepsis burgonyával',
+                'Csalamádé'
             ],
-            '2023. szeptember 17. vasárnap' => [
-                'Tejfölös bableves csipetkével',
-                'Alföldi zúzapörkölt galuskával',
-                'Savanyúság mix'
+            '2023. szeptember 24. vasárnap' => [
+                'Olasz paradicsomleves',
+                'Rántott sertésborda rizibizivel',
+                'Tiramisu'
             ],
         ];
     }

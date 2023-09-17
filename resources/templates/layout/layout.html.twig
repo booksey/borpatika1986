@@ -101,13 +101,49 @@
                 </a>
                 <nav id="navbar" class="navbar">
                     <ul>
-                        <li><a href="/"><i class="bi-house-fill"></i>{% if (language)== 'gb' %}About{% else %}Bemutatkozás{% endif %}</a></li>
-                        <li><a href="/napimenu"><i class="bi-clipboard-fill"></i>{% if (language)== 'gb' %}Daily menu{% else %}Napi menü{% endif %}</a></li>
-                        <li><a href="/hetimenu"><i class="bi-clipboard2-fill"></i>{% if (language)== 'gb' %}Weekly menu{% else %}Heti menü{% endif %}</a></li>
-                        <li><a href="/etlap"><i class="bi-cart-fill"></i>{% if (language)== 'gb' %}Menu{% else %}Étlap{% endif %}</a></li>
-                        <li><a href="/itallap"><i class="bi-cup-hot-fill"></i>{% if (language)== 'gb' %}Drinks{% else %}Itallap{% endif %}</a></li>
-                        <li><a href="/album"><i class="bi-image-fill"></i>{% if (language)== 'gb' %}Gallery{% else %}Fotóalbum{% endif %}</a></li>
-                        <li><a href="/rendezvenyek"><i class="bi-calendar2-fill"></i>{% if (language)== 'gb' %}Events{% else %}Rendezvények{% endif %}</a></li>
+                        <li>
+                            <a href="/">
+                                <i class="bi-house-fill"></i>
+                                {% if (language)== 'gb' %}About{% else %}Bemutatkozás
+                                {% endif %}
+                            </a>
+                        </li>
+                        {# <li><a href="/napimenu"><i class="bi-clipboard-fill"></i>{% if (language)== 'gb' %}Daily menu{% else %}Napi menü{% endif %}</a></li> #}
+                        <li>
+                            <a href="/hetimenu">
+                                <i class="bi-clipboard2-fill"></i>
+                                {% if (language)== 'gb' %}Weekly menu{% else %}Heti menü
+                                {% endif %}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/etlap">
+                                <i class="bi-cart-fill"></i>
+                                {% if (language)== 'gb' %}Menu{% else %}Étlap
+                                {% endif %}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/itallap">
+                                <i class="bi-cup-hot-fill"></i>
+                                {% if (language)== 'gb' %}Drinks{% else %}Itallap
+                                {% endif %}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/album">
+                                <i class="bi-image-fill"></i>
+                                {% if (language)== 'gb' %}Gallery{% else %}Fotóalbum
+                                {% endif %}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/rendezvenyek">
+                                <i class="bi-calendar2-fill"></i>
+                                {% if (language)== 'gb' %}Events{% else %}Rendezvények
+                                {% endif %}
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 <div class="position-relative d-flex align-items-center">
@@ -148,7 +184,7 @@
             <div id="cookie-footer" class="row cookie-footer p-2 {{ cookieFooterDisplayClass }}">
                 <div class="col text-center">
                     Az oldalon történő böngészéssel elfogadja, hogy a személyre szabott tartalom érdekében az oldal cookie-kat használ.
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Adatkezelési tájékoztatónkat
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Adatkezelési tájékoztatónkat
                     <a href="/cookie-tajekoztato">
                         <span class="cookie-footer-link">Itt</span>
                         olvashatja.</a>

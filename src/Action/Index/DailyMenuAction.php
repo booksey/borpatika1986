@@ -8,6 +8,7 @@ use App\Action\AbstractAction;
 use App\Helper\CookieHelperInterface;
 use App\ValueObject\WeeklyMenu;
 use DateTime;
+use IntlDateFormatter;
 use Psr\Http\Message\ResponseInterface;
 use Twig\Environment;
 
@@ -29,6 +30,11 @@ class DailyMenuAction extends AbstractAction
 
         $weeklyMenu = new WeeklyMenu();
         $now = new DateTime();
+        $todayDate =  IntlDateFormatter::formatObject(
+            new DateTime(), //a DateTime object
+            "Y. MMMM dd. EEEE",
+            'hu_HU'  //the locale
+        );
         $dailyMenu = $weeklyMenu->getMenuForDate($now);
 
         $this->response->getBody()->write($this->twig->render(
@@ -36,7 +42,7 @@ class DailyMenuAction extends AbstractAction
             [
                 'language' => $this->cookieHelper->getLanguage(),
                 'cookieFooterDisplayClass' => $cookieFooterClass,
-                'todayDate' => $now->format('Y. F d.'),
+                'todayDate' => $todayDate,
                 'dailyMenu' => $dailyMenu,
                 'ogTitle' => $ogTitle,
                 'ogUrl' => 'https://borpatika1986.hu/napimenu',
