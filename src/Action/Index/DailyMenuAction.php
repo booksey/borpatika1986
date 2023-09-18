@@ -8,6 +8,7 @@ use App\Action\AbstractAction;
 use App\Helper\CookieHelperInterface;
 use App\ValueObject\WeeklyMenu;
 use DateTime;
+use DateTimeZone;
 use IntlDateFormatter;
 use Psr\Http\Message\ResponseInterface;
 use Twig\Environment;
@@ -29,9 +30,9 @@ class DailyMenuAction extends AbstractAction
         $ogTitle = 'Borpatika napi menü - 1.890 Ft';
 
         $weeklyMenu = new WeeklyMenu();
-        $now = new DateTime();
+        $now = new DateTime('now', new DateTimeZone('Europe/Budapest'));
         $todayDate =  IntlDateFormatter::formatObject(
-            new DateTime(), //a DateTime object
+            $now, //a DateTime object
             "Y. MMMM dd. EEEE",
             'hu_HU'  //the locale
         );
