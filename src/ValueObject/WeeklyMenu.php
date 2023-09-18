@@ -14,10 +14,15 @@ final class WeeklyMenu
     {
         $this->weekNumber = '38';
         $this->menu2 = [
-            '20230917' => [
-                'Tejszínes gombaleves',
-                'Kolbászos rakott burgonya',
-                'Kovászos uborka',
+            '20230918' => [
+                'Zöldborsó krémleves',
+                'Vasi pecsenye hagymás tört burgonyával',
+                'Meggyes-mákos palacsinta',
+            ],
+            '20230919' => [
+                'Palóc leves',
+                'Káposztás tészta',
+                'Gyümölcs saláta',
             ],
         ];
         $this->menu = [
@@ -32,7 +37,7 @@ final class WeeklyMenu
                 'Gyümölcs saláta',
             ],
             '2023. szeptember 20. szerda' => [
-                'Erőlevers fridatto',
+                'Erőleves fridatto',
                 'Rakott kel',
                 'Gofri'
             ],

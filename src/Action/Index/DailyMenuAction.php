@@ -26,7 +26,7 @@ class DailyMenuAction extends AbstractAction
     public function invoke(): ResponseInterface
     {
         $cookieFooterClass = !$this->cookieHelper->isApproved() ? 'd-block' : 'd-none';
-        $ogTitle = 'Borpatika napi menü';
+        $ogTitle = 'Borpatika napi menü - 1.890 Ft';
 
         $weeklyMenu = new WeeklyMenu();
         $now = new DateTime();
@@ -46,7 +46,7 @@ class DailyMenuAction extends AbstractAction
                 'dailyMenu' => $dailyMenu,
                 'ogTitle' => $ogTitle,
                 'ogUrl' => 'https://borpatika1986.hu/napimenu',
-                'ogDescription' => $ogTitle,
+                'ogDescription' => 'Napi menü 12:00-tól',
             ]
         ));
         return $this->response;
