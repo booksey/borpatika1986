@@ -24,18 +24,20 @@ class WeeklyMenuAction extends AbstractAction
     public function invoke(): ResponseInterface
     {
         $weeklyMenu = new WeeklyMenu();
+        $weekNumber = $weeklyMenu->getWeekNumber();
         $cookieFooterClass = !$this->cookieHelper->isApproved() ? 'd-block' : 'd-none';
-        $ogTitle = 'Borpatika ' . $weeklyMenu->weekNumber . '. heti menü';
+        $ogTitle = 'Borpatika ' . $weekNumber . '. heti menü';
         $this->response->getBody()->write($this->twig->render(
             'weeklymenu.html.twig',
             [
                 'language' => $this->cookieHelper->getLanguage(),
                 'cookieFooterDisplayClass' => $cookieFooterClass,
-                'weekNumber' => $weeklyMenu->weekNumber,
-                'weeklyMenu' => $weeklyMenu->menu,
+                'weekNumber' => $weekNumber,
+                'weeklyMenu' => $weeklyMenu->getMenu(),
+                'menuPrice' => $weeklyMenu->menuPrice,
                 'ogTitle' => $ogTitle,
                 'ogUrl' => 'https://borpatika1986.hu/hetimenu',
-                'ogDescription' => 'Borpatika ' . $weeklyMenu->weekNumber . '. heti menü',
+                'ogDescription' => 'Borpatika ' . $weekNumber . '. heti menü',
             ]
         ));
         return $this->response;

@@ -25,23 +25,24 @@
                         <h2>In our cozy, air-conditioned wine bar-restaurant, you can taste our excellent wines and home-cooked meals by candlelight.</h2>
                         <br/>
                         <h2>Our wine selection covers the main wine regions of Hungary. You can taste quality white, red and rosé wines from Szekszárd, Villány,
-                                                                                                            the Gyöngyös area, Badacsony, Somló and Tokaj.</h2>
+                                                                                                                                                                                                                            the Gyöngyös area, Badacsony, Somló and Tokaj.</h2>
                         <br/>
                         <h2>Gyöngyös-környéki,badacsonyi, somlói és tokaji fehér, vörös és rozé borokat.</h2>
                         <br/>
                         <h2>In addition to measured and bottled wines, in our beverage selection you can find a wide selection of short
-                                                                                                            drinks and delicious Hungarian spirits called 'pálinka' from the products of the Szicsek Pálinkaház.</h2>
+                                                                                                                                                                                                                            drinks and delicious Hungarian spirits called 'pálinka' from the products of the Szicsek Pálinkaház.</h2>
                         <br/>
                         <h2>We serve several types of draft and bottled beer as well as non-alcoholic drinks to our guests.</h2>
                         <br/>
                         <h2>Along with the drinks, we offer a wide selection of savoury snacks (e.g. Hungarian home-baked savoury scone
-                                                                                                            called 'pogácsa', Hungarian fried dough called 'lángos', sandwiches, toasts, minced meat, salty and sweet cakes).</h2>
+                                                                                                                                                                                                                            called 'pogácsa', Hungarian fried dough called 'lángos', sandwiches, toasts, minced meat, salty and sweet cakes).</h2>
                         <br/>
                         <h2>Choose from our menu and enjoy a pleasant lunch or dinner by candlelight at reasonable prices.</h2>
                         <br/>
                         <h2>Our specialties are trotters, but we also offer other pork dishes, poultry, veal and beef.</h2>
                         <br/>
-                        <h2>The price of our three-course menu that changes daily is HUF 1,890.</h2>
+                        <h2>The price of our three-course menu that changes daily is HUF
+                            {{ menuPrice|number_format(0,'.',',') }}.</h2>
                         <br/>
                         <h2>For dessert, you can choose homemade cakes, pastries, pancakes.</h2>
                         <br/>
@@ -50,35 +51,37 @@
                         <h2>A separate room is available upon request.</h2>
                         <br/>
                         <h2>We undertake the organization of events (e.g. banquets, birthdays, class reunions, military reunions,
-                                                                                                            bachelor parties, friend gatherings, etc.).</h2>
+                                                                                                                                                                                                                            bachelor parties, friend gatherings, etc.).</h2>
                         <h2>Visit us in person: 1111 Budapest, Bertalan Lajos u 26.</h2>
                     {% else %}
                         <h2>Bemutatkozásképpen elmondjuk magunkról, hogy 1986 óta működünk családi vállalkozásként.</h2>
                         <br/>
                         <h2>Üzletünkben próbáljuk ma is megtartani a régi kiskocsmák hangulatát igazodva a mai
-                                                                                                            megváltozott világ igényeihez.</h2>
+                                                                                                                                                                                                                            megváltozott világ igényeihez.</h2>
                         <br/>
                         <h2>Otthonos, klimatizált borozó-éttermünkben gyertyafény mellett kóstolhatja meg kiváló borainkat
-                                                                                                            és házias ételeinket.</h2>
+                                                                                                                                                                                                                            és házias ételeinket.</h2>
                         <br/>
                         <h2>Borkínálatunk kiterjed Magyarország fő borvidékeire. Kóstolhatnak minőségi szekszárdi, villányi,</h2>
                         <br/>
                         <h2>Gyöngyös-környéki,badacsonyi, somlói és tokaji fehér, vörös és rozé borokat.</h2>
                         <br/>
                         <h2>Ital kínálatunkban a kimért és palackozott borok mellett széles választékban találhatnak különböző
-                                                                                                            röviditalokat és finom pálinkákat a Szicsek Pálinkaház termékei közül.</h2>
+                                                                                                                                                                                                                            röviditalokat és finom pálinkákat a Szicsek Pálinkaház termékei közül.</h2>
                         <br/>
                         <h2>Többféle csapolt és palackozott sört, valamint alkohol mentes italokat is felszolgálunk
-                                                                                                            vendégeinknek.</h2>
+                                                                                                                                                                                                                            vendégeinknek.</h2>
                         <br/>
                         <h2>Az italok mellé nagy választékban kínálunk bor-és sör korcsolyákat ( pl. házilag sütött pogácsák,
-                                                                                                            lángos,hideg és meleg szendvicsek, vagdalthús, sós és édes sütemények).</h2>
+                                                                                                                                                                                                                            lángos,hideg és meleg szendvicsek, vagdalthús, sós és édes sütemények).</h2>
                         <br/>
                         <h2>Étlapunkról választva kellemes ebédet illetve vacsorát fogyaszthat el gyertyafény mellett, szolid
-                                                                                                            árakon. Specialitásaink a csülkös ételek, de szárnyas, sertés, borjú és marha is szerepel a
-                                                                                                            kínálatban.</h2>
+                                                                                                                                                                                                                            árakon. Specialitásaink a csülkös ételek, de szárnyas, sertés, borjú és marha is szerepel a
+                                                                                                                                                                                                                            kínálatban.</h2>
                         <br/>
-                        <h2>Naponta változó három fogásos menünk ára 1.890 Ft.</h2>
+                        <h2>Naponta változó három fogásos menünk ára
+                            {{ menuPrice|number_format(0,'.','.') }}
+                            Ft.</h2>
                         <br/>
                         <h2>Desszertként házi süteményeket, réteseket, palacsintákat választhatnak.</h2>
                         <br/>
@@ -87,7 +90,7 @@
                         <h2>Igény szerint különterem áll rendelkezésre.</h2>
                         <br/>
                         <h2>Rendezvények lebonyolítását vállaljuk, (pl. bankettek, születésnapok, osztálytalálkozók,
-                                                                                                            katonatalálkozók, legénybúcsúk, baráti összejövetelek stb. )</h2>
+                                                                                                                                                                                                                            katonatalálkozók, legénybúcsúk, baráti összejövetelek stb. )</h2>
                         <br/>
                     {% endif %}
                 </div>

@@ -26,15 +26,15 @@ class DailyMenuAction extends AbstractAction
 
     public function invoke(): ResponseInterface
     {
-        $cookieFooterClass = !$this->cookieHelper->isApproved() ? 'd-block' : 'd-none';
-        $ogTitle = 'Borpatika napi menü - 1.890 Ft';
-
         $weeklyMenu = new WeeklyMenu();
+        $cookieFooterClass = !$this->cookieHelper->isApproved() ? 'd-block' : 'd-none';
+        $ogTitle = 'Borpatika napi menü - ' . $weeklyMenu->menuPrice . ' Ft';
+
         $now = new DateTime('now', new DateTimeZone('Europe/Budapest'));
         $todayDate =  IntlDateFormatter::formatObject(
-            $now, //a DateTime object
+            $now,
             "Y. MMMM dd. EEEE",
-            'hu_HU'  //the locale
+            'hu_HU'
         );
         $dailyMenu = $weeklyMenu->getMenuForDate($now);
 
@@ -45,6 +45,7 @@ class DailyMenuAction extends AbstractAction
                 'cookieFooterDisplayClass' => $cookieFooterClass,
                 'todayDate' => $todayDate,
                 'dailyMenu' => $dailyMenu,
+                'menuPrice' => $weeklyMenu->menuPrice,
                 'ogTitle' => $ogTitle,
                 'ogUrl' => 'https://borpatika1986.hu/napimenu',
                 'ogDescription' => 'Napi menü 12:00-tól',

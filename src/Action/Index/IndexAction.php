@@ -6,6 +6,7 @@ namespace App\Action\Index;
 
 use App\Action\AbstractAction;
 use App\Helper\CookieHelperInterface;
+use App\ValueObject\WeeklyMenu;
 use Psr\Http\Message\ResponseInterface;
 use Twig\Environment;
 
@@ -22,12 +23,14 @@ class IndexAction extends AbstractAction
 
     public function invoke(): ResponseInterface
     {
+        $weeklyMenu = new WeeklyMenu();
         $cookieFooterClass = !$this->cookieHelper->isApproved() ? 'd-block' : 'd-none';
         $this->response->getBody()->write($this->twig->render(
             'index.html.twig',
             [
                 'language' => $this->cookieHelper->getLanguage(),
-                'cookieFooterDisplayClass' => $cookieFooterClass
+                'cookieFooterDisplayClass' => $cookieFooterClass,
+                'menuPrice' => $weeklyMenu->menuPrice,
             ]
         ));
         return $this->response;
