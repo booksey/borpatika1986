@@ -4,6 +4,7 @@ namespace App\ValueObject;
 
 use DateInterval;
 use DateTime;
+use DateTimeZone;
 use IntlDateFormatter;
 
 final class WeeklyMenu
@@ -53,7 +54,42 @@ final class WeeklyMenu
                 'Tejszínes karfiol leves',
                 'Hawai csirkemell burgonyapürével',
                 'Borpatika kehely',
-            ]
+            ],
+            '20231002' => [
+                'Palóc leves',
+                'Juhtúrós sztrapacska',
+                'Alma fahéjas bundában',
+            ],
+            '20231003' => [
+                'Erőleves fridatto',
+                'Lecsós sertésszelet rizzsel',
+                'Meggyes piskóta',
+            ],
+            '20231004' => [
+                'Jókai bableves',
+                'Hortobágyi palacsinta',
+                'Isler',
+            ],
+            '20231005' => [
+                'Fahéjas szilvaleves',
+                'Pirított csirkemáj sós burgonyával',
+                'Kovászos uborka',
+            ],
+            '20231006' => [
+                'Májgombóc leves',
+                'Majorannás burgnyafőzelék sült kolbásszal',
+                'Túrógombóc',
+            ],
+            '20231007' => [
+                'Színes zöldségleves pirított sonka csíkokkal',
+                'Római pulykamell kukoricás rizzsel',
+                'Kevert almás',
+            ],
+            '20231008' => [
+                'Zöldborsó leves',
+                'Magyaróvári sertésszelet petrezselymes burgonyával',
+                'Lekváros palacsinta',
+            ],
         ];
         $this->menuPrice = 1890;
         if (date('Ymd') >= 20231002) {
@@ -90,7 +126,7 @@ final class WeeklyMenu
     public function getWeekDates(): array
     {
         $weekDates = [];
-        $weekStartDateTimeObject = new DateTime();
+        $weekStartDateTimeObject = new DateTime('now', new DateTimeZone('Europe/Budapest'));
         $weekStartDateTimeObject->setISODate($this->getYear(), $this->getWeekNumber());
         for ($i = 0; $i < 7; $i++) {
             $weekDates[] = clone $weekStartDateTimeObject;
@@ -101,13 +137,13 @@ final class WeeklyMenu
 
     public function getYear(): int
     {
-        $today = new DateTime();
+        $today = new DateTime('now', new DateTimeZone('Europe/Budapest'));
         return intval($today->format('Y'));
     }
 
     public function getWeekNumber(): int
     {
-        $today = new DateTime();
+        $today = new DateTime('now', new DateTimeZone('Europe/Budapest'));
         return intval($today->format('W'));
     }
 }
