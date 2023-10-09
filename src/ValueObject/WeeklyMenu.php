@@ -90,6 +90,41 @@ final class WeeklyMenu
                 'Magyaróvári sertésszelet petrezselymes burgonyával',
                 'Lekváros palacsinta',
             ],
+            '20231009' => [
+                'Tárkonyos raguleves',
+                'Krumplis tészta',
+                'Csemege uborka',
+            ],
+            '20231010' => [
+                'Sárgaborsó leves bacon csipsszel',
+                'Szezámmagos rántott csirkemell petrezselymes burgonyával',
+                'Piskóta tekercs',
+            ],
+            '20231011' => [
+                'Zöldségkrémleves',
+                'Rakott karfiol',
+                'Gesztenye golyó',
+            ],
+            '20231012' => [
+                'Pilisi sertésgulyás',
+                'Stefánia vagdalt burgonyapürével',
+                'Mákos guba',
+            ],
+            '20231013' => [
+                'Húsleves gazdagon',
+                'Szemesbab főzelék füstölt hússal',
+                'Linzer karika',
+            ],
+            '20231014' => [
+                'Póréhagyma leves',
+                'Csirkemell filé 4 sajt mártással, burgonyakrokettel',
+                'Szerelmes levél',
+            ],
+            '20231015' => [
+                'Magyaros gombaleves',
+                'Mátrai borzaska rizibizivel',
+                'Házi rétes',
+            ]
         ];
         $this->menuPrice = 1890;
         if (date('Ymd') >= 20231002) {
