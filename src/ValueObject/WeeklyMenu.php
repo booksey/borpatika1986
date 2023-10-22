@@ -160,6 +160,41 @@ final class WeeklyMenu
                 'Kijevi csirkemell rizibizivel',
                 'Túrógombóc',
             ],
+            '20231023' => [
+                'Zöldborsós szárnyasraguleves',
+                'Sajttal töltött sertésborda petrezselymes burgonyával',
+                'Tiramisu',
+            ],
+            '20231024' => [
+                'Majorannás burgonyaleves',
+                'Bácskai rizseshús',
+                'Csalamádé',
+            ],
+            '20231025' => [
+                'Pilisi sertésgulyás',
+                'Káposztás tészta',
+                'Gyümölcs saláta',
+            ],
+            '20231026' => [
+                'Francia hagymaleves',
+                'Húsos palacsinta rántva rizibizivel, tartárral',
+                'Almás rétes',
+            ],
+            '20231027' => [
+                'Tejfölös bableves csipetkével',
+                'Csibe brassói pirított burgonyával',
+                'Kevert mákos',
+            ],
+            '20231028' => [
+                'Sütőtök krémleves',
+                'Sajttal, almával töltött csirkemell burgonyapürével',
+                'Halloween gofri',
+            ],
+            '20231029' => [
+                'Májgombóc leves',
+                'Lecsós szelet rizzsel',
+                'Linzer karika',
+            ],
         ];
         $this->menuPrice = 1890;
         if (date('Ymd') >= 20231002) {
