@@ -195,7 +195,43 @@ final class WeeklyMenu
                 'Lecsós szelet rizzsel',
                 'Linzer karika',
             ],
+            '20231030' => [
+                'Babgulyás',
+                'Túrós csusza',
+                'Borpatika kehely',
+            ],
+            '20231031' => [
+                'Karfiol leves',
+                'Szepesi flekken hagymás tört burgonyával',
+                'Alma paprika',
+            ],
+            '20231101' =>  [
+                'Meleg,fahéjas almaleves',
+                'Pompadur csirkemell burgonya krokettel',
+                'Csokis pohárkrém',
+            ],
+            '20231102' => [
+                'Csurgatott tojásleves',
+                'Házi disznótoros hagymás tört burgonyával, párolt káposztával',
+                'Puding tejszínhabbal',
+            ],
+            '20231103' => [
+                'Daragaluska leves',
+                'Lencse főzelék füstölt hússal',
+                'Meggyes, mákos palacsinta',
+            ],
+            '20231104' => [
+                'Palóc leves',
+                'Tejszínes, gombás sertéstokány tésztával',
+                'Házi rétes',
+            ],
+            '20231105' => [
+                'Őszi zöldségleves',
+                'Holstein szelet petrezselymes burgonyával',
+                'Gesztenye püré',
+            ]
         ];
+
         $this->menuPrice = 1890;
         if (date('Ymd') >= 20231002) {
             $this->menuPrice = 1990;
