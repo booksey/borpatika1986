@@ -229,7 +229,43 @@ final class WeeklyMenu
                 'Őszi zöldségleves',
                 'Holstein szelet petrezselymes burgonyával',
                 'Gesztenye püré',
-            ]
+            ],
+
+            '20231106' => [
+                'Erdélyi húsleves',
+                'Bolognai spagetti',
+                'Gyümölcs saláta',
+            ],
+            '20231107' => [
+                'Zöldborsó leves vajas galuskával',
+                'Hússal töltött palacsinta rántva rizzsel, tartárral',
+                'Isler',
+            ],
+            '20231108' => [
+                'Kolbászos burgonyaleves',
+                'Székely káposzta',
+                'Kókusz golyó',
+            ],
+            '20231109' => [
+                'Erőleves fridatto',
+                'Paradicsomos húsgombóc sós burgonyával',
+                'Meggyes piskóta',
+            ],
+            '20231110' => [
+                'Lebbencs leves',
+                'Tejfölös zöldbabfőzelék sertés pörkölttel',
+                'Piskóta tekercs',
+            ],
+            '20231111' => [
+                'Libaleves lúdgége tésztával',
+                'Ludas kása',
+                'Napközis piskóta',
+            ],
+            '20231112' => [
+                'Zellerkrémleves',
+                'Sajttal töltött csirkemell petrezselymes burgonyával',
+                'Káposzta saláta',
+            ],
         ];
 
         $this->menuPrice = 1890;
