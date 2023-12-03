@@ -370,7 +370,42 @@ final class WeeklyMenu
                 'Húsleves cérnametélttel',
                 'Sajttal, baconnal töltött sertésborda petrezselymes burgonyával',
                 'Gesztenyepüré',
-            ]
+            ],
+            '20231204' => [
+                'Téli zöldségleves',
+                'Stefánia vagdalt burgonyapürével',
+                'Káposzta saláta',
+            ],
+            '20231205' => [
+                'Palóc leves',
+                'Túrós csusza tepertővel',
+                'Puncs szelet',
+            ],
+            '20231206' => [
+                'Tejfölös zöldbableves',
+                'Lecsós csirkemáj sós burgonyával',
+                'Citromos palacsinta',
+            ],
+            '20231207' => [
+                'Orja leves',
+                'Sült csirkecomb petrezselymes burgonyával',
+                'Kevert mákos',
+            ],
+            '20231208' => [
+                'Karfiol krémleves',
+                'Bácskai rizseshús',
+                'Piskóta tekercs',
+            ],
+            '20231209' => [
+                'Zöldborsó leves vajas galuskával',
+                'Gombával töltött sertésszelet rizzsel',
+                'Mogyorókrémes gofri',
+            ],
+            '20231210' => [
+                'Tejfölös bableves csipetkével',
+                'Kukoricás, sonkás csirkeragu penne tésztával',
+                'Napközis piskóta',
+            ],
         ];
 
         $this->menuPrice = 1890;
