@@ -406,6 +406,41 @@ final class WeeklyMenu
                 'Kukoricás, sonkás csirkeragu penne tésztával',
                 'Napközis piskóta',
             ],
+            '20231211' => [
+                'Orja leves',
+                'Szárnyasmáj rizottó',
+                'Rakott palacsinta',
+            ],
+            '20231212' => [
+                'Zöldségkrémleves',
+                'Párizsi csirkemell csíkok gombás rizzsel',
+                'Gesztenye golyó',
+            ],
+            '20231213' => [
+                'Kertész leves',
+                'Szepesi flekken hagymás tört burgonyával',
+                'Túrógombóc',
+            ],
+            '20231214' => [
+                'Daragaluska leves',
+                'Tarhonyás hús',
+                'Csemege uborka',
+            ],
+            '20231215' => [
+                'Gulyás leves',
+                'Káposztás tészta',
+                'Gyümölcs saláta',
+            ],
+            '20231216' => [
+                'Meleg, fahéjas szilvaleves',
+                'Bankár csirkemell petrezselymes burgonyával',
+                'Kókusz kocka',
+            ],
+            '20231217' => [
+                'Magyaros burgonyaleves kolbásszal',
+                'Fetával, olivával töltött sertésszelet rizibizivel',
+                'Kókusz golyó',
+            ],
         ];
 
         $this->menuPrice = 1890;
