@@ -441,6 +441,39 @@ final class WeeklyMenu
                 'Fetával, olivával töltött sertésszelet rizibizivel',
                 'Kókusz golyó',
             ],
+            '20231218' => [
+                'Magyaros gombaleves',
+                'Csirkepörkölt galuskával',
+                'Savanyúság mix',
+            ],
+            '20231219' => [
+                'Orja leves',
+                'Zöldbab főzelék vagdalttal',
+                'Puncs szelet',
+            ],
+            '20231220' => [
+                'Tárkonyos raguleves',
+                'Sajtos, tejfölös spagetti szalonna pörccel',
+                'Borpatika kehely',
+            ],
+            '20231221' => [
+                'Tejszínes karfiol leves',
+                'Rántott sajt kukoricás rizzsel, tartárral',
+                'Lekváros palacsinta',
+            ],
+            '20231222' => [
+                'Daragaluska leves',
+                'Csülök Pékné módra kocka burgonyával',
+                'Alma paprika',
+            ],
+            '20231223' => [
+                'Olasz paradicsom leves',
+                'Töltött káposzta',
+                'Beigli',
+            ],
+            '20231224' => [
+                'A megrendelt ételek elvitele 12 óráig'
+            ],
         ];
 
         $this->menuPrice = 1890;
