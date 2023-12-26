@@ -474,6 +474,31 @@ final class WeeklyMenu
             '20231224' => [
                 'A megrendelt ételek elvitele 12 óráig'
             ],
+            '20231227' => [
+                'Babgulyás',
+                'Rántott cukkini rizzsel, tartárral',
+                'Fahéjas palacsinta'
+            ],
+            '20231228' => [
+                'Zöldborsó leves',
+                'Milánói sertésborda',
+                'Alma fahéjas bundában',
+            ],
+            '20231229' => [
+                'Gulyás leves',
+                'Juhtúrós sztrapacska',
+                'Gyümölcsös vanília puding',
+            ],
+            '20231230' => [
+                'Tejfölös burgonyaleves virslivel',
+                'Bakonyi csirkemell tokány szarvacska tésztával',
+                'Piskóta tekercs',
+            ],
+            '20231231' => [
+                'Májgombóc leves',
+                'Malac sült párolt káposztával, tepsiben sült burgonyával',
+                'Gesztenye püré',
+            ],
         ];
 
         $this->menuPrice = 1890;
