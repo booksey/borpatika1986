@@ -499,6 +499,76 @@ final class WeeklyMenu
                 'Malac sült párolt káposztával, tepsiben sült burgonyával',
                 'Gesztenye püré',
             ],
+            '20240101' => [
+                'Zöldség leves',
+                'Lencsefőzelék füstölt hússal',
+                'Tiramisu',
+            ],
+            '20240102' => [
+                'Húsleves gazdagon',
+                'Libazúza pörkölt galuskával',
+                'Csemege uborka',
+            ],
+            '20240103' => [
+                'Tejfölös zöldbableves',
+                'Lecsós csirkemáj sós burgonyával',
+                'Kókusz golyó',
+            ],
+            '20240104' => [
+                'Zellerkrémleves',
+                'Rántott csirkemell rizibizivel',
+                'Túrógombóc',
+            ],
+            '20240105' => [
+                'Palóc leves',
+                'Bolognai spagetti',
+                'Gyümölcs saláta',
+            ],
+            '20240106' => [
+                'Daragaluska leves',
+                'Rántott gomba rizzsel, tartárral',
+                'Csokis palacsinta',
+            ],
+            '20240107' => [
+                'Magyaros burgonyaleves kolbásszal',
+                'Mustáros flekken hagymás tört burgonyával',
+                'Savanyúság mix',
+            ],
+            '20240108' => [
+                'Sajtkrémleves',
+                'Paradicsomos húsgombóc sós burgonyával',
+                'Piskóta tekercs',
+            ],
+            '20240109' => [
+                'Kertész leves',
+                'Rántott sertésszelet majonézes burgonya salátával',
+                'Tiramisu',
+            ],
+            '20240110' => [
+                'Zöldborsós szárnyasraguleves',
+                'Túrós csusza',
+                'Borpatika kehely',
+            ],
+            '20240111' => [
+                'Húsleves csiga tésztával',
+                'Székely káposzta',
+                'Lekváros palacsinta',
+            ],
+            '20240112' => [
+                'Magyaros gomba leves',
+                'Zöldborsó főzelék sült virslivel',
+                'Kókusz kocka',
+            ],
+            '20240113' => [
+                'Karfiol leves',
+                'Sertéspörkölt galuskával',
+                'Cékla saláta',
+            ],
+            '20240114' => [
+                'Brokkoli krémleves',
+                'Kijevi csirkemell kukoricás rizzsel',
+                'Almás rétes',
+            ],
         ];
 
         $this->menuPrice = 1890;
