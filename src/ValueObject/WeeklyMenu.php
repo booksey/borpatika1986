@@ -569,6 +569,41 @@ final class WeeklyMenu
                 'Kijevi csirkemell kukoricás rizzsel',
                 'Almás rétes',
             ],
+            '20240115' => [
+                'Orja leves',
+                'Kolbászos pásztortarhonya',
+                'Csemege uborka',
+            ],
+            '20240116' => [
+                'Gulyás leves',
+                'Mákos metélt',
+                'Gesztenye püré',
+            ],
+            '20240117' => [
+                'Újházy tyúkhúsleves',
+                'Rakott káposzta',
+                'Fahéjas palacsinta',
+            ],
+            '20240118' => [
+                'Olasz paradicsomleves',
+                'Rántott karfiol rizzsel, tartárral',
+                'Napközis piskóta',
+            ],
+            '20240119' => [
+                'Színes zöldségleves bacon csipsszel',
+                'Kolbászos paprikás burgonya',
+                'Puding tejszínhabbal',
+            ],
+            '20240120' => [
+                'Erőleves fridatto',
+                'Vadas csirketokány spagettivel',
+                'Meggyes piskóta',
+            ],
+            '20240121' => [
+                'Tejfölös bableves csipetkével',
+                'Sajttal töltött sertésborda petrezselymes burgonyával',
+                'Rakott mákos süti',
+            ]
         ];
 
         $this->menuPrice = 1890;
