@@ -603,7 +603,42 @@ final class WeeklyMenu
                 'Tejfölös bableves csipetkével',
                 'Sajttal töltött sertésborda petrezselymes burgonyával',
                 'Rakott mákos süti',
-            ]
+            ],
+            '20240122' => [
+                'Tárkonyos raguleves',
+                'Tejfölös burgonyafőzelék sült kolbásszal',
+                'Kókusz kocka',
+            ],
+            '20240123' => [
+                'Zöldborsó leves',
+                'Brassói apró pecsenye pirított burgonyával',
+                'Alma paprika',
+            ],
+            '20240124' => [
+                'Zellerkrémleves',
+                'Sült csirkecomb petrezselymes burgonyával',
+                'Túrós palacsinta',
+            ],
+            '20240125' => [
+                'Csülkös bableves',
+                'Kolbászos rakott burgonya',
+                'Gesztenye golyó',
+            ],
+            '20240126' => [
+                'Pilisi sertésgulyás',
+                'Túrós csusza',
+                'Borpatika kehely',
+            ],
+            '20240127' => [
+                'Magyaros karfiol leves',
+                'Diós jércemell szamóca mártással, krokettel',
+                'Almás rétes',
+            ],
+            '20240128' => [
+                'Orja leves',
+                'Sertés pörkölt galuskával',
+                'Cékla saláta',
+            ],
         ];
 
         $this->menuPrice = 1890;
