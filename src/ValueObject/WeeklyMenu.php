@@ -639,6 +639,112 @@ final class WeeklyMenu
                 'Sertés pörkölt galuskával',
                 'Cékla saláta',
             ],
+            '20240129' => [
+                'Kertész leves',
+                'Kijevi csirkemell rizibizivel',
+                'Lekváros palacsinta',
+            ],
+            '20240130' => [
+                'Kolbászos tarhonya leves',
+                'Csikós tokány galuskával',
+                'Madár tej',
+            ],
+            '20240131' => [
+                'Meleg, fahéjas gyümölcsleves',
+                'Rántott sajt rizzsel, tartárral',
+                'Túrógombóc',
+            ],
+            '20240201' => [
+                'Újházy tyúkhúsleves',
+                'Zöldborsó főzelék sült virslivel',
+                'Hideg gyümölcsrizs',
+            ],
+            '20240202' => [
+                'Palóc leves',
+                'Sajtos, tejfölös spagetti szalonna pörccel',
+                'Gesztenye püré',
+            ],
+            '20240203' => [
+                'Olasz paradicsom leves',
+                'Bankár csirkemell petrezselymes burgonyával',
+                'Káposzta saláta',
+            ],
+            '20240204' => [
+                'Citromos zöldbableves virsli karikákkal',
+                'Lyoni sertés tarja burgonya pürével',
+                'Gesztenye püré',
+
+            ],
+            '20240205' => [
+                'Májgombóc leves',
+                'Székely káposzta',
+                'Nutellás gofri'
+            ],
+            '20240206' => [
+                'Zöldborsó leves vajas galuskával',
+                'Rántott gomba rizzsel, tartárral',
+                'Túrós palacsinta',
+            ],
+            '20240207' => [
+                'Színes zöldségleves pirított sonka csíkokkal',
+                'Szemes babfőzelék füstölt hússal',
+                'Püspök kenyér',
+            ],
+            '20240208' => [
+                'Burgonya krémleves bacon csipsszel',
+                'Bácskai rizseshús',
+                'Kovászos uborka',
+            ],
+            '20240209' => [
+                'Zöldborsós csirkeragu leves',
+                'Spagetti carbonara',
+                'Puding tejszínhabbal',
+            ],
+            '20240210' => [
+                'Orja leves',
+                'Bakonyi sertésszelet galuskával',
+                'Piskóta tekercs',
+            ],
+            '20240211' => [
+                'Póréhagyma leves',
+                'Rántott csirkemell kukoricás rizzsel',
+                'Tiramisu',
+            ],
+            '20240212' => [
+                'Tejfölös bableves csipetkével',
+                'Rántott csirkemáj rizibizivel',
+                'Csalamádé',
+            ],
+            '20240213' => [
+                'Tejszínes gombaleves',
+                'Vasi pecsenye hagymás tört burgonyával',
+                'Kókusz golyó',
+            ],
+            '20240214' => [
+                'Zellerkrémleves',
+                'Sajttal, almával töltött csirkemell sonkás rizzsel',
+                'Gesztenye szív',
+            ],
+            '20240215' => [
+                'Daragaluska leves',
+                'Tejfölös zöldbabfőzelék sertés pörkölttel',
+                'Lekváros palacsinta',
+            ],
+            '20240216' => [
+                'Gulyás leves',
+                'Túrós csusza',
+                'Gyümölcs saláta',
+            ],
+            '20240217' => [
+                'Frankfurti leves',
+                'Brassói pirított burgonyával',
+                'Savanyúság mix',
+            ],
+            '20240211' => [
+                'Majorannás burgonyaleves',
+                'Mézes, mustáros csirkecomb burgonyapürével',
+                'Házi rétes',
+            ],
         ];
 
         $this->menuPrice = 1890;
