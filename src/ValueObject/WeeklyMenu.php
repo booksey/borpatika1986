@@ -740,7 +740,7 @@ final class WeeklyMenu
                 'Brassói pirított burgonyával',
                 'Savanyúság mix',
             ],
-            '20240211' => [
+            '20240218' => [
                 'Majorannás burgonyaleves',
                 'Mézes, mustáros csirkecomb burgonyapürével',
                 'Házi rétes',
