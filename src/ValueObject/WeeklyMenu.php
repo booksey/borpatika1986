@@ -745,6 +745,41 @@ final class WeeklyMenu
                 'Mézes, mustáros csirkecomb burgonyapürével',
                 'Házi rétes',
             ],
+            '20240219' => [
+                'Bakonyi betyárleves',
+                'Krumplis tészta',
+                'Csemege uborka',
+            ],
+            '20240220' => [
+                'Brokkoli krémleves',
+                'Gombával töltött sertésborda petrezselymes burgonyával',
+                'Borpatika kehely',
+            ],
+            '20240221' => [
+                'Húsleves csigatésztával',
+                'Rakott káposzta',
+                'Napközis piskóta',
+            ],
+            '20240222' => [
+                'Babgulyás',
+                'Gombapaprikás galuskával',
+                'Rakott palacsinta',
+            ],
+            '20240223' => [
+                'Zöldséges pulykanyak leves',
+                'Szárnyasmáj rizottó',
+                'Házi rétes',
+            ],
+            '20240224' => [
+                'Kertész leves',
+                'Milánói sertésborda',
+                'Kevert mákos',
+            ],
+            '20240225' => [
+                'Magyaros karfiol leves',
+                'Csirkemell filé 4 sajt mártással, krokettel',
+                'Pohárkrém',
+            ],
         ];
 
         $this->menuPrice = 1890;
