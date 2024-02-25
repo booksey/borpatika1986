@@ -780,6 +780,41 @@ final class WeeklyMenu
                 'Csirkemell filé 4 sajt mártással, krokettel',
                 'Pohárkrém',
             ],
+            '20240226' => [
+                'Palóc leves',
+                'Káposztás tészta',
+                'Gyümölcssaláta',
+            ],
+            '20240227' => [
+                'Orja leves',
+                'Kolbászos pásztor tarhonya',
+                'Kovászos uborka',
+            ],
+            '20240228' => [
+                'Tejfölös bableves csipetkével',
+                'Mexikói aprópecsenye szarvacska tésztával',
+                'Keksztekercs',
+            ],
+            '20240229' => [
+                'Olasz paradicsom leves',
+                'Sajttal, brokkolival töltött csirkemell rántva, párolt rizzsel',
+                'Püspök kenyér',
+            ],
+            '20240301' => [
+                'Májgombóc leves',
+                'Kolbászos rakott burgonya',
+                'Meggyes-mákos palacsinta',
+            ],
+            '20240302' => [
+                'Tárkonyos lencseleves virslivel',
+                'Párizsi csirkemell csíkok kukoricás rizzsel',
+                'Tiramisu',
+            ],
+            '20240303' => [
+                'Zellerkrémleves',
+                'Sertés szelet Jóasszony módra petrezselymes burgonyával',
+                'Puncs szelet',
+            ],
         ];
 
         $this->menuPrice = 1890;
