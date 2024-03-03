@@ -815,6 +815,41 @@ final class WeeklyMenu
                 'Sertés szelet Jóasszony módra petrezselymes burgonyával',
                 'Puncs szelet',
             ],
+            '20240304' => [
+                'Zöldség leves',
+                'Tarkabab főzelék füstölt hússal',
+                'Kókusz kocka',
+            ],
+            '20240305' => [
+                'Erőleves fridatto',
+                'Bácskai rizseshús',
+                'Csalamádé',
+            ],
+            '20240306' => [
+                'Francia hagymaleves',
+                'Rántott cukkini rizzsel, tartárral',
+                'Gesztenye püré',
+            ],
+            '20240307' => [
+                'Zöldborsó leves vajas galuskával',
+                'Cigány pecsenye hagymás tört burgonyával',
+                'Lekváros palacsinta',
+            ],
+            '20240308' => [
+                'Görög gyümölcsleves',
+                'Hawaii csirkemell burgonyapürével',
+                'Piskótatekercs',
+            ],
+            '20240309' => [
+                'Daragaluska leves',
+                'Székely káposzta',
+                'Túró gombóc',
+            ],
+            '20240310' => [
+                'Magyaros gombaleves',
+                'Rántott sertésborda petrezselymes burgonyával',
+                'Nutellás gofri',
+            ],
         ];
 
         $this->menuPrice = 1890;
