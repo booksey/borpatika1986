@@ -885,6 +885,41 @@ final class WeeklyMenu
                 'Patikus szelet rizibizivel',
                 'Linzer karika',
             ],
+            '20240318' => [
+                'Pilisi sertésgulyás',
+                'Káposztás tészta',
+                'Madártej',
+            ],
+            '20240319' => [
+                'Kolbászos burgonya leves',
+                'Zöldborsó főzelék sült virslivel',
+                'Kevert almás',
+            ],
+            '20240320' => [
+                'Tejfölös bableves csipetkével',
+                'Rántott sajt rizzsel, tartárral',
+                'Piskóta tekercs',
+            ],
+            '20240321' => [
+                'Zöldborsós csirkeragu leves',
+                'Bácskai rizseshús',
+                'Francia túrós palacsinta',
+            ],
+            '20240322' => [
+                'Májgombóc leves',
+                'Kolbászos paprikás burgonya',
+                'Csemege uborka',
+            ],
+            '20240323' => [
+                'Csülkös bableves',
+                'Lecsós csirkemáj sós burgonyával',
+                'Kókusz golyó',
+            ],
+            '20240324' => [
+                'Francia hagymaleves',
+                'Sajttal, almával töltött csirkemell rizibizivel',
+                'Vaníliás gofri',
+            ],
         ];
 
         $this->menuPrice = 1890;
