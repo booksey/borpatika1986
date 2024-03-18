@@ -4,6 +4,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
+                {% if language == 'hu' %}
+                  <h2>Kedves Érdeklődő!</h2>
+                  <h4>Beugrós konyhai kisegítő, takarító
+                    munkatársat keresünk heti 2 alkalommal
+                    16-24 óráig, egyszerűsített alkalmi
+                    bejelentővel. Díjazás napi kifizetéssel:
+                  </h4>
+                  <h3 class='text-center'>16.000 Ft/alkalom</h3><br/>
+                  <h4>
+                    Érdeklődni személyesen az üzletben, illetve telefonszámon:<br/>
+                    Bartusné Toppler Mónika<br/>+36309771158
+                  </h4><br/>
+                {% endif %}
                     <h1 class="text-center mb-5">{{ language == 'gb' ? 'We welcome our future guests!' : 'Üdvözöljük leendő vendégeinket!'}}
                     </h1>
                 </div>
