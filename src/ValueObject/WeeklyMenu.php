@@ -920,6 +920,41 @@ final class WeeklyMenu
                 'Sajttal, almával töltött csirkemell rizibizivel',
                 'Vaníliás gofri',
             ],
+            '20240325' => [
+                'Tárkonyos vadragu leves',
+                'Krumplis tészta',
+                'Kovászos uborka',
+            ],
+            '20240326' => [
+                'Paradicsom leves betű tésztával',
+                'Rakott kel',
+                'Fahéjas palacsinta',
+            ],
+            '20240327' => [
+                'Zellerkrémleves',
+                'Bakonyi sertésszelet galuskával',
+                'Gyümölcs saláta',
+            ],
+            '20240328' => [
+                'Tejfölös burgonyaleves virslivel',
+                'Csibe brassói pirított burgonyával',
+                'Csalamádé'
+            ],
+            '20240329' => [
+                'Orja leves',
+                'Tejfölös zöldbabfőzelék vagdalttal',
+                'Tiramisu',
+            ],
+            '20240330' => [
+                'Zöldség leves',
+                'Rántott cukkini rizzsel, tartárral',
+                'Túrógombóc',
+            ],
+            '20240331' => [
+                'Erőleves fridatto',
+                'Húsvéti sonkatál',
+                'Borpatika kehely',
+            ],
         ];
 
         $this->menuPrice = 1890;
