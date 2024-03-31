@@ -955,6 +955,41 @@ final class WeeklyMenu
                 'Húsvéti sonkatál',
                 'Borpatika kehely',
             ],
+            '20240101' => [
+                'Sajtkrémleves',
+                'Kijevi csirkemell kukoricás rizzsel',
+                'Somlói galuska',
+            ],
+            '20240402' => [
+                'Palóc leves',
+                'Carbonara spagetti',
+                'Alma fahéjas bundában',
+            ],
+            '20240403' => [
+                'Májgombóc leves',
+                'Csülök Pékné módra pirított burgonyával',
+                'Savanyúság mix',
+            ],
+            '20240404' => [
+                'Zöldségleves vajas galuskával',
+                'Lencse főzelék füstölt hússal',
+                'Gesztenye golyó',
+            ],
+            '20240405' => [
+                'Pilisi sertésgulyás',
+                'Csőben sült karfiol sajt mártással',
+                'Túrós palacsinta',
+            ],
+            '20240406' => [
+                'Magyaros gombaleves',
+                'Sokmagvas csirkemell petrezselymes burgonyával',
+                'Meggyes piskóta',
+            ],
+            '20240407' => [
+                'Frankfurti leves',
+                'Debreceni sertéstokány galuskával',
+                'Napközis piskóta',
+            ],
         ];
 
         $this->menuPrice = 1890;
