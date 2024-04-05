@@ -1,0 +1,13 @@
+services:
+    php7.4-apache:
+        build:
+            context: .
+        ports:
+            - 9000:80
+        develop:
+            watch:
+                - action: sync
+                  path: ./
+                  target: /var/www/html
+                  ignore:
+                      - node_modules/
