@@ -990,6 +990,41 @@ final class WeeklyMenu
                 'Debreceni sertéstokány galuskával',
                 'Napközis piskóta',
             ],
+            '20240408' => [
+                'Húsleves csiga tésztával',
+                'Sonkás kocka',
+                'Gyümölcs saláta',
+            ],
+            '20240409' => [
+                'Zöldborsó leves',
+                'Stefánia vagdalt burgonyapürével',
+                'Kovászos uborka',
+            ],
+            '20240410' => [
+                'Sárgaborsó krémleves bacon csipsszel',
+                'Rántott csirkemáj burgonyapürével',
+                'Borpatika kehely',
+            ],
+            '20240411' => [
+                'Karfiol leves',
+                'Alföldi zúzapörkölt tésztával',
+                'Linzer karika',
+            ],
+            '20240412' => [
+                'Lebbencs leves kolbásszal',
+                'Rántott gomba rizzsel, tartárral',
+                'Kakaós palacsinta',
+            ],
+            '20240413' => [
+                'Görög gyümölcsleves',
+                'Vasi pecsenye hagymás tört burgonyával',
+                'Mákos guba',
+            ],
+            '20240414' => [
+                'Jókai bableves',
+                'Hortobágyi palacsinta',
+                'Puncs szelet',
+            ],
         ];
 
         $this->menuPrice = 1890;
