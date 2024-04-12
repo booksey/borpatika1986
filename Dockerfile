@@ -15,11 +15,11 @@ RUN apt-get update && \
 COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
 
 
-RUN useradd -ms /bin/sh -u 1001 bakosip
-USER bakosip
+RUN useradd -ms /bin/sh -u 1001 booksey
+USER booksey
 
 # Copy your PHP application code into the container
-COPY --chown=bakosip:bakosip . .
+COPY --chown=booksey:booksey . .
 COPY .env.dist .env
 
 RUN composer install
