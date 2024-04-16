@@ -1025,6 +1025,41 @@ final class WeeklyMenu
                 'Hortobágyi palacsinta',
                 'Puncs szelet',
             ],
+            '20240415' => [
+                'Májgombóc leves',
+                'Bácskai rizseshús',
+                'Churros',
+            ],
+            '20240416' => [
+                'Zöldborsó leves',
+                'Tojásos galuska',
+                'Fejes saláta',
+            ],
+            '20240417' => [
+                'Tejfölös bableves csipetkével',
+                'Sült csirkecomb steak burgonyával',
+                'Isler',
+            ],
+            '20240418' => [
+                'Tárkonyos raguleves',
+                'Rántott karfiol rizzsel, tartárral',
+                'Madártej',
+            ],
+            '20240419' => [
+                'Gulyás leves',
+                'Zöldborsó főzelék sült virslivel',
+                'Kókusz golyó',
+            ],
+            '20240420' => [
+                'Erőleves fridatto',
+                'Lecsós szelet rizzsel',
+                'Gesztenyepüré',
+            ],
+            '20240421' => [
+                'Brokkoli krémleves',
+                'Csirkecsíkok vadasan spagettivel',
+                'Lekváros palacsinta',
+            ],
         ];
 
         $this->menuPrice = 1890;
