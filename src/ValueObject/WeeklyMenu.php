@@ -1060,6 +1060,41 @@ final class WeeklyMenu
                 'Csirkecsíkok vadasan spagettivel',
                 'Lekváros palacsinta',
             ],
+            '20240422' => [
+                'Zöldség leves',
+                'Paradicsomos húsgombóc sós burgonyával',
+                'Túrós rétes',
+            ],
+            '20240423' => [
+                'Jókai bableves',
+                'Sajtos, tejfölös spagetti szalonna pörccel',
+                'Gyümölcs saláta',
+            ],
+            '20240424' => [
+                'Karfiol leves',
+                'Csirkepörkölt szarvacska tésztával',
+                'Puding tejszínhabbal',
+            ],
+            '20240425' => [
+                'Paradicsom leves betű tésztával',
+                'Rakott kel',
+                'Kevert mákos',
+            ],
+            '20240426' => [
+                'Daragaluska leves',
+                'Tejfölös zöldbabfőzelék vagdalttal',
+                'Szerelmes levél',
+            ],
+            '20240420' => [
+                'Francia hagymaleves',
+                'Rántott csirkecomb filé petrezselymes burgonyával',
+                'Savanyúság mix',
+            ],
+            '20240421' => [
+                'Majorannás burgonyaleves virsli karikákkal',
+                'Töltött dagadó hagymás tört burgonyával',
+                'Piskótatekercs',
+            ],
         ];
 
         $this->menuPrice = 1890;
