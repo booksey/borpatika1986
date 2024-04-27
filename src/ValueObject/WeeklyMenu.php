@@ -1085,12 +1085,12 @@ final class WeeklyMenu
                 'Tejfölös zöldbabfőzelék vagdalttal',
                 'Szerelmes levél',
             ],
-            '20240420' => [
+            '20240427' => [
                 'Francia hagymaleves',
                 'Rántott csirkecomb filé petrezselymes burgonyával',
                 'Savanyúság mix',
             ],
-            '20240421' => [
+            '20240428' => [
                 'Majorannás burgonyaleves virsli karikákkal',
                 'Töltött dagadó hagymás tört burgonyával',
                 'Piskótatekercs',
