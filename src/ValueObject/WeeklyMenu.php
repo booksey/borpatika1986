@@ -1270,6 +1270,76 @@ final class WeeklyMenu
                 'Pompadur csirkemell csíkok krokettel',
                 'Gesztenye püré',
             ],
+            '20240603' => [
+                'Kolbászos bableves',
+                'Káposztás tészta',
+                'Madártej',
+            ],
+            '20240604' => [
+                'Tárkonyos burgonyaleves',
+                'Roston sült csirkemell kevert salátával',
+                'Puncs szelet',
+            ],
+            '20240605' => [
+                'Citromos zöldbableves virsli karikákkal',
+                'Rántott sajt rizzsel, tartárral',
+                'Churros',
+            ],
+            '20240606' => [
+                'Magyaros gomba leves',
+                'Tarhonyás hús',
+                'Csemege uborka',
+            ],
+            '20240607' => [
+                'Erdélyi húsleves',
+                'Zöldborsó főzelék sült virslivel',
+                'Mogyorós gombóc',
+            ],
+            '20240608' => [
+                'Zöldséges pulykanyak leves',
+                'Húsos palacsinta rántva rizzsel, tartárral',
+                'Mákos guba vanília öntettel',
+            ],
+            '20240609' => [
+                'Zellerkrémleves',
+                'Bakonyi sertésborda galuskával',
+                'Csokis palacsinta',
+            ],
+            '20240610' => [
+                'Jókai bableves',
+                'Tojásos galuska',
+                'Fejes saláta',
+            ],
+            '20240611' => [
+                'Rozmaringos csirkeragu leves',
+                'Bolognai spagetti',
+                'Meggyes piskóta',
+            ],
+            '20240612' => [
+                'Májgombóc leves',
+                'Zöldbabfőzelék sertés pörkölttel',
+                'Isler',
+            ],
+            '20240613' => [
+                'Fahéjas szilvaleves',
+                'Rántott csirkemáj majonézes burgonya salátával',
+                'Napközis piskóta',
+            ],
+            '20240614' => [
+                'Erőleves fridatto',
+                'Lecsós szelet rizzsel',
+                'Linzer karika',
+            ],
+            '20240615' => [
+                'Sajtkrémleves',
+                'Párizsi bundás csirkemell csíkok kukoricás rizzsel',
+                'Túrós palacsinta',
+            ],
+            '20240616' => [
+                'Zöldséges grízgaluska leves',
+                'Magyaróvári sertésborda hagymás tört burgonyával',
+                'Káposzta saláta',
+            ],
         ];
 
         $this->menuPrice = 1890;
