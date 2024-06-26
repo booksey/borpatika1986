@@ -1340,6 +1340,76 @@ final class WeeklyMenu
                 'Magyaróvári sertésborda hagymás tört burgonyával',
                 'Káposzta saláta',
             ],
+            '20240617' => [
+                'Póréhagyma leves',
+                'Natúr sertésszelet párolt zöldségekkel',
+                'Lekváros palacsinta',
+            ],
+            '20240618' => [
+                'Tárkonyos lencseleves virslivel',
+                'Tejfölös burgonyafőzelék sült kolbásszal',
+                'Puncsszelet',
+            ],
+            '20240619' => [
+                'Görög gyümölcsleves',
+                'Rántott csirkemell vajas, petrezselymes burgonyával',
+                'Uborka saláta'
+            ],
+            '20240620' => [
+                'Palóc leves',
+                'Káposztás tészta',
+                'Borpatika kehely',
+            ],
+            '20240621' => [
+                'Orja leves',
+                'Kolbászos paprikás burgonya',
+                'Csemege uborka',
+            ],
+            '20240622' => [
+                'Olasz paradicsom leves',
+                'Hentes szelet pirított burgonyával',
+                'Kevert mákos szamóca öntettel',
+            ],
+            '20240623' => [
+                'Tejfölös bableves csipetkével',
+                'Rántott cukkini rizzsel, tartárral',
+                'Piskóta tekercs',
+            ],
+            '20240624' => [
+                'Pilisi sertésgulyás',
+                'Sajtos, tejfölös spagetti szalonna pörccel',
+                'Peach melba',
+            ],
+            '20240625' => [
+                'Daragaluska leves',
+                'Vadas csirkemell krokettel',
+                'Gesztenye golyó',
+            ],
+            '20240626' => [
+                'Zöldség leves',
+                'Rakott karfiol',
+                'Vaníliás gofri',
+            ],
+            '20240627' => [
+                'Tárkonyos csirkeragu leves',
+                'Gombapaprikás galuskával',
+                'Túrós palacsinta',
+            ],
+            '20240628' => [
+                'Zöldborsó leves',
+                'Lyoni sertés tarja burgonyapürével',
+                'Házi rétes',
+            ],
+            '20240629' => [
+                'Burgonyakrémleves virslivel',
+                'Sertéspörkölt szarvacska tésztával',
+                'Csalamádé',
+            ],
+            '20240630' => [
+                'Tejfölös zöldbableves',
+                'Sajttal töltött csirkemell zöldséges rizzsel',
+                'Tiramisu',
+            ],
         ];
 
         $this->menuPrice = 1890;
