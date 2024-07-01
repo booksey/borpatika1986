@@ -1410,6 +1410,41 @@ final class WeeklyMenu
                 'Sajttal töltött csirkemell zöldséges rizzsel',
                 'Tiramisu',
             ],
+            '20240701' => [
+                'Húsleves finommmetélttel',
+                'Hortobágyi palacsinta',
+                'Borpatika kehely',
+            ],
+            '20240702' => [
+                'Zellerkrémleves',
+                'Tarhonyás hús',
+                'Kovászos uborka',
+            ],
+            '20240703' => [
+                'Májgombóc leves',
+                'Húsos lasagne sajtmártással',
+                'Alma fahéjas bundában',
+            ],
+            '20240704' => [
+                'Alföldi tarhonya leves kolbásszal',
+                'Csibe brassói kocka burgonyával',
+                'Káposzta saláta',
+            ],
+            '20240705' => [
+                'Magyaros gombaleves',
+                'Pirított csirkemáj sós burgonyával',
+                'Linzer karika',
+            ],
+            '20240706' => [
+                'Karfiol krémleves',
+                'Bundás csirkemell fűszeres tejföllel, kukoricás rizzsel',
+                'Csokis gofri',
+            ],
+            '20240707' => [
+                'Tojás leves',
+                'Holstein szelet petrezselymes burgonyával',
+                'Boszorkány hab',
+            ],
         ];
 
         $this->menuPrice = 1890;
