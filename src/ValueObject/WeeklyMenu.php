@@ -1445,6 +1445,41 @@ final class WeeklyMenu
                 'Holstein szelet petrezselymes burgonyával',
                 'Boszorkány hab',
             ],
+            '20240708' => [
+                'Zöldségleves',
+                'Pompadur csirkemell krokettel',
+                'Gyümölcsös vanília puding',
+            ],
+            '20240709' => [
+                'Jókai bableves',
+                'Krumplis tészta',
+                'Csemege uborka',
+            ],
+            '20240710' => [
+                'Orja leves',
+                'Zöldborsó főzelék tükör tojással',
+                'Kókusz kocka',
+            ],
+            '20240711' => [
+                'Olasz paradicsomleves',
+                'Párizsi csirkemell csíkok petrezselymes burgonyával',
+                'Tiramisu',
+            ],
+            '20240712' => [
+                'Daragaluska leves',
+                'Töltött paprika sós burgonyával',
+                'Fahéjas palacsinta',
+            ],
+            '20240713' => [
+                'Hideg gyümölcsleves',
+                'Gombával töltött sertésborda rizibizivel',
+                'Kókusz golyó',
+            ],
+            '20240714' => [
+                'Újházy tyúkhúsleves',
+                'Rántott karfiol rizzsel, tartárral',
+                'Túrógombóc',
+            ],
         ];
 
         $this->menuPrice = 1890;
