@@ -1480,6 +1480,41 @@ final class WeeklyMenu
                 'Rántott karfiol rizzsel, tartárral',
                 'Túrógombóc',
             ],
+            '20240715' => [
+                'Pilisi sertésgulyás',
+                'Káposztás tészta',
+                'Peach melba',
+            ],
+            '20240716' => [
+                'Erőleves fridatto',
+                'Tejfölös zöldbabfőzelék sertés pörkölttel',
+                'Piskóta tekercs',
+            ],
+            '20240717' => [
+                'Zöldborsó leves',
+                'Rántott sertésszelet petrezselymes burgonyával',
+                'Uborka saláta',
+            ],
+            '20241718' => [
+                'Tejfölös bableves',
+                'Kapros, gombás csirkeragu rizzsel',
+                'Pohárkrém',
+            ],
+            '20240719' => [
+                'Frankfurti leves',
+                'Kolbászos rakott burgonya',
+                'Túrós palacsinta',
+            ],
+            '20240720' => [
+                'Francia hagymaleves',
+                'Csirkemell filé 4 sajt mártással, krokettel',
+                'Szerelmes levél',
+            ],
+            '20240721' => [
+                'Orja leves',
+                'Sült csirkecomb kevert salátával',
+                'Gofri',
+            ],
         ];
 
         $this->menuPrice = 1890;
