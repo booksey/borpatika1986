@@ -1495,7 +1495,7 @@ final class WeeklyMenu
                 'Rántott sertésszelet petrezselymes burgonyával',
                 'Uborka saláta',
             ],
-            '20241718' => [
+            '20240718' => [
                 'Tejfölös bableves',
                 'Kapros, gombás csirkeragu rizzsel',
                 'Pohárkrém',
@@ -1514,6 +1514,41 @@ final class WeeklyMenu
                 'Orja leves',
                 'Sült csirkecomb kevert salátával',
                 'Gofri',
+            ],
+            '20240722' => [
+                'Görög gyümölcsleves',
+                'Milánói spagetti',
+                'Csokis gofri',
+            ],
+            '20240723' => [
+                'Tárkonyos sertésragu leves',
+                'Rántott padlizsán rizzsel, tartárral',
+                'Mogyorós gombóc',
+            ],
+            '20240724' => [
+                'Palóc leves',
+                'Stefánia vagdalt burgonyapürével',
+                'Lekváros palacsinta',
+            ],
+            '20240725' => [
+                'Zöldségkrémleves',
+                'Fahéjas szilvával töltött csirkemell hasábburgonyával',
+                'Churros',
+            ],
+            '20240726' => [
+                'Karfiolleves',
+                'Lecsós szelet rizzsel',
+                'Kevert almás',
+            ],
+            '20240727' => [
+                'Burgonyakrémleves pirított virsli karikákkal',
+                'Csirkepörkölt szarvacska tésztával',
+                'Napközis piskóta',
+            ],
+            '20240728' => [
+                'Májgombóc leves',
+                'Fokhagymás, mustáros flekken hagymás tört burgonyával',
+                'Savanyúság mix',
             ],
         ];
 
