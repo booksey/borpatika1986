@@ -1550,6 +1550,41 @@ final class WeeklyMenu
                 'Fokhagymás, mustáros flekken hagymás tört burgonyával',
                 'Savanyúság mix',
             ],
+            '20240729' => [
+                'Tejfölös zöldbableves',
+                'Bakonyi csirkemell tokány rizzsel',
+                'Borpatika kehely',
+            ],
+            '20240730' => [
+                'Kertész leves',
+                'Sertésborda Hentes módra pirított burgonyával',
+                'Alma fahéjas bundában',
+            ],
+            '20240731' => [
+                'Daragaluska leves',
+                'Lencse főzelék sült virslivel',
+                'Gesztenye golyó',
+            ],
+            '20240801' => [
+                'Jókai bableves',
+                'Gombapörkölt galuskával',
+                'Madártej',
+            ],
+            '20240802' => [
+                'Gulyás leves',
+                'Sajtos, tejfölös spagetti szalonna pörccel',
+                'Gyümölcs saláta',
+            ],
+            '20240803' => [
+                'Zöldborsó leves',
+                'Tarhonyás hús',
+                'Káposzta saláta',
+            ],
+            '20240804' => [
+                'Orja leves',
+                'Szezámmagos csirkemell csíkok rizibizivel',
+                'Fagyi kehely',
+            ],
         ];
 
         $this->menuPrice = 1890;
