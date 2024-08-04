@@ -1585,6 +1585,41 @@ final class WeeklyMenu
                 'Szezámmagos csirkemell csíkok rizibizivel',
                 'Fagyi kehely',
             ],
+            '20240805' => [
+                'Zellerkrémleves',
+                'Sertés szelet Erdész módra krokettel',
+                'Lekváros palacsinta',
+            ],
+            '20240806' => [
+                'Palóc leves',
+                'Burgonya főzelék sült kolbásszal',
+                'Túrós rétes',
+            ],
+            '20240807' => [
+                'Erdélyi húsleves',
+                'Húsos palacsinta rántva rizzsel, tartárral',
+                'Gyümölcs saláta',
+            ],
+            '20240808' => [
+                'Olasz paradicsomleves',
+                'Kapros juhtúróval töltött gomba rizzsel, tartárral',
+                'Tiramisu',
+            ],
+            '20240809' => [
+                'Lencsegulyás',
+                'Túrós csusza',
+                'Gesztenyepüré',
+            ],
+            '20240810' => [
+                'Kolbászos burgonyaleves',
+                'Dubarry csirkemell petrezselymes burgonyával',
+                'Peach melba',
+            ],
+            '20240811' => [
+                'Gyümölcs leves',
+                'Sajttal töltött sertésborda kukoricás rizzsel',
+                'Uborka saláta',
+            ],
         ];
 
         $this->menuPrice = 1890;
