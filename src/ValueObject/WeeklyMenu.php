@@ -1620,6 +1620,76 @@ final class WeeklyMenu
                 'Sajttal töltött sertésborda kukoricás rizzsel',
                 'Uborka saláta',
             ],
+            '20240812' => [
+                'Zöldségkrémleves',
+                'Brassói pirított burgonyával',
+                'Csalamádé',
+            ],
+            '20240813' => [
+                'Majorannás burgonyaleves virslivel',
+                'Párizsi csirkemell gombás rizzsel',
+                'Puncs szelet',
+            ],
+            '20240814' => [
+                'Erőleves fridatto',
+                'Székely káposzta',
+                'Linzer karika',
+            ],
+            '20240815' => [
+                'Babgulyás',
+                'Káposztás tészta',
+                'Borpatika kehely',
+            ],
+            '20240816' => [
+                'Májgombóc leves',
+                'Kelkáposzta főzelék vagdalttal',
+                'Mogyorós gombóc',
+            ],
+            '20240817' => [
+                'Tárknyos vadragu leves',
+                'Rántott sajt rizzsel, tartárral',
+                'Meggyes, mákos palacsinta',
+            ],
+            '20240818' => [
+                'Kertész leves',
+                'Bakonyi sertésszelet galuskával',
+                'Churros',
+            ],
+            '20240819' => [
+                'Görög gyümölcsleves',
+                'Csirkepaprikás galuskával',
+                'Piskóta tekercs',
+            ],
+            '20240820' => [
+                'Húsleves gazdagon',
+                'Kijevi csirkemell rizibizivel',
+                'Gyümölcsös vanília puding',
+            ],
+            '20240821' => [
+                'Csülkös bableves',
+                'Mákos tészta',
+                'Fagyi kehely',
+            ],
+            '20240822' => [
+                'Daragaluska leves',
+                'Kolbászos rakott burgonya',
+                'Csemege uborka',
+            ],
+            '20240823' => [
+                'Csirkeragu leves',
+                'Zöldborsó főzelék tükörtojással',
+                'Kókusz golyó',
+            ],
+            '20240824' => [
+                'Magyaros karfiol leves',
+                'Sertéspörkölt szarvacska tésztával',
+                'Fahéjas palacsinta',
+            ],
+            '20240825' => [
+                'Citromos zöldbableves',
+                'Töltött csirkecomb petrezselymes burgonyával',
+                'Káposzta saláta',
+            ],
         ];
 
         $this->menuPrice = 1890;
