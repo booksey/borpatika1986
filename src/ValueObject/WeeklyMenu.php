@@ -1690,6 +1690,41 @@ final class WeeklyMenu
                 'Töltött csirkecomb petrezselymes burgonyával',
                 'Káposzta saláta',
             ],
+            '20240826' => [
+                'Bakonyi betyárleves',
+                'Resztelt csirkemáj főtt burgonyával',
+                'Meggyes piskóta',
+            ],
+            '20240827' => [
+                'Olasz zöldségleves',
+                'Tejszínes, kukoricás csirkeragu rizzsel',
+                'Túrós rétes',
+            ],
+            '20240828' => [
+                'Májgaluska leves',
+                'Töltött paprika sós burgonyával',
+                'Borpatika kehely',
+            ],
+            '20240829' => [
+                'Zöldborsó leves vajas galuskával',
+                'Zúzapörkölt galuskával',
+                'Csalamádé',
+            ],
+            '20240830' => [
+                'Sajtkrémleves',
+                'Gyros vegyes zöldséggel, hasábburgonyával',
+                'Citromos álom',
+            ],
+            '20240831' => [
+                'Orja leves',
+                'Erdélyi rakott káposzta',
+                'Gesztenye golyó',
+            ],
+            '20240901' => [
+                'Brokkoli krémleves',
+                'Rántott csirkemell filé rizibizivel',
+                'Csokis palacsinta',
+            ],
         ];
 
         $this->menuPrice = 1890;
