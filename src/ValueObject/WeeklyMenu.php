@@ -1725,6 +1725,39 @@ final class WeeklyMenu
                 'Rántott csirkemell filé rizibizivel',
                 'Csokis palacsinta',
             ],
+            '20240902' => [
+                'Üzletünk műszaki okok miatt zárva tart',
+            ],
+            '20240903' => [
+                'Jókai bableves',
+                'Juhtúrós sztrapacska',
+                'Gyümölcs saláta',
+            ],
+            '20240904' => [
+                'Paradicsom leves betű tésztával',
+                'Tarhonyás hús',
+                'Kovászos uborka',
+            ],
+            '20240905' => [
+                'Kertész leves',
+                'Párizsi sertésszelet gombás rizzsel',
+                'Lekváros palacsinta',
+            ],
+            '20240906' => [
+                'Húsleves gazdagon',
+                'Rakott karfiol',
+                'Meggyes rétes',
+            ],
+            '20240907' => [
+                'Tejfölös zöldbableves',
+                'Csibe brassói pirított burgonyával',
+                'Mákos guba',
+            ],
+            '20240908' => [
+                'Fokhagyma krémleves',
+                'Pirosra sült csülök hagymás tört burgonyával',
+                'Alma fahéjas bundában',
+            ],
         ];
 
         $this->menuPrice = 1890;
