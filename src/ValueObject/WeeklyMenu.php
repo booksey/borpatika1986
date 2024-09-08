@@ -1758,6 +1758,41 @@ final class WeeklyMenu
                 'Pirosra sült csülök hagymás tört burgonyával',
                 'Alma fahéjas bundában',
             ],
+            '20240909' => [
+                'Nyírségi gombócleves',
+                'Milánói spagetti',
+                'Kevert almás',
+            ],
+            '20240910' => [
+                'Francia hagymaleves',
+                'Rántott cukkini rizzsel, tartárral',
+                'Napközis piskóta',
+            ],
+            '20240911' => [
+                'Májgombóc leves',
+                'Tejfölös burgonyafőzelék sült kolbásszal',
+                'Túrós palacsinta',
+            ],
+            '20240912' => [
+                'Magyaros gombaleves',
+                'Hawai csirkemell steak burgonyával',
+                'Puding tejszínhabbal',
+            ],
+            '20240913' => [
+                'Zöldborsó leves',
+                'Stefánia vagdalt burgonyapürével',
+                'Savanyúság mix',
+            ],
+            '20240914' => [
+                'Húsleves csigatésztával',
+                'Rántott csirkecomb filé zöldséges rizzsel',
+                'Madártej',
+            ],
+            '20240915' => [
+                'Csülkös bableves',
+                'Hortobágyi palacsinta',
+                'Borpatika kehely',
+            ],
         ];
 
         $this->menuPrice = 1890;
