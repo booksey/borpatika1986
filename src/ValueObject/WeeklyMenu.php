@@ -1793,6 +1793,41 @@ final class WeeklyMenu
                 'Hortobágyi palacsinta',
                 'Borpatika kehely',
             ],
+            '20240916' => [
+                'Édesburgonya krémleves',
+                'Chili corn carne',
+                'Szerelmes levél',
+            ],
+            '20240917' => [
+                'Savanyú szárnyas thai leves',
+                'Mézes-mustáros csirkeragu rizzsel',
+                'Túrógombóc',
+            ],
+            '20240918' => [
+                'Tojás leves',
+                'Kelkáposzta főzelék vagdalttal',
+                'Piskóta tekercs',
+            ],
+            '20240919' => [
+                'Frankfurti leves',
+                'Gombás sertéstokány szarvacska tésztával',
+                'Kakaós palacsinta',
+            ],
+            '20240920' => [
+                'Gulyás leves',
+                'Juhtúrós sztrapacska',
+                'Gyümölcs saláta',
+            ],
+            '20240921' => [
+                'Zöldségleves',
+                'Sült csirkecomb petrezselymes burgonyával',
+                'Kókusz golyó',
+            ],
+            '20240922' => [
+                'Orja leves',
+                'Párizsi sertésszelet rizibizivel',
+                'Tiramisu',
+            ],
         ];
 
         $this->menuPrice = 1890;
