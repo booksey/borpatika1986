@@ -1828,6 +1828,41 @@ final class WeeklyMenu
                 'Párizsi sertésszelet rizibizivel',
                 'Tiramisu',
             ],
+            '20240923' => [
+                'Erdélyi csorba leves',
+                'Pásztor tarhonya',
+                'Puncs szelet',
+            ],
+            '20240924' => [
+                'Csontleves cérnametélttel',
+                'Sólet főtt tojással, füstölt csülökkel',
+                'Gofri',
+            ],
+            '20240925' => [
+                'Palóc gulyás',
+                'Lecsó gazdagon kolbásszal',
+                'Gesztenyés szelet',
+            ],
+            '20240926' => [
+                'Francia hagymaleves',
+                'Milánói spagetti',
+                'Túrós rétes',
+            ],
+            '20240927' => [
+                'Magyaros gombaleves',
+                'Kolbászos rakott burgonya',
+                'Csemege uborka',
+            ],
+            '20240928' => [
+                'Brokkoli krémleves',
+                'Lyoni sertés szelet burgonyapürével',
+                'Gyümölcsös vanília puding',
+            ],
+            '20240929' => [
+                'Tejszínes karfiol leves',
+                'Bankár csirkemell rizibizivel',
+                'Püspök kenyér',
+            ],
         ];
 
         $this->menuPrice = 1890;
