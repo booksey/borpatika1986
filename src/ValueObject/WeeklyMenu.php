@@ -1863,6 +1863,41 @@ final class WeeklyMenu
                 'Bankár csirkemell rizibizivel',
                 'Püspök kenyér',
             ],
+            '20240930' => [
+                'Jókai bableves',
+                'Káposztás tészta',
+                'Gyümölcs saláta',
+            ],
+            '20241001' => [
+                'Májgaluska leves',
+                'BBQ csirkeszárnyak steak burgonyával',
+                'Túrós palacsinta',
+            ],
+            '20241002' => [
+                'Kertész leves',
+                'Borsos tokány galuskával',
+                'Isler',
+            ],
+            '20241003' => [
+                'Erdélyi húsleves',
+                'Rántott karfiol rizzsel, tartárral',
+                'Kókusz kocka',
+            ],
+            '20241004' => [
+                'Zöldborsó leves vajas galuskával',
+                'Csülök Pékné módra pirított burgonyával',
+                'Savanyúság mix',
+            ],
+            '20241005' => [
+                'Kolbászos burgonya leves',
+                'Szezámmagos rántott csirkemell kukoricás rizzsel',
+                'Linzer karika',
+            ],
+            '20241006' => [
+                'Zellerkrémleves',
+                'Sertésszelet Holstein módra petrezselymes burgonyával',
+                'Hideg gyümölcsrizs',
+            ],
         ];
 
         $this->menuPrice = 1890;
