@@ -1898,6 +1898,41 @@ final class WeeklyMenu
                 'Sertésszelet Holstein módra petrezselymes burgonyával',
                 'Hideg gyümölcsrizs',
             ],
+            '20241007' => [
+                'Erőleves fridatto',
+                'Sertéspörkölt galuskával',
+                'Gesztenyepüré',
+            ],
+            '20241008' => [
+                'Frankfurti leves',
+                'Sajtos, tejfölös spagetti szalonna pörccel'?
+                'Puncs szelet',
+            ],
+            '20241009' => [
+                'Zöldborsós csirkeragu leves',
+                'Tejfölös zöldbabfőzelék vagdalttal',
+                'Kevert mákos',
+            ],
+            '20241010' => [
+                'Olasz paradicsom leves',
+                'Lecsós csirkemáj sós burgonyával',
+                'Őszibarackos vanília puding',
+            ],
+            '20241011' => [
+                'Daragaluska leves',
+                'Vasi pecsenye hagymás tört burgonyával',
+                'Káposzta saláta',
+            ],
+            '20241012' => [
+                'Burgonyakrémleves sonka csipsszel',
+                'Római csirkemell gombás rizzsel',
+                'Borpatika kehely',
+            ],
+            '20241013' => [
+                'Színes zöldségleves',
+                'Bakonyi sertésszelet galuskával',
+                'Szerelmes levél',
+            ],
         ];
 
         $this->menuPrice = 1890;
