@@ -1905,7 +1905,7 @@ final class WeeklyMenu
             ],
             '20241008' => [
                 'Frankfurti leves',
-                'Sajtos, tejfölös spagetti szalonna pörccel'?
+                'Sajtos, tejfölös spagetti szalonna pörccel',
                 'Puncs szelet',
             ],
             '20241009' => [
