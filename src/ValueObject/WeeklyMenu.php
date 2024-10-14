@@ -1933,6 +1933,41 @@ final class WeeklyMenu
                 'Bakonyi sertésszelet galuskával',
                 'Szerelmes levél',
             ],
+            '20241014' => [
+                'Húsleves cérnametélttel',
+                'Rántott sajt rizzsel, tartárral',
+                'Vaníliás tiramisu csoki öntettel',
+            ],
+            '20241015' => [
+                'Citromos zöldbableves virslivel',
+                'Bolognai spagetti',
+                'Túrógombóc',
+            ],
+            '20241016' => [
+                'Tejfölös bableves csipetkével',
+                'Tarhonyás hús',
+                'Csalamádé',
+            ],
+            '20241017' => [
+                'Alföldi tarhonyaleves kolbásszal',
+                'Disznótoros hagymás tört burgonyával, párolt káposztával',
+                'Meggyes, mákos palacsinta',
+            ],
+            '20241018' => [
+                'Májgombóc leves',
+                'Székely káposzta',
+                'Gesztenye golyó',
+            ],
+            '20241019' => [
+                'Fokhagyma krémleves',
+                'Mexikói csirkemell rizzsel',
+                'Kevert almás',
+            ],
+            '20241020' => [
+                'Meleg, fahéjas szilvaleves',
+                'Fetával, olivával töltött sertésborda petrezselymes burgonyával',
+                'Meggyes piskóta',
+            ],
         ];
 
         $this->menuPrice = 1890;
