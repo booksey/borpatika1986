@@ -1968,6 +1968,41 @@ final class WeeklyMenu
                 'Fetával, olivával töltött sertésborda petrezselymes burgonyával',
                 'Meggyes piskóta',
             ],
+            '20241021' => [
+                'Húsleves eperlevéllel',
+                'Vadas csirkemell makarónival',
+                'Alma fahéjas bundában',
+            ],
+            '20241022' => [
+                'Francia hagymaleves',
+                'Húsos palacsinta rántva rizzsel, tartárral',
+                'Piskóta tekercs',
+            ],
+            '20241023' => [
+                'Orja leves',
+                'Sajttal, sonkával töltött sertésborda petrezselymes burgonyával',
+                'Tiramisu',
+            ],
+            '20241024' => [
+                'Gulyás leves',
+                'Túrós csusza',
+                'Ananász tejszínhabbal',
+            ],
+            '20241025' => [
+                'Kertész leves',
+                'Köményes sertéssült párolt káposztával',
+                'Madártej',
+            ],
+            '20241026' => [
+                'Tárkonyos csirkeragu leves',
+                'Brassói pirított burgonyával',
+                'Uborka saláta',
+            ],
+            '20241027' => [
+                'Tejfölös gombaleves',
+                'Patikus szelet burgonyapürével',
+                'Házi rétes',
+            ],
         ];
 
         $this->menuPrice = 1890;
