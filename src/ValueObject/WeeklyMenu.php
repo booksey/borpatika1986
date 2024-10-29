@@ -2003,6 +2003,41 @@ final class WeeklyMenu
                 'Patikus szelet burgonyapürével',
                 'Házi rétes',
             ],
+            '20241028' => [
+                'Zöldség leves',
+                'Töltött paprika sós burgonyával',
+                'Lekváros palacsinta',
+            ],
+            '20241029' => [
+                'Babgulyás',
+                'Káposztás tészta',
+                'Borpatika kehely',
+            ],
+            '20241030' => [
+                'Meleg, fahéjas almaleves',
+                'Szepesi flekken hagymás tört burgonyával',
+                'Savanyúság mix',
+            ],
+            '20241031' => [
+                'Sütőtök krémleves',
+                'Sajttal, almával töltött csirkemell burgonyapürével',
+                'Halloween muffin',
+            ],
+            '20241101' => [
+                'Daragaluska leves',
+                'Holstein szelet petrezselymes burgonyával',
+                'Vaníliás gofri',
+            ],
+            '20241102' => [
+                'Karfiol leves',
+                'Rántott csirkemáj zöldséges rizzsel',
+                'Káposzta saláta',
+            ],
+            '20241103' => [
+                'Zöldborsó leves',
+                'Pompadur csirkemell burgonya krokettel',
+                'Csokoládés pohárkrém',
+            ],
         ];
 
         $this->menuPrice = 1890;
