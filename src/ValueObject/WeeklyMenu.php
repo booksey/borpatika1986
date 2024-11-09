@@ -2038,6 +2038,41 @@ final class WeeklyMenu
                 'Pompadur csirkemell burgonya krokettel',
                 'Csokoládés pohárkrém',
             ],
+            '20241111' => [
+                'Libaleves macesz gombóccal',
+                'Ludas kása',
+                'Csokis, meggyes pohárkrém',
+            ],
+            '20241112' => [
+                'Tejfölös gombaleves',
+                'Rakott káposzta',
+                'Tiramisu',
+            ],
+            '20241113' => [
+                'Brokkoli krémleves',
+                'Resztelt csirkemáj sós burgonyával',
+                'Puncs szelet',
+            ],
+            '20241114' => [
+                'Sertésragu leves',
+                'Krumplis tészta',
+                'Kovászos uborka',
+            ],
+            '20241115' => [
+                'Gulyás leves',
+                'Sárgaborsó főzelék sült virslivel',
+                'Vargabéles',
+            ],
+            '20241116' => [
+                'Francia hagymaleves',
+                'Mátrai borzaska rizibizivel',
+                'Csokis palacsinta',
+            ],
+            '20241117' => [
+                'Húsleves gazdagon',
+                'Töltött csirkecomb petrezselymes burgonyával',
+                'Káposzta saláta',
+            ],
         ];
 
         $this->menuPrice = 1890;
