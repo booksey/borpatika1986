@@ -2108,6 +2108,41 @@ final class WeeklyMenu
                 'Csirkepörkölt szarvacsa tésztával',
                 'Túrós rétes',
             ],
+            '20241125' => [
+                'Csontleves cérnametélttel',
+                'Székely káposzta',
+                'Nutellás gofri',
+            ],
+            '20241126' => [
+                'Tárkonyos vadraguleves',
+                'Zöldborsó főzelék tükörtojással',
+                'Puncs szelet',
+            ],
+            '20241127' => [
+                'Zellerkrémleves',
+                'Hentes tokány pirított burgonyával',
+                'Keksztekercs',
+            ],
+            '20241128' => [
+                'Jókai bableves',
+                'Kolbászos pásztortarhonya',
+                'Gesztenyepüré',
+            ],
+            '20241129' => [
+                'Frankfurti leves',
+                'Rántott gomba rizzsel, tartárral',
+                'Meggyes piskóta',
+            ],
+            '20241130' => [
+                'Paradicsom leves betű tésztával',
+                'Sült csirkecomb steak burgonyával',
+                'Káposzta saláta',
+            ],
+            '20241201' => [
+                'Májgaluska leves',
+                'Milánói sertésborda',
+                'Gyümölcs saláta',
+            ],
         ];
 
         $this->menuPrice = 1890;
