@@ -2143,6 +2143,41 @@ final class WeeklyMenu
                 'Milánói sertésborda',
                 'Gyümölcs saláta',
             ],
+            '20241202' => [
+                'Nyírségi gombóc leves',
+                'Túrós csusza',
+                'Borpatika kehely',
+            ],
+            '20241203' => [
+                'Erdélyi húsleves',
+                'Kolbászos rakott burgonya',
+                'Citromos palacsinta',
+            ],
+            '20241204' => [
+                'Őszi zöldségleves',
+                'Bácskai rizseshús',
+                'Savanyúság mix',
+            ],
+            '20241205' => [
+                'Tárkonyos burgonyaleves',
+                'Sertéssült gomba mártással burgonya krokettel',
+                'Piskóta tekercs',
+            ],
+            '20241206' => [
+                'Póréhagyma leves',
+                'Paradicsomos húsgombóc sós burgonyával',
+                'Meglepetés a Mikulástól',
+            ],
+            '20241207' => [
+                'Karfiol leves',
+                'Sajttal, baconnal töltött csirkemell kukoricás rizzsel',
+                'Kevert almás',
+            ],
+            '20241208' => [
+                'Tejfölös bableves csipetkével',
+                'Magyaróvári sertésborda petrezselymes burgonyával',
+                'Püspök kenyér',
+            ],
         ];
 
         $this->menuPrice = 1890;
