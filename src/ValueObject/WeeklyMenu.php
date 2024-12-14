@@ -2178,6 +2178,61 @@ final class WeeklyMenu
                 'Magyaróvári sertésborda petrezselymes burgonyával',
                 'Püspök kenyér',
             ],
+            '20241212' => [
+                'Húsleves cérnametélttel',
+                'Csirkecomb filé rántva petrezselymes burgonyával',
+                'Kovászos uborka',
+            ],
+            '20241213' => [
+                'Csurgatott tojásleves',
+                'Tarhonyás hús',
+                'Kakaós palacsinta',
+            ],
+            '20241214' => [
+                'Jókai bableves',
+                'Káposztás tészta',
+                'Borpatika kehely',
+            ],
+            '20241215' => [
+                'Tárkonyos raguleves',
+                'Zöldborsó főzelék tükörtojással',
+                'Túrógombóc',
+            ],
+            '20241216' => [
+                'Sütőtök krémleves',
+                'Sertésszelet Jóasszony módra vajas tört burgonyával',
+                'Lekváros palacsinta',
+            ],
+            '20241217' => [
+                'Erdélyi húsleves',
+                'Kolbászos paprikás burgonya',
+                'Csemege uborka',
+            ],
+            '20241218' => [
+                'Olasz paradicsomleves',
+                'Húsos palacsinta rántva rizzsel, tartárral',
+                'Kókusz golyó',
+            ],
+            '20241219' => [
+                'Jókai bableves',
+                'Sajtos, tejfölös spagetti szalonna pörccel',
+                'Borpatika kehely',
+            ],
+            '20241220' => [
+                'Palóc leves',
+                'Zöldborsó főzelék sült virslivel',
+                'Puncs szelet',
+            ],
+            '20241221' => [
+                'Májgombóc leves',
+                'Csülök Pékné módra kocka burgonyával',
+                'Savanyúság mix',
+            ],
+            '20241222' => [
+                'Kertész leves',
+                'Bakonyi csirkeragu tésztával',
+                'Mákos guba',
+            ],
         ];
 
         $this->menuPrice = 1890;
