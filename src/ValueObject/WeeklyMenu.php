@@ -2281,18 +2281,33 @@ final class WeeklyMenu
         $menu = [];
         $dates = $this->getWeekDates();
         /** @var DateTime $date */
+        $dates = [
+            '20241230',
+            '20241231',
+            '20250101',
+            '20250102',
+            '20250103',
+            '20250104',
+            '20250105',
+        ];
         foreach ($dates as $date) {
+            $date = date_create_from_format('Ymd', $date);
             $dateTitle =  IntlDateFormatter::formatObject(
                 $date,
                 "Y. MMMM dd. EEEE",
                 'hu_HU'
             );
+            if ($dateTitle == '2025. december 30. hétfő') {
+                $dateTitle = '2024. december 30. hétfő';
+            }
+            if ($dateTitle == '2025. december 31. kedd') {
+                $dateTitle = '2024. december 31. kedd';
+            }
             $dateKey = $date->format('Ymd');
             if (!empty($this->menu[$dateKey])) {
                 $menu[$dateTitle] = $this->menu[$dateKey];
             }
         }
-
         return $menu;
     }
 
