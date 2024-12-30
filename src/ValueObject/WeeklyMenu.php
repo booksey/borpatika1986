@@ -2233,6 +2233,41 @@ final class WeeklyMenu
                 'Bakonyi csirkeragu tésztával',
                 'Mákos guba',
             ],
+            '20241230' => [
+                'Gulyás leves',
+                'Juhtúrós sztrapacska',
+                'Rétes',
+            ],
+            '20241231' => [
+                'Májgombóc leves',
+                'Malac sült párolt káposztával',
+                'Gesztenyepüré'
+            ],
+            '20250101' => [
+                'Zöldség leves',
+                'Lencse főzelék füstölt hússal',
+                'Tiramisu',
+            ],
+            '20250102' => [
+                'Zellerkrémleves',
+                'Rántott sertésborda majonézes burgonya salátával',
+                'Csalamádé',
+            ],
+            '20250103' => [
+                'Szárnyas aprólék leves',
+                'Lecsós csirkemáj rizzsel',
+                'Piskótatekercs',
+            ],
+            '20250104' => [
+                'Zöldborsó leves',
+                'Zúzapörkölt galuskával',
+                'Puncs szelet',
+            ],
+            '20250105' => [
+                'Tejfölös bableves',
+                'Római csirkemell petrezselymes burgonyával',
+                'Lekváros palacsinta',
+            ],
         ];
 
         $this->menuPrice = 1890;
