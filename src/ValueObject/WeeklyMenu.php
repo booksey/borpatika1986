@@ -2268,6 +2268,41 @@ final class WeeklyMenu
                 'Római csirkemell petrezselymes burgonyával',
                 'Lekváros palacsinta',
             ],
+            '20250106' => [
+                'Lencsegulyás',
+                'Krumplis tészta',
+                'Csemege uborka',
+            ],
+            '20250107' => [
+                'Kolbászos burgonya leves',
+                'Bankár csirkemell rizibizivel',
+                'Fahéjas palacsinta',
+            ],
+            '20250108' => [
+                'Orja leves',
+                'Gombapaprikás galuskával',
+                'Borpatika kehely',
+            ],
+            '20250109' => [
+                'Brokkoli krémleves',
+                'Brassói pirított burgonyával',
+                'Káposzta saláta',
+            ],
+            '20250110' => [
+                'Erőleves fridatto',
+                'Hortobágyi palacsinta',
+                'Kókusz kocka',
+            ],
+            '20250111' => [
+                'Karfiol leves',
+                'Rántott csirkemáj kukoricás rizzsel',
+                'Túrógombóc',
+            ],
+            '20250112' => [
+                'Paradicsom leves',
+                'Lyoni sertésszelet burgonyapürével',
+                'Rétes',
+            ],
         ];
 
         $this->menuPrice = 1890;
