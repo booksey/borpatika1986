@@ -2303,6 +2303,41 @@ final class WeeklyMenu
                 'Lyoni sertésszelet burgonyapürével',
                 'Rétes',
             ],
+            '20250113' => [
+                'Bakonyi betyár leves',
+                'Sajtos, tejfölös spagetti szalonna pörccel',
+                'Gyümölcs saláta',
+            ],
+            '20250114' => [
+                'Kertész leves',
+                '4 sajtos csirkemell filé krokettel',
+                'Túrós palacsinta',
+            ],
+            '20250115' => [
+                'Pilisi sertésgulyás',
+                'Zöldborsó főzelék sült virslivel',
+                'Linzer karika',
+            ],
+            '20250116' => [
+                'Gombaleves',
+                'Rakott burgonya kolbásszal',
+                'Kókusz golyó',
+            ],
+            '20250117' => [
+                'Sárgaborsó krémleves bacon csipsszel',
+                'Rántott csirkecomb filé petrezselymes burgonyával',
+                'Isler',
+            ],
+            '20250118' => [
+                'Daragaluska leves',
+                'Lecsós szelet rizzsel',
+                'Napközis piskóta',
+            ],
+            '20250119' => [
+                'Tejfölös zöldbab leves',
+                'Cigány pecsenye hagymás tört burgonyával',
+                'Savanyúság mix',
+            ],
         ];
 
         $this->menuPrice = 1890;
@@ -2316,28 +2351,12 @@ final class WeeklyMenu
         $menu = [];
         $dates = $this->getWeekDates();
         /** @var DateTime $date */
-        $dates = [
-            '20241230',
-            '20241231',
-            '20250101',
-            '20250102',
-            '20250103',
-            '20250104',
-            '20250105',
-        ];
         foreach ($dates as $date) {
-            $date = date_create_from_format('Ymd', $date);
             $dateTitle =  IntlDateFormatter::formatObject(
                 $date,
                 "Y. MMMM dd. EEEE",
                 'hu_HU'
             );
-            if ($dateTitle == '2025. december 30. hétfő') {
-                $dateTitle = '2024. december 30. hétfő';
-            }
-            if ($dateTitle == '2025. december 31. kedd') {
-                $dateTitle = '2024. december 31. kedd';
-            }
             $dateKey = $date->format('Ymd');
             if (!empty($this->menu[$dateKey])) {
                 $menu[$dateTitle] = $this->menu[$dateKey];
